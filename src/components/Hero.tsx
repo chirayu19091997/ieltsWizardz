@@ -31,7 +31,7 @@ const Hero = () => {
               <FiArrowRightCircle size={18} className="ml-8" />
             </Link>
             <p className="mt-5 text-gray-600">
-              Don't know what to choose?
+              Don&apos;t know what to choose?
               <Link
                 href="/contact"
                 title=""
