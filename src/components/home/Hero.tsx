@@ -26,7 +26,7 @@ const Hero = () => {
               className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
               role="button"
             >
-              Book a Demo
+              Book a Consultation
               <IconCircleArrowRight size={18} className="ml-8" />
             </Link>
             <p className="flex mt-5 space-x-2 text-gray-600">

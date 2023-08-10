@@ -68,7 +68,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex w-full flex-col space-y-4 items-center justify-center">
-        <h1 className="text-3xl text-primaryColor">For Businesses</h1>
+        <h1 className="text-3xl text-primaryColor">For Partners</h1>
         <p>
           We develop test-preparation practice papers for companies and
           businesses in book publishing and the edtech domains. We also provide

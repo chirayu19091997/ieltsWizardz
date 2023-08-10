@@ -12,14 +12,15 @@ export const emailRegex = RegExp(
 );
 
 export const Logo = (
-  <div className="flex h-14 flex-shrink-0">
+  <div className="flex h-14 space-x-2 items-center flex-shrink-0">
     <img
-      className="w-auto object-contain h-12"
-      src="/titledlogo.png"
+      className="w-auto object-contain h-14"
+      src="/logo.png"
       alt=""
-      height={132}
-      width={382}
+      height={230}
+      width={230}
     />
+    <p className="text-xl font-bold">IELTS Wizardz</p>
   </div>
 );
 
@@ -31,7 +32,7 @@ export const clientData = {
 export const HeaderOptions = [
   { title: "About", route: "/about" },
   { title: "Services", route: "/services" },
-  { title: "For Businesses", route: "/b2bservices" },
+  { title: "For Partners", route: "/b2bservices" },
   { title: "Blog", route: "/blog" },
   { title: "Contact Us", route: "/contact" },
 ];
@@ -78,9 +79,9 @@ export const homeServiceSections = [
     subtitle:
       "Live and self-paced online training & preparation for proficiency tests like IELTS / TOEFL / PTE and scholastic tests such as the SAT.",
     logo: (
-      <div className="flex items-center justify-center h-[42px] w-[42px] flex-shrink-0">
+      <div className="flex items-center justify-center w-14 h-14 flex-shrink-0">
         <img
-          className="w-[42px] object-contain h-[42px]"
+          className="h-14 w-14 object-contain"
           src="/serviceshome/image6.png"
           alt=""
         />
@@ -92,9 +93,9 @@ export const homeServiceSections = [
     subtitle:
       "We brainstorm with you to develop your university specific admission essays necessary for your applications to universities abroad.",
     logo: (
-      <div className="flex items-center justify-center h-[42px] w-[42px] flex-shrink-0">
+      <div className="flex items-center justify-center h-14 w-14 flex-shrink-0">
         <img
-          className="w-[42px] object-contain h-[42px]"
+          className="h-14 w-14 object-contain"
           src="/serviceshome/image7.png"
           alt=""
         />
@@ -106,9 +107,9 @@ export const homeServiceSections = [
     subtitle:
       "Your all-in-one guide that assists you at every step in your journey from course, country and university selection to securing your seat and getting your visa and accommodation.",
     logo: (
-      <div className="flex items-center justify-center h-[42px] w-[42px] flex-shrink-0">
+      <div className="flex items-center justify-center h-14 w-14 flex-shrink-0">
         <img
-          className="w-[42px] object-contain h-[42px]"
+          className="h-14 w-14 object-contain"
           src="/serviceshome/image8.png"
           alt=""
         />
@@ -167,36 +168,6 @@ export const serviceSections = [
     tab: "Test Preparation",
     subTabs: [
       {
-        tab: "IELTS One-Skill",
-        title: "IELTS One Skill Preparation",
-        data: [
-          {
-            title: "One-skill Booster",
-            subtitle:
-              "For those who wish to boost their scores in any one section of the IELTS test",
-            keyFeatures: "Key Features",
-            features: [
-              "10 hrs. of live training-cum-practice",
-              "Evaluation and feedback by experts",
-              "Personal mentoring and support",
-            ],
-          },
-          {
-            title: "Writing Tasks Evaluation",
-            subtitle:
-              "For those who are worried about your IELTS Academic writing skills and want to get their essays evaluated",
-            keyFeatures: "Key Features",
-            features: [
-              "Combo: Task 1 + Task 2 (pack of 5/10/15 writeups)",
-              "Task 2: Pack of 5/10/15 writeups",
-              "Real time evaluation based on band descriptions",
-              "Predictive band scores",
-              "Feedback within 24-48 hrs",
-            ],
-          },
-        ],
-      },
-      {
         tab: "IELTS Academic",
         title: "IELTS Complete Preparation",
         data: [
@@ -245,6 +216,36 @@ export const serviceSections = [
               "100+ videos on trending topics, idioms and spellings",
               "200+ Practice Exercises and Quizzes",
               "Free English assessment and IELTS Diagnostic Test",
+            ],
+          },
+        ],
+      },
+      {
+        tab: "IELTS One-Skill",
+        title: "IELTS One Skill Preparation",
+        data: [
+          {
+            title: "One-skill Booster",
+            subtitle:
+              "For those who wish to boost their scores in any one section of the IELTS test",
+            keyFeatures: "Key Features",
+            features: [
+              "10 hrs. of live training-cum-practice",
+              "Evaluation and feedback by experts",
+              "Personal mentoring and support",
+            ],
+          },
+          {
+            title: "Writing Tasks Evaluation",
+            subtitle:
+              "For those who are worried about your IELTS Academic writing skills and want to get their essays evaluated",
+            keyFeatures: "Key Features",
+            features: [
+              "Combo: Task 1 + Task 2 (pack of 5/10/15 writeups)",
+              "Task 2: Pack of 5/10/15 writeups",
+              "Real time evaluation based on band descriptions",
+              "Predictive band scores",
+              "Feedback within 24-48 hrs",
             ],
           },
         ],

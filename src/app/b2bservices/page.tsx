@@ -11,7 +11,7 @@ const B2BServices = () => {
           <Animator animationData={forBusinessAnimation} />
         </div>
         <div className="flex flex-col space-y-4">
-          <h1 className="text-4xl text-primaryColor">For Businesses</h1>
+          <h1 className="text-4xl text-primaryColor">For Partners</h1>
           <div className="flex flex-col space-y-4">
             <p>
               We provide extensive services to test preparatory academies,

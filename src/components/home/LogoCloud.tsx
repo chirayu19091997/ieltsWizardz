@@ -5,7 +5,7 @@ const LogoCloud = () => {
     <section className="py-12 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="xl:flex flex-col space-y-12 xl:items-center xl:justify-between">
-          <h2 className="text-4xl font-bold text-center text-gray-500 xl:text-left font-pj">
+          <h2 className="text-3xl font-bold text-center text-gray-500 xl:text-left font-pj">
             Partnerships and Certifications
           </h2>
 

@@ -5,7 +5,7 @@ import { IconCheck } from "@tabler/icons-react";
 const ServiceItem = ({ cardData }: any) => {
   return (
     <div className="flex z-10 flex-col bg-white space-y-4 lg:w-[30%] h-screen p-4 shadow-xl border rounded-lg lg:m-2 my-2">
-      <div className="w-full h-36">
+      <div className="w-full h-40">
         <h2 className="font-extrabold py-2 border-b text-lg border-gray-700">
           {cardData.title}
         </h2>
@@ -27,7 +27,7 @@ const ServiceItem = ({ cardData }: any) => {
         <div className="w-full h-full">
           <h2 className="font-semibold py-2 mt-4">{cardData.keyFeatures}:</h2>
           {cardData.features.map((feature: any) => (
-            <div key={feature} className="flex w-full items-center space-x-2">
+            <div key={feature} className="flex w-full space-x-2">
               <IconCheck strokeWidth={4} color="green" size={14} />
               <p className="text-gray-700">{feature}</p>
             </div>

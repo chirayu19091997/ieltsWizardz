@@ -32,8 +32,8 @@ export default function RootLayout({
           {children}
           <Footer />
           <Chatbot />
-          <Toaster position="top-right" reverseOrder={false} />
         </Suspense>
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );
