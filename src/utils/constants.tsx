@@ -254,21 +254,44 @@ export const serviceSections = [
         title: "TOEFL Complete Preparation",
         data: [
           {
-            title: "TOEFL Self Paced",
-            subtitle: "For those who need complete TOEFL training",
+            title: "TOEFL Plus",
+            subtitle:
+              "For those who need complete live training on TOEFL test with online support",
             keyFeatures: "Key Features",
             features: [
-              "Recorded Sessions by professionals",
-              "24/7 Availability",
-              "Personal Mentor Support",
+              "3 weeks of online classes",
+              "Video recordings of each class",
+              "Up-to-date study materials",
+              "1 full length mock test with evaluation",
+              "Grammar and vocabulary sessions",
             ],
           },
           {
-            title: "TOEFL Live",
+            title: "TOEFL Premium",
             subtitle:
-              "For those who need complete TOEFL training with mentor support live",
-            keyFeatures: "Everything in TOEFL Self Paced, plus",
-            features: ["Live Classes"],
+              "For those who need complete live training with access to our exclusive ONLINE Portal treasures",
+            keyFeatures: "Key Features",
+            features: [
+              "6 weeks of live online classes",
+              "Video recordings of each class",
+              "24x7 access to our ONLINE Portal for 6 months",
+              "14 timed Mock Tests with evaluation",
+              "300+ videos on grammar, vocabulary and tips",
+              "Weekend doubt solving sessions",
+              "Free English assessment Test",
+            ],
+          },
+          {
+            title: "TOEFL Self-paced",
+            subtitle:
+              "For those who wish to prepare and practice at their own pace.",
+            keyFeatures: "Key Features",
+            features: [
+              "24x7 access to our ONLINE Portal for 6 months",
+              "14 timed Mock Tests with evaluation",
+              "300+ videos on grammar, vocabulary and tips",
+              "Free English assessment Test",
+            ],
           },
         ],
       },
