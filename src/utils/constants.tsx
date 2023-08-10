@@ -36,22 +36,22 @@ export const Socials = [
   {
     title: "LinkedIn",
     route: "https://www.linkedin.com/company/ieltswizardz/",
-    logo: <IconBrandLinkedin size={16} />,
+    logo: <IconBrandLinkedin size={20} />,
   },
   {
     title: "Instagram",
     route: "https://www.instagram.com/ieltswizardz/",
-    logo: <IconBrandInstagram size={16} />,
+    logo: <IconBrandInstagram size={20} />,
   },
   {
     title: "Facebook",
     route: "https://www.facebook.com/ieltswizardz/",
-    logo: <IconBrandFacebook size={16} />,
+    logo: <IconBrandFacebook size={20} />,
   },
   {
     title: "Whatsapp",
     route: `https://wa.me/${clientData.phone}`,
-    logo: <IconBrandWhatsapp size={16} />,
+    logo: <IconBrandWhatsapp size={20} />,
   },
 ];
 
@@ -65,147 +65,6 @@ export const DirectContacts = [
     title: "Email",
     route: `mailto:${clientData.email}`,
     logo: <IconAt size={16} />,
-  },
-];
-
-export const serviceSections = [
-  {
-    tab: "IELTS One Skill",
-    title: "IELTS One Skill Preparation",
-    data: [
-      {
-        title: "IELTS One Skill Live",
-        subtitle:
-          "For those who need training for just one skill with mentor support live",
-        keyFeatures: "Key Features",
-        features: ["Personal Mentor Support", "Live Classes"],
-      },
-      {
-        title: "Writing Evaulation Service",
-        subtitle: "For those who wants evaluation for their preparation",
-        keyFeatures: "Key Features",
-        features: [
-          "Personalised insights on their preparation",
-          "Detailed information on improvement areas",
-        ],
-      },
-    ],
-  },
-  {
-    tab: "IELTS Complete",
-    title: "IELTS Complete Preparation",
-    data: [
-      {
-        title: "IELTS Plus Self Paced",
-        subtitle: "For those who need complete IELTS training",
-        keyFeatures: "Key Features",
-        features: [
-          "Recorded Sessions by professionals",
-          "24/7 Availability",
-          "Personal Mentor Support",
-        ],
-      },
-      {
-        title: "IELTS Plus Live",
-        subtitle:
-          "For those who need complete IELTS training with mentor support live",
-        keyFeatures: "Everything in IELTS Plus Self Paced, plus",
-        features: ["Live Classes"],
-      },
-    ],
-  },
-  {
-    tab: "TOEFL",
-    title: "TOEFL Complete Preparation",
-    data: [
-      {
-        title: "TOEFL Self Paced",
-        subtitle: "For those who need complete TOEFL training",
-        keyFeatures: "Key Features",
-        features: [
-          "Recorded Sessions by professionals",
-          "24/7 Availability",
-          "Personal Mentor Support",
-        ],
-      },
-      {
-        title: "TOEFL Live",
-        subtitle:
-          "For those who need complete TOEFL training with mentor support live",
-        keyFeatures: "Everything in TOEFL Self Paced, plus",
-        features: ["Live Classes"],
-      },
-    ],
-  },
-  {
-    tab: "PTE",
-    title: "PTE Complete Preparation",
-    data: [
-      {
-        title: "PTE Self Paced",
-        subtitle: "For those who need complete PTE training",
-        keyFeatures: "Key Features",
-        features: [
-          "Recorded Sessions by professionals",
-          "24/7 Availability",
-          "Personal Mentor Support",
-        ],
-      },
-      {
-        title: "PTE Live",
-        subtitle:
-          "For those who need complete PTE training with mentor support live",
-        keyFeatures: "Everything in PTE Self Paced, plus",
-        features: ["Live Classes"],
-      },
-    ],
-  },
-  {
-    tab: "SAT",
-    title: "SAT Complete Preparation",
-    data: [
-      {
-        title: "SAT Self Paced",
-        subtitle: "For those who need complete SAT training",
-        keyFeatures: "Key Features",
-        features: [
-          "Recorded Sessions by professionals",
-          "24/7 Availability",
-          "Personal Mentor Support",
-        ],
-      },
-      {
-        title: "SAT Live",
-        subtitle:
-          "For those who need complete SAT training with mentor support live",
-        keyFeatures: "Everything in SAT Self Paced, plus",
-        features: ["Live Classes"],
-      },
-    ],
-  },
-  {
-    tab: "Document Drafting",
-    title: "Document Drafting",
-    data: [
-      {
-        title: "Document Drafting",
-        subtitle: "For those who need assistance with document preparation",
-        keyFeatures: "Key Features",
-        features: ["SOPs", "LORs", "Admission Essays"],
-      },
-    ],
-  },
-  {
-    tab: "Admission Assistance",
-    title: "Admission Assistance",
-    data: [
-      {
-        title: "Admission Assistance",
-        subtitle: "For those who need assistance with admission",
-        keyFeatures: "Key Features",
-        features: ["University Selection", "Application Processing", "Visa"],
-      },
-    ],
   },
 ];
 
@@ -407,4 +266,164 @@ export const logoSlides = [
   "/universities/image22.png",
   "/universities/image23.png",
   "/universities/image24.png",
+];
+
+export const serviceSections = [
+  {
+    tab: "Test Preparation",
+    subTabs: [
+      {
+        tab: "IELTS One Skill",
+        title: "IELTS One Skill Preparation",
+        data: [
+          {
+            title: "IELTS One Skill Live",
+            subtitle:
+              "For those who need training for just one skill with mentor support live",
+            keyFeatures: "Key Features",
+            features: ["Personal Mentor Support", "Live Classes"],
+          },
+          {
+            title: "Writing Evaulation Service",
+            subtitle: "For those who wants evaluation for their preparation",
+            keyFeatures: "Key Features",
+            features: [
+              "Personalised insights on their preparation",
+              "Detailed information on improvement areas",
+            ],
+          },
+        ],
+      },
+      {
+        tab: "IELTS Complete",
+        title: "IELTS Complete Preparation",
+        data: [
+          {
+            title: "IELTS Plus Self Paced",
+            subtitle: "For those who need complete IELTS training",
+            keyFeatures: "Key Features",
+            features: [
+              "Recorded Sessions by professionals",
+              "24/7 Availability",
+              "Personal Mentor Support",
+            ],
+          },
+          {
+            title: "IELTS Plus Live",
+            subtitle:
+              "For those who need complete IELTS training with mentor support live",
+            keyFeatures: "Everything in IELTS Plus Self Paced, plus",
+            features: ["Live Classes"],
+          },
+        ],
+      },
+      {
+        tab: "TOEFL",
+        title: "TOEFL Complete Preparation",
+        data: [
+          {
+            title: "TOEFL Self Paced",
+            subtitle: "For those who need complete TOEFL training",
+            keyFeatures: "Key Features",
+            features: [
+              "Recorded Sessions by professionals",
+              "24/7 Availability",
+              "Personal Mentor Support",
+            ],
+          },
+          {
+            title: "TOEFL Live",
+            subtitle:
+              "For those who need complete TOEFL training with mentor support live",
+            keyFeatures: "Everything in TOEFL Self Paced, plus",
+            features: ["Live Classes"],
+          },
+        ],
+      },
+      {
+        tab: "PTE",
+        title: "PTE Complete Preparation",
+        data: [
+          {
+            title: "PTE Self Paced",
+            subtitle: "For those who need complete PTE training",
+            keyFeatures: "Key Features",
+            features: [
+              "Recorded Sessions by professionals",
+              "24/7 Availability",
+              "Personal Mentor Support",
+            ],
+          },
+          {
+            title: "PTE Live",
+            subtitle:
+              "For those who need complete PTE training with mentor support live",
+            keyFeatures: "Everything in PTE Self Paced, plus",
+            features: ["Live Classes"],
+          },
+        ],
+      },
+      {
+        tab: "SAT",
+        title: "SAT Complete Preparation",
+        data: [
+          {
+            title: "SAT Self Paced",
+            subtitle: "For those who need complete SAT training",
+            keyFeatures: "Key Features",
+            features: [
+              "Recorded Sessions by professionals",
+              "24/7 Availability",
+              "Personal Mentor Support",
+            ],
+          },
+          {
+            title: "SAT Live",
+            subtitle:
+              "For those who need complete SAT training with mentor support live",
+            keyFeatures: "Everything in SAT Self Paced, plus",
+            features: ["Live Classes"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    tab: "Document Preparations",
+    subTabs: [
+      {
+        tab: "Document Drafting",
+        title: "Document Drafting",
+        data: [
+          {
+            title: "Document Drafting",
+            subtitle: "For those who need assistance with document preparation",
+            keyFeatures: "Key Features",
+            features: ["SOPs", "LORs", "Admission Essays"],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    tab: "Admission Assistance",
+    subTabs: [
+      {
+        tab: "Admission Assistance",
+        title: "Admission Assistance",
+        data: [
+          {
+            title: "Admission Assistance",
+            subtitle: "For those who need assistance with admission",
+            keyFeatures: "Key Features",
+            features: [
+              "University Selection",
+              "Application Processing",
+              "Visa",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];

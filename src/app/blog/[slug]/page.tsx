@@ -14,14 +14,18 @@ const Blog = async ({ params }: any) => {
 
   return (
     <div className="flex lg:flex-row flex-col w-full h-full py-8 px-8 lg:space-x-8 max-md:space-y-8 max-md:mb-8">
-      <div className="flex flex-col w-full h-[80vh] max-md:min-h-full bg-slate-100 rounded-lg p-4 space-y-4 overflow-auto noScroll">
+      <div className="flex flex-col w-full max-md:min-h-full rounded-lg p-4 space-y-4 overflow-auto noScroll">
+        <img
+          src={`https:${blogDetails.fields.featuredImage.fields.file.url}`}
+          className="w-full object-cover"
+        />
         <h1 className="font-bold text-3xl">{blogDetails.fields.title}</h1>
         <div className="border w-full border-black" />
-        <p>{documentToReactComponents(blogDetails.fields.content)}</p>
+        <div>{documentToReactComponents(blogDetails.fields.content)}</div>
       </div>
-      <div className="flex flex-col h-[80vh] lg:w-[40%] w-full space-y-2">
+      <div className="flex flex-col lg:w-[40%] w-full space-y-2">
         <h1 className="text-xl font-bold border-b pb-2">Recent Posts</h1>
-        <div className="flex flex-col overflow-y-auto noScroll h-full w-full space-y-2">
+        <div className="flex flex-col overflow-y-auto noScroll w-full space-y-2">
           {blogDetails.fields.relatedBlogPosts &&
             blogDetails.fields.relatedBlogPosts.map((item: any) => (
               <Link

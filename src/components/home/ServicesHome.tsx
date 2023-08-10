@@ -1,4 +1,5 @@
 import { homeServiceSections } from "@/utils/constants";
+import Link from "next/link";
 import React from "react";
 
 const ServicesHome = () => {
@@ -16,7 +17,9 @@ const ServicesHome = () => {
 
         <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
           {homeServiceSections.map((item, index) => (
-            <div
+            <Link
+              key={`services-home-${index}`}
+              href={{ pathname: "/services", query: { serviceId: index } }}
               className={`md:p-8 lg:p-14 ${
                 index > 0 ? "md:border-l md:border-gray-200" : ""
               }`}
@@ -28,7 +31,7 @@ const ServicesHome = () => {
               <p className="mt-5 text-base text-gray-600 font-pj">
                 {item.subtitle}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
