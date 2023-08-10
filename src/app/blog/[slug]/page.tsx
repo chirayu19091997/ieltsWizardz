@@ -17,13 +17,13 @@ const Blog = async ({ params }: any) => {
       <div className="flex flex-col w-full max-md:min-h-full rounded-lg p-4 space-y-4 overflow-auto noScroll">
         <img
           src={`https:${blogDetails.fields.featuredImage.fields.file.url}`}
-          className="w-full object-cover"
+          className="w-full object-cover border rounded-md"
         />
         <h1 className="font-bold text-3xl">{blogDetails.fields.title}</h1>
         <div className="border w-full border-black" />
         <div>{documentToReactComponents(blogDetails.fields.content)}</div>
       </div>
-      <div className="flex flex-col lg:w-[40%] w-full space-y-2">
+      <div className="flex flex-col lg:w-[40%] w-full space-y-2 py-4">
         <h1 className="text-xl font-bold border-b pb-2">Recent Posts</h1>
         <div className="flex flex-col overflow-y-auto noScroll w-full space-y-2">
           {blogDetails.fields.relatedBlogPosts &&
@@ -39,7 +39,7 @@ const Blog = async ({ params }: any) => {
         </div>
         <Link
           href="/blog"
-          className="flex font-semibold justify-center text-center items-center cursor-pointer transition ease-in-out delay-300 duration-800 hover:space-x-1"
+          className="flex font-semibold justify-center text-center items-center"
         >
           <TextHover text="See all articles" className="text-lg" />
         </Link>

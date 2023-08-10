@@ -7,6 +7,10 @@ import {
   IconBrandWhatsapp,
 } from "@tabler/icons-react";
 
+export const emailRegex = RegExp(
+  "([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|\"([]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(.[!#-'*+/-9=?A-Z^-~-]+)*|[[\t -Z^-~]*])"
+);
+
 export const Logo = (
   <div className="flex h-14 flex-shrink-0">
     <img

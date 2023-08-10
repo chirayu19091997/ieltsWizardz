@@ -7,6 +7,9 @@ import TextAreaInput from "@/components/TextAreaInput";
 import { useSearchParams } from "next/navigation";
 import Animator from "@/components/Animator";
 import { sendContactForm } from "@/utils/api";
+import { emailRegex } from "@/utils/constants";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/bootstrap.css";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -33,12 +36,22 @@ const Contact = () => {
                   value={data.name}
                   onChange={(i: any) => setData({ ...data, name: i })}
                 />
-                <Input
+                {/* <Input
                   type="number"
                   label="Phone"
                   otherProps={{ minLength: 10, maxLength: 10 }}
                   value={data.phone}
                   onChange={(i: any) => setData({ ...data, phone: i })}
+                /> */}
+
+                <PhoneInput
+                  country={"in"}
+                  value={data.phone}
+                  onChange={(phone) => {
+                    setData({ ...data, phone });
+                  }}
+                  containerClass="h-[85%]"
+                  inputClass="h-full"
                 />
               </div>
               <div className="w-full">
@@ -53,7 +66,6 @@ const Contact = () => {
                 label="Message"
                 value={data.message}
                 onChange={(i: any) => setData({ ...data, message: i })}
-                className="w-full h-full"
               />
             </div>
             <div className="flex flex-col items-center w-full space-y-4">
@@ -61,8 +73,16 @@ const Contact = () => {
                 We will get back to you soon.
               </p>
               <button
+                disabled={
+                  !(
+                    data.name.length > 3 &&
+                    data.email.length > 1 &&
+                    !!data.email.match(emailRegex) &&
+                    data.phone.length > 4
+                  )
+                }
                 onClick={() => sendContactForm(data)}
-                className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
+                className="disabled:opacity-30 inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
               >
                 Submit
                 <IconCircleArrowRight size={18} className="ml-8" />

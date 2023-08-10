@@ -27,7 +27,7 @@ const Input = ({
           {...otherProps}
           type={type || "text"}
           id={label}
-          placeholder={placeholder}
+          placeholder={placeholder || ""}
           value={value}
           onChange={(e) => onChange(e.target.value)}
           className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
