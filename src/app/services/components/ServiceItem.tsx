@@ -4,7 +4,7 @@ import { IconCheck } from "@tabler/icons-react";
 
 const ServiceItem = ({ cardData }: any) => {
   return (
-    <div className="flex flex-col bg-white space-y-4 lg:w-1/3 h-80vh p-4 shadow-xl border rounded-lg">
+    <div className="flex flex-col bg-white space-y-4 lg:w-1/3 h-[80vh] p-4 shadow-xl border rounded-lg">
       <div className="w-full h-36">
         <h2 className="font-extrabold py-2 border-b text-lg border-gray-700">
           {cardData.title}
