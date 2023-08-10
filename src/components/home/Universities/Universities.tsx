@@ -5,7 +5,7 @@ import React from "react";
 const Universities = () => {
   return (
     <section className="xl:flex xl:items-center xl:justify-between overflow-hidden px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-      <div className="flex w-full space-x-8 moving-text  items-center">
+      <div className="flex w-full space-x-8 moving-text items-center">
         {logoSlides.map((item, index) => (
           <img
             key={`logo-${index}`}

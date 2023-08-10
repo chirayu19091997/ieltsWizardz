@@ -79,9 +79,9 @@ export const homeServiceSections = [
     subtitle:
       "Live and self-paced online training & preparation for proficiency tests like IELTS / TOEFL / PTE and scholastic tests such as the SAT.",
     logo: (
-      <div className="flex items-center justify-center w-14 h-14 flex-shrink-0">
+      <div className="flex bg-gray-100 items-center justify-center w-14 h-14 flex-shrink-0">
         <img
-          className="h-14 w-14 object-contain"
+          className="h-14 w-14 object-contain mix-blend-multiply"
           src="/serviceshome/image6.png"
           alt=""
         />
@@ -93,9 +93,9 @@ export const homeServiceSections = [
     subtitle:
       "We brainstorm with you to develop your university specific admission essays necessary for your applications to universities abroad.",
     logo: (
-      <div className="flex items-center justify-center h-14 w-14 flex-shrink-0">
+      <div className="flex bg-gray-100 items-center justify-center h-14 w-14 flex-shrink-0">
         <img
-          className="h-14 w-14 object-contain"
+          className="h-14 w-14 object-contain mix-blend-multiply"
           src="/serviceshome/image7.png"
           alt=""
         />
@@ -107,9 +107,9 @@ export const homeServiceSections = [
     subtitle:
       "Your all-in-one guide that assists you at every step in your journey from course, country and university selection to securing your seat and getting your visa and accommodation.",
     logo: (
-      <div className="flex items-center justify-center h-14 w-14 flex-shrink-0">
+      <div className="flex bg-gray-100 items-center justify-center h-14 w-14 flex-shrink-0">
         <img
-          className="h-14 w-14 object-contain"
+          className="h-14 w-14 object-contain mix-blend-multiply"
           src="/serviceshome/image8.png"
           alt=""
         />
