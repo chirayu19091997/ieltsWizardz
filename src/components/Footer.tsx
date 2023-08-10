@@ -21,7 +21,7 @@ const Footer = () => {
 
             <ul className="flex items-center space-x-3 mt-9">
               {Socials.map((item) => (
-                <li>
+                <li key={`socials-${item.title}`}>
                   <Link
                     href={item.route}
                     target="_blank"
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4">
               {HeaderOptions.slice(0, 3).map((item) => (
-                <li>
+                <li key={`Fnavigation-${item.title}`}>
                   <Link
                     href={item.route}
                     title=""
@@ -62,7 +62,7 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4">
               {HeaderOptions.slice(3).map((item) => (
-                <li>
+                <li key={`Fnavigation-${item.title}`}>
                   <Link
                     href={item.route}
                     title=""

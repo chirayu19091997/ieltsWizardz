@@ -42,7 +42,11 @@ const BlogList = () => {
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:flex-wrap justify-between px-4">
           {displayBlogs.map((item: any, index: number) => (
-            <Link href={`/blog/${index}`} className="lg:w-[40%] cursor-pointer">
+            <Link
+              key={`dblogs-${index}`}
+              href={`/blog/${index}`}
+              className="lg:w-[40%] cursor-pointer"
+            >
               <BlogTile />
             </Link>
           ))}

@@ -141,7 +141,11 @@ const Services = () => {
     <div className="flex flex-col space-y-4 p-6">
       <h1 className="font-bold text-3xl text-center">Services</h1>
       {serviceSections.map((item: any, index: number) => (
-        <ServiceItem services={item.data} isAlternate={index % 2 === 0} />
+        <ServiceItem
+          services={item.data}
+          isAlternate={index % 2 === 0}
+          key={`serviceSection-${index}`}
+        />
       ))}
     </div>
   );

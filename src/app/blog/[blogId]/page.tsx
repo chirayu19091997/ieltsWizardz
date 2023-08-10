@@ -14,7 +14,7 @@ const Blog = () => {
         </h1>
         <div className="border w-full border-black" />
         <p>
-          A blog (a truncation of "weblog")[1] is an informational website
+          {`A blog (a truncation of "weblog")[1] is an informational website
           published on the World Wide Web consisting of discrete, often informal
           diary-style text entries (posts). Posts are typically displayed in
           reverse chronological order so that the most recent post appears
@@ -27,14 +27,18 @@ const Blog = () => {
           similar institutions account for an increasing quantity of blog
           traffic. The rise of Twitter and other "microblogging" systems helps
           integrate MABs and single-author blogs into the news media. Blog can
-          also be used as a verb, meaning to maintain or add content to a blog.
+          also be used as a verb, meaning to maintain or add content to a blog.`}
         </p>
       </div>
       <div className="flex flex-col h-[80vh] lg:w-[40%] w-full space-y-2">
         <h1 className="text-xl font-bold border-b pb-2">Recent Posts</h1>
         <div className="flex flex-col h-full w-full space-y-2">
           {Data.map((item, index) => (
-            <Link href={`/blog/${index}`} className="cursor-pointer">
+            <Link
+              key={`blog-${index}`}
+              href={`/blog/${index}`}
+              className="cursor-pointer"
+            >
               <BlogTile />
             </Link>
           ))}

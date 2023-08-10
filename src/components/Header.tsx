@@ -31,8 +31,9 @@ const Header = () => {
           </button>
 
           <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-            {HeaderOptions.map((item, index) => (
+            {HeaderOptions.map((item) => (
               <Link
+                key={`Hnavigation-${item.title}`}
                 href={item.route}
                 title={item.title}
                 className="text-base text-black transition-all duration-200 hover:text-opacity-80"
@@ -76,7 +77,7 @@ const Header = () => {
           <div>
             <ul>
               {HeaderOptions.map((item) => (
-                <li className="mb-1" key={item.title}>
+                <li className="mb-1" key={`Hnavigation-${item.title}`}>
                   <Link
                     className="block p-4 text-sm font-semibold text-gray-400 hover:bg-indigo-50 hover:text-primaryColor rounded"
                     href={item.route}
