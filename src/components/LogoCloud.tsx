@@ -2,7 +2,7 @@ import React from "react";
 
 const LogoCloud = () => {
   return (
-    <section className="py-12 bg-backgroundColor sm:py-16 lg:py-20">
+    <section className="py-12 sm:py-16 lg:py-20 bg-backgroundColor">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="xl:flex xl:items-center xl:justify-between">
           <h2 className="text-xl font-bold text-center text-gray-500 xl:text-left font-pj">

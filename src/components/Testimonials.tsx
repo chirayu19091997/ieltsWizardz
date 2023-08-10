@@ -1,8 +1,19 @@
 import React from "react";
-
+import Image from "next/image";
+import curvy from "@/assets/curves/wavesOpacity.svg";
 const Testimonials = () => {
   return (
-    <section className="py-12 bg-gray-50 sm:py-16 lg:py-20">
+    <section className="py-12 sm:py-16 lg:py-20 gradientss relative">
+      <Image
+        src={curvy}
+        className="absolute h-32 rotate-180 opacity-50 bottom-0 w-full"
+        alt="curvy"
+      />
+      {/* <Image
+        src={curvy}
+        className="absolute h-48 opacity-50 top-0 w-full"
+        alt="curvy"
+      /> */}
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
           <div className="text-center">

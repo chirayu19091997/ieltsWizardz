@@ -9,7 +9,7 @@ const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   return (
-    <header className="bg-[#FCF8F1] bg-opacity-30">
+    <header className="gradientss bg-opacity-30">
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">

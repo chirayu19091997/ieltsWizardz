@@ -26,7 +26,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
                   >
                     {item.logo}
                   </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
                   >
                     {item.logo}
                   </Link>
@@ -102,13 +102,13 @@ const Footer = () => {
                   name="email"
                   id="email"
                   placeholder="Enter your email"
-                  className="block w-full p-4  placeholder-gray-500 transition-all duration-200 bg-backgroundColor border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                  className="block w-full p-4  placeholder-gray-500 transition-all duration-200 bg-backgroundColor border border-gray-200 rounded-md focus:outline-none focus:border-secondaryColor caret-secondaryColor"
                 />
               </div>
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700"
+                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md hover:bg-secondaryColor focus:bg-secondaryColor"
               >
                 Subscribe
               </button>

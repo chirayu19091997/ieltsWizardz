@@ -22,7 +22,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-between w-full h-full p-4 px-8 shadow-xl border rounded-lg">
-            <p className="text-base font-semibold tracking-wider text-blue-600 uppercase my-4">
+            <p className="text-base font-semibold tracking-wider text-secondaryColor uppercase my-4">
               Leave us a message
             </p>
             <div className="w-full space-y-4">

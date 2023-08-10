@@ -4,17 +4,24 @@ import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import * as HeroAnimation from "../assets/animations/heroAnimation.json";
 import Lottie from "react-lottie";
+import Image from "next/image";
+import curvy from "@/assets/curves/wavesOpacity.svg";
 
 const Hero = () => {
   return (
-    <section className="bg-[#FCF8F1] bg-opacity-30 py-10 sm:py-16 lg:pb-24">
+    <section className="py-12 sm:py-16 lg:py-20 gradientss bg-opacity-30 relative">
+      <Image
+        src={curvy}
+        className="absolute h-36 rotate-180 opacity-50 bottom-0 w-full"
+        alt="curvy"
+      />
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
-            <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
+            <p className="text-base font-semibold tracking-wider text-secondaryColor uppercase">
               A social media for learners
             </p>
-            <h1 className="mt-4 text-4xl font-bold  lg:mt-8 sm:text-6xl xl:text-8xl">
+            <h1 className="mt-4 text-2xl font-bold  lg:mt-8 sm:text-4xl xl:text-6xl">
               Connect & learn from the experts
             </h1>
             <p className="mt-4 text-base  lg:mt-8 sm:text-xl">
@@ -24,7 +31,7 @@ const Hero = () => {
             <Link
               href="/contact"
               title=""
-              className="inline-flex items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:bg-secondaryColor focus:bg-secondaryColor"
+              className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:bg-secondaryColor focus:bg-secondaryColor"
               role="button"
             >
               Book a Demo

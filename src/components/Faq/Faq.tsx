@@ -2,11 +2,22 @@ import React from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import FaqItem from "./FaqItem";
 import Link from "next/link";
-
+import Image from "next/image";
+import curvy from "@/assets/curves/wavesOpacity.svg";
 const Faq = () => {
   const onFAQClick = () => {};
   return (
-    <section className="bg-gray-50 sm:py-16 lg:py-24">
+    <section className="py-12 sm:py-16 lg:py-24 gradientss relative">
+      {/* <Image
+        src={curvy}
+        className="absolute h-36 rotate-180 opacity-50 bottom-0 w-full"
+        alt="curvy"
+      />
+      <Image
+        src={curvy}
+        className="absolute h-36  opacity-50 top-0 w-full"
+        alt="curvy"
+      /> */}
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl">
