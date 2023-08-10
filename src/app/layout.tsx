@@ -2,8 +2,10 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
-import Chatbot from "@/components/Chatbot";
+import Chatbot from "@/components/Chatbot/Chatbot";
 import Highlighter from "@/components/Highlighter";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title: {
@@ -22,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="noScroll">
-        <Highlighter />
-        <Header />
-        {children}
-        <Footer />
-        <Chatbot />
+        <Suspense fallback={<Loading />}>
+          <Highlighter />
+          <Header />
+          {children}
+          <Footer />
+          <Chatbot />
+        </Suspense>
       </body>
     </html>
   );

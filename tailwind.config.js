@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#d97706",
-        secondaryColor: "#b45309",
+        primaryColor: "#df683d",
+        secondaryColor: "#508ba1",
         textColor: "#000000",
         secondaryTextColor: "#ffffff",
         disabledColor: "#6b7280",
@@ -19,5 +19,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"],
+  },
 };

@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-start grid-cols-1 lg:gap-12 max-md:gap-6 lg:grid-cols-2">
           <div className="py-12">
-            <p className="text-base font-semibold tracking-wider text-secondaryColor uppercase">
+            <p className="text-base font-semibold tracking-wider text-primaryColor uppercase">
               A social media for learners
             </p>
             <h1 className="mt-4 text-2xl font-bold  lg:mt-8 sm:text-4xl xl:text-6xl">
@@ -24,7 +24,7 @@ const Hero = () => {
             <Link
               href="/contact"
               title=""
-              className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:bg-secondaryColor focus:bg-secondaryColor"
+              className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-secondaryColor rounded-full lg:mt-16 hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
               role="button"
             >
               Book a Demo
