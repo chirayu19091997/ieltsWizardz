@@ -6,6 +6,7 @@ interface AnimatorProps {
   animationData: any;
   height?: string;
   width?: string;
+  className?: string;
   customOptions?: object;
 }
 
@@ -13,10 +14,11 @@ const Animator = ({
   animationData,
   height,
   width,
+  className,
   customOptions,
 }: AnimatorProps) => {
   return (
-    <div>
+    <div className={className}>
       <Lottie
         options={{
           loop: true,

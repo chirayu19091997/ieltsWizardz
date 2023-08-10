@@ -27,7 +27,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-primaryColor focus:bg-primaryColor"
                   >
                     {item.logo}
                   </Link>
@@ -39,7 +39,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-primaryColor focus:bg-primaryColor"
                   >
                     {item.logo}
                   </Link>
@@ -110,7 +110,7 @@ const Footer = () => {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md hover:bg-secondaryColor focus:bg-secondaryColor"
+                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md"
               >
                 Subscribe
               </button>

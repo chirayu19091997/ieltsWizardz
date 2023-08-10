@@ -70,7 +70,7 @@ const Testimonials = () => {
 
                     <div className="flex items-center mt-8">
                       <img
-                        className="flex-shrink-0 object-cover rounded-full w-11 h-11"
+                        className="flex-shrink-0 object-contain rounded-full w-11 h-11"
                         src={testimonial.imageUrl}
                         alt=""
                       />

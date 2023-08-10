@@ -32,10 +32,12 @@ const Header = () => {
                 key={`Hnavigation-${item.title}`}
                 href={item.route}
                 title={item.title}
-                className="text-base relative one"
+                // className="text-base relative one"
               >
-                <span>{item.title}</span>
-                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-secondaryColor" />
+                <div className="text-base relative one">
+                  <span>{item.title}</span>
+                  <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-primaryColor" />
+                </div>
               </Link>
             ))}
           </div>

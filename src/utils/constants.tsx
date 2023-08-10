@@ -33,6 +33,11 @@ export const HeaderOptions = [
 
 export const Socials = [
   {
+    title: "LinkedIn",
+    route: "https://www.linkedin.com/company/ieltswizardz/",
+    logo: <BiLogoLinkedin />,
+  },
+  {
     title: "Instagram",
     route: "https://www.instagram.com/ieltswizardz/",
     logo: <BiLogoInstagram />,
@@ -47,7 +52,6 @@ export const Socials = [
     route: "https://wa.me/+919310888164",
     logo: <BiLogoWhatsapp />,
   },
-  // { title: "LinkedIn", route: "/contact", logo: <BiLogoLinkedin /> },
 ];
 
 export const DirectContacts = [
@@ -66,15 +70,13 @@ export const DirectContacts = [
 export const testimonialData = [
   {
     name: "Ishita",
-    imageUrl:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png",
+    imageUrl: "/image12.png",
     pursuing: "MBA in Canada",
     review: `I really liked the learning techniques and methods. I'm really grateful to the teachers for helping me to understand in the best possible way. Teachers are very friendly, they give proper one on one attention to every student  . Keep growing and shining the same #ieltswizardz ✨`,
   },
   {
     name: "Hitansh Agrawal",
-    imageUrl:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png",
+    imageUrl: "/image26.png",
     pursuing: "BSc in Singapore",
     review: `I have enjoyed learning with IELTS Wizardz. I received 7.5 bands in 2 weeks of preparation, this became possible only because of them and their supporting staff.`,
   },

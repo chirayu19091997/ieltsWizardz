@@ -4,27 +4,34 @@ interface InputProps {
   placeholder: string;
   label: string;
   type?: string;
+  value: string;
   otherProps?: any;
   onChange: any;
+  className?: string;
 }
 
 const Input = ({
   placeholder,
   label,
   type,
+  value,
   otherProps,
   onChange,
+  className,
 }: InputProps) => {
   return (
     <label
       htmlFor={label}
-      className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-4 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+      className={`relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-4 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 ${
+        className ? className : ""
+      }`}
     >
       <input
         {...otherProps}
         type={type || "text"}
         id={label}
         placeholder={placeholder}
+        value={value}
         onChange={(e) => onChange(e.target.value)}
         className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
       />

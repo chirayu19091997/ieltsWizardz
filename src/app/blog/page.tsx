@@ -3,11 +3,6 @@ import React, { useEffect, useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import BlogTile from "./components/blogTile";
 import Link from "next/link";
-// import { Metadata } from "next";
-
-// export const metadata: Metadata = {
-//   title: "Blog",
-// };
 
 const BlogList = () => {
   const [allBlogs, setAllBlogs] = useState<any>([]);

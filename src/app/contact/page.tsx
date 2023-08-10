@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import * as contactAnimation from "../../assets/animations/contact.json";
 import Input from "@/components/Input";
@@ -9,56 +9,59 @@ import { useSearchParams } from "next/navigation";
 import Animator from "@/components/Animator";
 
 const Contact = () => {
-  const searchParams = useSearchParams();
-  const message = searchParams.get("message");
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: useSearchParams().get("message") || "",
+  });
 
   return (
     <section className="p-6 max-md:p-4">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
-            <Animator animationData={contactAnimation} />
-          </div>
-          <div className="flex flex-col items-center justify-between w-full h-full p-4 px-8 shadow-xl border rounded-lg">
-            <p className="text-base font-semibold tracking-wider text-primaryColor uppercase my-4">
+          <Animator animationData={contactAnimation} />
+          <div className="flex flex-col items-center justify-between w-full h-full p-8 space-y-4 shadow-xl border rounded-lg">
+            <p className="flex text-base font-semibold tracking-wider text-primaryColor uppercase lg:my-4">
               Leave us a message
             </p>
-            <div className="w-full space-y-4">
+            <div className="flex flex-col w-full h-full space-y-4">
               <div className="flex w-full space-x-4">
-                <div className="w-full">
-                  <Input
-                    placeholder="Martha"
-                    label="Name"
-                    onChange={() => {}}
-                  />
-                </div>
-                <div className="w-full">
-                  <Input
-                    placeholder="+919999999999"
-                    type="number"
-                    label="Phone"
-                    onChange={() => {}}
-                  />
-                </div>
+                <Input
+                  placeholder="Martha"
+                  label="Name"
+                  value={data.name}
+                  onChange={(i: any) => setData({ ...data, name: i })}
+                  className="w-full h-full"
+                />
+                <Input
+                  placeholder="+919999999999"
+                  type="number"
+                  label="Phone"
+                  value={data.phone}
+                  onChange={(i: any) => setData({ ...data, phone: i })}
+                  className="w-full h-full"
+                />
               </div>
               <div className="w-full">
                 <Input
                   placeholder="ieltswizardz@gmail.com"
                   type="email"
                   label="Email"
-                  onChange={() => {}}
+                  value={data.email}
+                  onChange={(i: any) => setData({ ...data, email: i })}
+                  className="w-full"
                 />
               </div>
-              <div className="w-full">
-                <TextAreaInput
-                  placeholder="Message"
-                  label="Message"
-                  value={message || ""}
-                  onChange={() => {}}
-                />
-              </div>
+              <TextAreaInput
+                placeholder="Message"
+                label="Message"
+                value={data.message}
+                onChange={(i: any) => setData({ ...data, message: i })}
+                className="w-full h-full"
+              />
             </div>
-            <div className="flex flex-col items-center w-full space-y-4 py-4">
+            <div className="flex flex-col items-center w-full space-y-4">
               <p className="text-base lg:mt-8 sm:text-xl">
                 We will get back to you soon.
               </p>
