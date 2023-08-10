@@ -3,6 +3,8 @@ import { fetchData } from "@/utils/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Image from "next/image";
 
+export const revalidate = 604800;
+
 const Testimonials = async () => {
   const reviewData = await fetchData("review");
 
@@ -79,6 +81,14 @@ const Testimonials = async () => {
                         className="flex-shrink-0 object-contain rounded-full w-11 h-11"
                         src={`https:${testimonial.fields.author.fields.avatar.fields.file.url}`}
                         alt=""
+                        width={
+                          testimonial.fields.author.fields.avatar.fields.file
+                            .details.image.width
+                        }
+                        height={
+                          testimonial.fields.author.fields.avatar.fields.file
+                            .details.image.height
+                        }
                       />
                       <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 font-pj">

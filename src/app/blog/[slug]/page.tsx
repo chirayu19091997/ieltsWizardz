@@ -2,8 +2,14 @@ import React, { useEffect } from "react";
 import BlogTile from "../components/blogTile";
 import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link";
+import { fetchData } from "@/utils/contentful";
 
-const Blog = () => {
+export const revalidate = 604800;
+
+const Blog = async ({ params }: any) => {
+  const blogDetails = await fetchData("pageBlogPost", {
+    "fields.slug": params.slug,
+  });
   const Data = new Array(3).fill({
     thumbnailUrl: "/t1.png",
     tag: "Career",

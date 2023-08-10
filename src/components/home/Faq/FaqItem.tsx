@@ -1,8 +1,7 @@
-// @ts-nocheck
 "use client";
 import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import { Fade } from "react-reveal";
+
 interface FaqItemProps {
   title: string;
   description: React.ReactNode;
@@ -27,9 +26,9 @@ const FaqItem = ({ title, description }: FaqItemProps) => {
       </button>
 
       {isExpanded && (
-        <Fade duration={500} top>
-          <div className="px-4 pb-5 sm:px-6 sm:pb-6">{description}</div>
-        </Fade>
+        <div className="animate__animated animate__fadeInDown px-4 pb-5 sm:px-6 sm:pb-6">
+          {description}
+        </div>
       )}
     </div>
   );

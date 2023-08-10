@@ -6,11 +6,11 @@ const StatsCountItem = ({ enableScrollSpy, start, end, duration }: any) => {
   return (
     <CountUp
       enableScrollSpy={enableScrollSpy}
-      start={start}
+      start={start || 0.5}
       end={end}
-      duration={duration}
+      duration={duration || 3}
     />
   );
 };
 
-export default StatsCountItem;
+export default React.memo(StatsCountItem);

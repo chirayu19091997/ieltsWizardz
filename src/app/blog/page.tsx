@@ -5,6 +5,8 @@ import BlogTile from "./components/blogTile";
 import Link from "next/link";
 import { fetchData } from "@/utils/contentful";
 
+export const revalidate = 604800;
+
 const BlogList = async () => {
   const [allBlogs, setAllBlogs] = useState<any>([]);
   const [displayBlogs, setDisplayBlogs] = useState<any>([]);

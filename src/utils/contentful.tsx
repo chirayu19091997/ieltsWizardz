@@ -5,7 +5,7 @@ const client = createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_KEY || "",
 });
 
-export const fetchData = async (type: string) => {
-  const res = await client.getEntries({ content_type: type });
+export const fetchData = async (type: string, otherParams?: object) => {
+  const res = await client.getEntries({ content_type: type, ...otherParams });
   return res.items;
 };

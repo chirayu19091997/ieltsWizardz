@@ -1,6 +1,4 @@
 import React from "react";
-// @ts-ignore
-import { Fade } from "react-reveal";
 import StatsCountItem from "./StatsCountItem";
 const Stats = () => {
   const statsData = [
@@ -33,17 +31,16 @@ const Stats = () => {
             sint. Velit officia consequat duis.
           </p> */}
         </div>
-        {/* <Fade bottom> */}
-        <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+        <div className="animate__animated animate__fadeInUp grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
           {statsData.map((statItem, statIndex) => (
             <div key={`stats-${statIndex}`}>
               <h3 className="font-bold text-7xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
                   <StatsCountItem
                     enableScrollSpy={true}
-                    start={statItem.stats - statItem.stats * 0.5}
+                    start={0.5}
                     end={statItem.stats}
-                    duration={3}
+                    duration={2}
                   />
                   +
                 </span>
@@ -57,7 +54,6 @@ const Stats = () => {
             </div>
           ))}
         </div>
-        {/* </Fade> */}
       </div>
     </section>
   );

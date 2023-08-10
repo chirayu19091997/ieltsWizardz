@@ -1,4 +1,5 @@
 import "./globals.css";
+import "animate.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
