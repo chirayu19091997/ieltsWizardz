@@ -20,7 +20,7 @@ const BlogTile = ({ blogData }: BlogTileProps) => {
       <Image
         src={`https:${thumbnail.fields.file.url}`}
         alt="Blog Thumbnail"
-        className="rounded-2xl w-[100px] h-[100px] object-cover border-2"
+        className="rounded-2xl w-24 h-24 object-fill border-2"
         width={thumbnail.fields.file.details.image.width}
         height={thumbnail.fields.file.details.image.height}
         priority
