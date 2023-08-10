@@ -8,7 +8,7 @@ const Stats = () => {
     <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <HeadingText text="Numbers tell our story" />
-        <div className="animate__animated animate__fadeInUp grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+        <div className="animate__animated animate__fadeInUp grid grid-cols-1 gap-8 mt-10 text-center items-center justify-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
           {statsData.map((statItem, statIndex) => (
             <div key={`stats-${statIndex}`}>
               <h3 className="font-bold text-7xl">
