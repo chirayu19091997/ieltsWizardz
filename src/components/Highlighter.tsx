@@ -22,7 +22,7 @@ const Highlighter = () => {
             </Link>
           </li>
         ))}
-        {Socials.map((item) => (
+        {Socials.slice(1).map((item) => (
           <li key={`socials-${item.title}`}>
             <Link
               href={item.route}

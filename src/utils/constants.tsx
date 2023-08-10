@@ -12,7 +12,7 @@ import {
 } from "@tabler/icons-react";
 
 export const Logo = (
-  <div className="flex h-12 flex-shrink-0">
+  <div className="flex h-14 flex-shrink-0">
     <img
       className="w-auto object-contain h-12"
       src="/titledlogo.png"
