@@ -283,7 +283,7 @@ export const serviceSections = [
     ],
   },
   {
-    tab: "Document Preparations",
+    tab: "Admission Essays",
     subTabs: [
       {
         tab: "Document Drafting",
@@ -300,7 +300,7 @@ export const serviceSections = [
     ],
   },
   {
-    tab: "Admission Assistance",
+    tab: "Study Abroad",
     subTabs: [
       {
         tab: "Admission Assistance",

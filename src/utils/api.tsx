@@ -8,3 +8,14 @@ export const sendContactForm = async (data: any) => {
     },
   });
 };
+
+export const sendSubscriptionData = async (data: any) => {
+  fetch("/api/subscription", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-type": "application/json",
+      Accept: "application/json",
+    },
+  });
+};

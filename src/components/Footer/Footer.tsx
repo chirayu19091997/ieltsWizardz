@@ -6,6 +6,7 @@ import {
 } from "@/utils/constants";
 import Link from "next/link";
 import React from "react";
+import SubscriptionForm from "./SubscriptionForm";
 
 const Footer = () => {
   return (
@@ -91,30 +92,8 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
             <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
               Subscribe
-              {/* to newsletter */}
             </p>
-
-            <form action="#" method="POST" className="mt-6">
-              <div>
-                <label htmlFor="email" className="sr-only">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter your email"
-                  className="block w-full p-4  placeholder-gray-500 transition-all duration-200 bg-backgroundColor border border-gray-200 rounded-md focus:outline-none focus:border-secondaryColor caret-secondaryColor"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md"
-              >
-                Subscribe
-              </button>
-            </form>
+            <SubscriptionForm />
           </div>
         </div>
 

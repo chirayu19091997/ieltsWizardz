@@ -1,7 +1,7 @@
 import "./globals.css";
 import "animate.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
 import { Metadata } from "next";
 import Chatbot from "@/components/Chatbot/Chatbot";
 import Highlighter from "@/components/Highlighter";
