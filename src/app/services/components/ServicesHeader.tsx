@@ -14,6 +14,7 @@ const ServicesHeader = ({
           {serviceSections.map((item, index) =>
             item.subTabs.length <= 1 ? (
               <li
+                key={`serviceheader-n-${index}`}
                 className={
                   activeIndex === index
                     ? "bg-primaryColor rounded-md text-white"
@@ -28,6 +29,7 @@ const ServicesHeader = ({
               </li>
             ) : (
               <li
+                key={`serviceheader-n-${index}`}
                 className={
                   activeIndex === index
                     ? "bg-primaryColor rounded-md text-white"
@@ -42,6 +44,7 @@ const ServicesHeader = ({
                   >
                     {item.subTabs.map((subItem, subIndex) => (
                       <li
+                        key={`serviceheader-s-${subIndex}`}
                         onClick={() => {
                           setActiveIndex(index);
                           setActiveSubTab(subIndex);
