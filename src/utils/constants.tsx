@@ -255,3 +255,42 @@ export const statsData = [
     stats: 700,
   },
 ];
+
+export const logoSlides = [
+  [
+    "/universities/image1.png",
+    "/universities/image2.png",
+    "/universities/image3.png",
+    "/universities/image4.png",
+  ],
+  [
+    "/universities/image5.png",
+    "/universities/image6.png",
+    "/universities/image7.png",
+    "/universities/image8.png",
+  ],
+  [
+    "/universities/image9.png",
+    "/universities/image10.png",
+    "/universities/image11.png",
+    "/universities/image12.png",
+  ],
+  [
+    "/universities/image13.png",
+    "/universities/image14.png",
+    "/universities/image15.png",
+    "/universities/image16.png",
+  ],
+  [
+    "/universities/image17.png",
+    "/universities/image18.png",
+    "/universities/image19.png",
+    "/universities/image20.png",
+  ],
+  [
+    "/universities/image21.png",
+    "/universities/image22.png",
+    "/universities/image23.png",
+    "/universities/image24.png",
+  ],
+];

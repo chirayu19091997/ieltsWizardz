@@ -5,7 +5,7 @@ import LogoCloud from "@/components/home/LogoCloud";
 import Hero from "@/components/home/Hero";
 // import Steps from "@/components/home/Steps";
 import ServicesHome from "@/components/home/ServicesHome";
-// import Universities from "@/components/home/Universities";
+import Universities from "@/components/home/Universities";
 import NewServicesHome from "@/components/home/newServicesHome";
 
 export default function Home() {
@@ -16,9 +16,10 @@ export default function Home() {
       <NewServicesHome />
       {/* <Steps /> */}
       <Stats />
-      {/* <Universities /> */}
+      {/* uni */}
       <Testimonials />
-      <LogoCloud />
+      <Universities />
+      {/* <LogoCloud /> */}
       {/* articles */}
       <Faq />
     </div>
