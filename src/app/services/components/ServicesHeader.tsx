@@ -8,7 +8,7 @@ const ServicesHeader = ({
   setActiveSubTab,
 }: any) => {
   return (
-    <div className="navbar-center z-20 rounded-md shadow-lg border-primaryColor border bg-base-100">
+    <div className="navbar-center z-40 rounded-md shadow-lg border-primaryColor border bg-base-100">
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           {serviceSections.map((item, index) =>
