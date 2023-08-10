@@ -11,22 +11,22 @@ const LogoCloud = () => {
 
           <div className="grid items-center grid-cols-1 mt-10 gap-y-6 xl:mt-0 sm:grid-cols-2 sm:gap-y-8 lg:grid-cols-4 lg:gap-x-12">
             <img
-              className="object-contain w-auto mx-auto h-32"
+              className="object-contain w-auto mx-auto h-14"
               src="/bc.png"
               alt=""
             />
             <img
-              className="object-contain w-auto mx-auto h-32 mix-blend-multiply"
+              className="object-contain w-auto mx-auto h-14 mix-blend-multiply"
               src="/tesol.png"
               alt=""
             />
             <img
-              className="object-contain w-auto mx-auto h-32"
+              className="object-contain w-auto mx-auto h-14"
               src="/ets.svg"
               alt=""
             />
             <img
-              className="object-contain w-auto mx-auto h-32"
+              className="object-contain w-auto mx-auto h-14"
               src="/idp.svg"
               alt=""
             />

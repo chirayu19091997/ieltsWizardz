@@ -14,7 +14,7 @@ const Countries = () => {
             {CountriesData.map((country) => (
               <div
                 key={`country-${country.title}`}
-                className="flex flex-col items-center justify-center space-y-4 h-36 max-md:py-4"
+                className="flex flex-col items-center justify-center space-y-4 h-36 m-4"
               >
                 <img
                   className="object-contain w-auto mx-auto h-32"

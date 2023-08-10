@@ -433,8 +433,12 @@ export const serviceSections = [
 ];
 
 export const CountriesData = [
-  { title: "United States", image: "/us.svg" },
-  { title: "Canada", image: "/canada.svg" },
-  { title: "Australia", image: "/australia.svg" },
-  { title: "New Zealand", image: "/newzeland.svg" },
+  { title: "United States", image: "/countries/us.svg" },
+  { title: "Canada", image: "/countries/canada.svg" },
+  { title: "United Kingdom", image: "/countries/uk.svg" },
+  { title: "Australia", image: "/countries/australia.svg" },
+  { title: "France", image: "/countries/france.svg" },
+  { title: "Ireland", image: "/countries/ireland.svg" },
+  { title: "Singapore", image: "/countries/singapore.svg" },
+  { title: "UAE", image: "/countries/uae.svg" },
 ];
