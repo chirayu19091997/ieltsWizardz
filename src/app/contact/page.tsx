@@ -6,8 +6,11 @@ import * as contactAnimation from "../../assets/animations/contact.json";
 import Lottie from "react-lottie";
 import Input from "@/components/Input";
 import TextAreaInput from "@/components/TextAreaInput";
+import { useSearchParams } from "next/navigation";
 
 const Contact = () => {
+  const searchParams = useSearchParams();
+  const message = searchParams.get("message");
   return (
     <section className="p-6 max-md:p-4">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -22,7 +25,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-between w-full h-full p-4 px-8 shadow-xl border rounded-lg">
-            <p className="text-base font-semibold tracking-wider text-tertiaryColor uppercase my-4">
+            <p className="text-base font-semibold tracking-wider text-primaryColor uppercase my-4">
               Leave us a message
             </p>
             <div className="w-full space-y-4">
@@ -55,6 +58,7 @@ const Contact = () => {
                 <TextAreaInput
                   placeholder="Message"
                   label="Message"
+                  value={message}
                   onChange={() => {}}
                 />
               </div>
@@ -66,7 +70,7 @@ const Contact = () => {
               <Link
                 href="/contact"
                 title=""
-                className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-tertiaryColor text-secondaryTextColor rounded-full hover:bg-quadraColor focus:bg-quadraColor"
+                className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:bg-secondaryColor focus:bg-secondaryColor"
                 role="button"
               >
                 Submit

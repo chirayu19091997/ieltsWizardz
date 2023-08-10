@@ -1,18 +1,19 @@
-import { DirectContacts, HeaderOptions, Socials } from "@/utils/constants";
+import {
+  DirectContacts,
+  HeaderOptions,
+  Logo,
+  Socials,
+} from "@/utils/constants";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
-    <section className="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
+    <section className="py-10 sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-            <img
-              className="w-auto h-9"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-              alt=""
-            />
+            {Logo}
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -26,7 +27,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-quadraColor focus:bg-quadraColor"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
                   >
                     {item.logo}
                   </Link>
@@ -38,7 +39,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-quadraColor focus:bg-quadraColor"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
                   >
                     {item.logo}
                   </Link>
@@ -58,7 +59,7 @@ const Footer = () => {
                   <Link
                     href={item.route}
                     title=""
-                    className="flex text-base  transition-all duration-200 hover:text-tertiaryColor focus:text-tertiaryColor"
+                    className="flex text-base  transition-all duration-200 hover:text-primaryColor focus:text-primaryColor"
                   >
                     {item.title}
                   </Link>
@@ -78,7 +79,7 @@ const Footer = () => {
                   <Link
                     href={item.route}
                     title=""
-                    className="flex text-base  transition-all duration-200 hover:text-tertiaryColor focus:text-tertiaryColor"
+                    className="flex text-base  transition-all duration-200 hover:text-primaryColor focus:text-primaryColor"
                   >
                     {item.title}
                   </Link>
@@ -109,7 +110,7 @@ const Footer = () => {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-tertiaryColor rounded-md hover:bg-quadraColor focus:bg-quadraColor"
+                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md hover:bg-secondaryColor focus:bg-secondaryColor"
               >
                 Subscribe
               </button>

@@ -17,7 +17,7 @@ const Highlighter = () => {
                 href={item.route}
                 target="_blank"
                 title={item.title}
-                className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-quadraColor focus:bg-quadraColor"
+                className="flex items-center justify-center transition-all duration-200 bg-slate-100 rounded-full hover:bg-slate-300 focus:bg-slate-300"
               >
                 <span className="flex items-center justify-center h-7 px-2 space-x-2">
                   {item.logo}
@@ -32,7 +32,7 @@ const Highlighter = () => {
                 href={item.route}
                 target="_blank"
                 title={item.title}
-                className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-quadraColor focus:bg-quadraColor"
+                className="flex items-center justify-center transition-all duration-200 bg-slate-100 rounded-full w-7 h-7 hover:bg-slate-300 focus:bg-slate-300"
               >
                 {item.logo}
               </Link>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextAreaInput = ({ placeholder, label, onChange }: any) => {
+const TextAreaInput = ({ placeholder, label, onChange, value }: any) => {
   return (
     <label
       htmlFor={label}
@@ -9,6 +9,7 @@ const TextAreaInput = ({ placeholder, label, onChange }: any) => {
       <textarea
         id={label}
         placeholder={placeholder}
+        value={value}
         onChange={(e) => onChange(e.target.value)}
         className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
       />

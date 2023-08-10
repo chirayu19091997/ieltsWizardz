@@ -21,10 +21,10 @@ const PublishBlog = () => {
         className="w-full border rounded-md p-2 shadow-sm"
         onChange={(e) => setBlogData({ ...blogData, title: e.target.value })}
       />
-      <h1 className="self-start font-semibold">Description</h1>
+      <h1 className="self-start font-semibold">Content</h1>
       <textarea
         maxLength={300}
-        placeholder="description"
+        placeholder="Content"
         className="w-full border rounded-md p-2 shadow-sm"
         onChange={(e) => setBlogData({ ...blogData, content: e.target.value })}
       />
@@ -50,7 +50,7 @@ const PublishBlog = () => {
         </div>
         <button
           type="submit"
-          className="inline-flex w-full shadow-md h-[70%] items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-tertiaryColor rounded-md hover:bg-quadraColor focus:bg-quadraColor"
+          className="inline-flex w-full shadow-md h-[70%] items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md hover:bg-secondaryColor focus:bg-secondaryColor"
         >
           Publish
         </button>

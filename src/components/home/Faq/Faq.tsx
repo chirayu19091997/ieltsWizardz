@@ -1,23 +1,11 @@
 import React from "react";
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import FaqItem from "./FaqItem";
 import Link from "next/link";
-import Image from "next/image";
-import curvy from "@/assets/curves/wavesOpacity.svg";
+
 const Faq = () => {
   const onFAQClick = () => {};
   return (
-    <section className="py-12 sm:py-16 lg:py-24 gradientss relative">
-      <Image
-        src={curvy}
-        className="absolute h-20 rotate-180 opacity-50 bottom-0 w-full"
-        alt="curvy"
-      />
-      {/* <Image
-        src={curvy}
-        className="absolute h-36  opacity-50 top-0 w-full"
-        alt="curvy"
-      /> */}
+    <section className="py-12 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl">
@@ -37,7 +25,7 @@ const Faq = () => {
                 <a
                   href="#"
                   title=""
-                  className="text-tertiaryColor transition-all duration-200 hover:underline"
+                  className="text-primaryColor transition-all duration-200 hover:underline"
                 >
                   aliqua dolor
                 </a>
@@ -53,7 +41,7 @@ const Faq = () => {
                 <a
                   href="#"
                   title=""
-                  className="text-tertiaryColor transition-all duration-200 hover:underline"
+                  className="text-primaryColor transition-all duration-200 hover:underline"
                 >
                   aliqua dolor
                 </a>
@@ -67,7 +55,7 @@ const Faq = () => {
           Didn’t find the answer you are looking for?
           <Link
             href="/contact"
-            className="ml-2 font-medium text-tertiaryColor transition-all cursor-pointer duration-200 hover:text-quadraColor focus:text-quadraColor hover:underline"
+            className="ml-2 font-medium text-primaryColor transition-all cursor-pointer duration-200 hover:text-secondaryColor focus:text-secondaryColor hover:underline"
           >
             Contact our support
           </Link>

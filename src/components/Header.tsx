@@ -1,5 +1,5 @@
 "use client";
-import { HeaderOptions } from "@/utils/constants";
+import { HeaderOptions, Logo } from "@/utils/constants";
 import Link from "next/link";
 import React, { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
@@ -9,16 +9,12 @@ const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   return (
-    <header className="">
+    <header>
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex-shrink-0">
             <Link href="/" title="" className="flex">
-              <img
-                className="w-auto h-8"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-                alt=""
-              />
+              {Logo}
             </Link>
           </div>
 
@@ -62,11 +58,7 @@ const Header = () => {
         <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-backgroundColor border-r overflow-y-auto">
           <div className="flex items-center mb-8">
             <Link className="mr-auto text-3xl font-bold leading-none" href="/">
-              <img
-                className="w-auto h-8"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-                alt=""
-              />
+              {Logo}
             </Link>
             <button
               className="navbar-close"
@@ -80,7 +72,7 @@ const Header = () => {
               {HeaderOptions.map((item) => (
                 <li className="mb-1" key={`Hnavigation-${item.title}`}>
                   <Link
-                    className="block p-4 text-sm font-semibold text-gray-500 hover:bg-indigo-50 hover:text-quadraColor rounded"
+                    className="block p-4 text-sm font-semibold text-gray-500 hover:bg-indigo-50 hover:text-secondaryColor rounded"
                     href={item.route}
                   >
                     {item.title}
