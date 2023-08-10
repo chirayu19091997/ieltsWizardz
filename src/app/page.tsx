@@ -3,7 +3,7 @@ import Stats from "@/components/home/Stats/Stats";
 import Testimonials from "@/components/home/Testimonials";
 import LogoCloud from "@/components/home/LogoCloud";
 import Hero from "@/components/home/Hero";
-import Steps from "@/components/home/Steps";
+// import Steps from "@/components/home/Steps";
 // import ServicesHome from "@/components/home/ServicesHome";
 // import Universities from "@/components/home/Universities";
 import NewServicesHome from "@/components/home/newServicesHome";
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       {/* <ServicesHome /> */}
       <NewServicesHome />
-      <Steps />
+      {/* <Steps /> */}
       <Stats />
       {/* <Universities /> */}
       <Testimonials />

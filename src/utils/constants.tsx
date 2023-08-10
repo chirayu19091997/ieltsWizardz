@@ -13,11 +13,7 @@ import { FcServices } from "react-icons/fc";
 import { GiGraduateCap } from "react-icons/gi";
 
 export const Logo = (
-  <img
-    className="w-auto object-cover h-8"
-    src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
-    alt=""
-  />
+  <img className="w-auto object-cover h-9" src="/titledlogo.png" alt="" />
 );
 
 export const HeaderOptions = [

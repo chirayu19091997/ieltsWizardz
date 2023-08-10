@@ -1,35 +1,16 @@
 "use client";
 import React from "react";
-import Lottie from "react-lottie";
+//@ts-ignore
+import Lottie from "lottie-react";
 
 interface AnimatorProps {
-  animationData: any;
-  height?: string;
-  width?: string;
-  className?: string;
+  animationData: object;
   customOptions?: object;
 }
 
-const Animator = ({
-  animationData,
-  height,
-  width,
-  className,
-  customOptions,
-}: AnimatorProps) => {
+const Animator = ({ animationData, customOptions }: AnimatorProps) => {
   return (
-    <div className={className}>
-      <Lottie
-        options={{
-          loop: true,
-          autoplay: true,
-          animationData: animationData,
-          ...customOptions,
-        }}
-        height={height}
-        width={width}
-      />
-    </div>
+    <Lottie {...customOptions} loop autoplay animationData={animationData} />
   );
 };
 

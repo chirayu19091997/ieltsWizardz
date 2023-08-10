@@ -24,19 +24,25 @@ const NewServiceItem = () => {
       {homeServiceSections.map((section, idx) => (
         <div
           key={`hs-${idx}`}
-          className={`w-full  ${idx != activeIndex && "hidden"}  ${
+          className={`w-full h-full ${idx != activeIndex && "hidden"}  ${
             idx < activeIndex ? "cover" : ""
           }`}
         >
           {idx >= activeIndex ? (
-            <div className="flex flex-col space-y-4 text-center items-center px-8 overflow-hidden">
-              {section.logo && section.logo}
-              <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl ">
-                {section.title}
-              </h2>
-              <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-8 ">
-                {section.subtitle}
-              </p>
+            <div className="flex border justify-between h-full w-full flex-col space-y-4 text-center items-center p-8 overflow-hidden">
+              <div className="flex flex-col w-full h-full items-center space-y-4">
+                {section.logo && section.logo}
+                <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl ">
+                  {section.title}
+                </h2>
+                <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-8 ">
+                  {section.subtitle}
+                </p>
+              </div>
+              {/* custom button */}
+              {idx === 0 && (
+                <button className="shadow__btn mb-4">Know More</button>
+              )}
             </div>
           ) : (
             <BsFillBalloonHeartFill size={200} color="red" />

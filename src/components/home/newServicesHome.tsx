@@ -8,10 +8,12 @@ const NewServicesHome = () => {
     <section className="py-12 bg-gray-50 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <Animator
-            animationData={edFloat}
-            className={"h-[80vh] max-md:hidden"}
-          />
+          <div className={"max-md:hidden"}>
+            <Animator
+              animationData={edFloat}
+              customOptions={{ style: { height: "80vh" } }}
+            />
+          </div>
           <NewServiceItem />
         </div>
       </div>

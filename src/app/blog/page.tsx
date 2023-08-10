@@ -14,11 +14,7 @@ const BlogList = () => {
   useEffect(() => {
     fetchData("pageBlogPost").then((res: any) => {
       setAllBlogs(res);
-      if (res.length > 6) {
-        setDisplayBlogs(res.splice(0, 6));
-      } else {
-        setDisplayBlogs(res);
-      }
+      setDisplayBlogs(res.splice(0, 6));
     });
   }, []);
 

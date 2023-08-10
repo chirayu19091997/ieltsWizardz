@@ -47,15 +47,17 @@ const About = () => {
               </p>
             </div>
             <div className="flex w-full h-full">
-              <Animator animationData={aboutSquare} height="100%" width="80%" />
+              <Animator
+                animationData={aboutSquare}
+                customOptions={{ style: { height: "100%", width: "80%" } }}
+              />
             </div>
           </div>
           <div className="flex w-full items-center justify-center h-full">
             <div className="flex w-full h-full">
               <Animator
                 animationData={aboutComputer}
-                height="100%"
-                width="80%"
+                customOptions={{ style: { height: "100%", width: "80%" } }}
               />
             </div>
             <div className="flex flex-col space-y-4 items-center w-2/3">

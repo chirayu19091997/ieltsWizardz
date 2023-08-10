@@ -31,7 +31,6 @@ const Contact = () => {
                   label="Name"
                   value={data.name}
                   onChange={(i: any) => setData({ ...data, name: i })}
-                  className="w-full h-full"
                 />
                 <Input
                   placeholder="+919999999999"
@@ -39,7 +38,6 @@ const Contact = () => {
                   label="Phone"
                   value={data.phone}
                   onChange={(i: any) => setData({ ...data, phone: i })}
-                  className="w-full h-full"
                 />
               </div>
               <div className="w-full">
@@ -49,7 +47,6 @@ const Contact = () => {
                   label="Email"
                   value={data.email}
                   onChange={(i: any) => setData({ ...data, email: i })}
-                  className="w-full"
                 />
               </div>
               <TextAreaInput
