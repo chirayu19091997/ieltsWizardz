@@ -8,7 +8,7 @@ import React from "react";
 const Highlighter = () => {
   return (
     <Slide top>
-      <div className="flex justify-between w-full bg-secondaryColor">
+      <header className="flex justify-between w-full bg-secondaryColor">
         <div></div>
         <ul className="flex space-x-2 p-2">
           {DirectContacts.slice(0, 1).map((item) => (
@@ -39,7 +39,7 @@ const Highlighter = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </header>
     </Slide>
   );
 };

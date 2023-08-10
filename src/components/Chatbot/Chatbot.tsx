@@ -6,7 +6,7 @@ import { AiOutlineSend } from "react-icons/ai";
 
 const Chatbot = () => {
   const [isChatExpanded, setIsChatExpanded] = useState(false);
-  const [enableInput, setEnableInput] = useState(false);
+  const [enableInput, setEnableInput] = useState(true);
   const [message, setMessage] = useState("");
   const [astep, setAstep] = useState(1);
   const [chat, setChat] = useState([
@@ -105,22 +105,24 @@ const Chatbot = () => {
           {chat.map((item, index) => (
             <Message chatData={item} key={`message-${index}`} />
           ))}
-          <div className="flex mt-2 items-center border rounded-lg p-6 pr-2 space-x-4 w-full h-[10%] bg-backgroundColor">
-            <input
-              type="text"
-              maxLength={30}
-              placeholder="Please Type your answer Here"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="h-8 w-full border-none bg-transparent placeholder-gray-300 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
-            />
-            <button
-              className="bg-gray-200 rounded-full h-8 w-8 text-center flex items-center justify-center p-2"
-              onClick={sendMessage}
-            >
-              <AiOutlineSend size={24} color="black" />
-            </button>
-          </div>
+          {enableInput && (
+            <div className="flex mt-2 items-center border rounded-lg p-6 pr-2 space-x-4 w-full h-[10%] bg-backgroundColor">
+              <input
+                type="text"
+                maxLength={30}
+                placeholder="Please Type your answer Here"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="h-8 w-full border-none bg-transparent placeholder-gray-300 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+              />
+              <button
+                className="bg-gray-200 rounded-full h-8 w-8 text-center flex items-center justify-center p-2"
+                onClick={sendMessage}
+              >
+                <AiOutlineSend size={24} color="black" />
+              </button>
+            </div>
+          )}
         </div>
       )}
 
