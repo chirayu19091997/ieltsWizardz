@@ -7,6 +7,7 @@ import Chatbot from "@/components/Chatbot/Chatbot";
 import Highlighter from "@/components/Highlighter";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Chatbot />
+          <Toaster position="top-right" reverseOrder={false} />
         </Suspense>
       </body>
     </html>

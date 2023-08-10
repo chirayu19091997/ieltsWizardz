@@ -11,16 +11,22 @@ const generateEmailContent = (data: any) => {
         </tr>
         <tr>
           <td style="text-align:center;border:1px solid black">${data.name}</td>
-          <td style="text-align:center;border:1px solid black">${data.email}</td>
-          <td style="text-align:center;border:1px solid black">${data.phone}</td>
-          <td style="text-align:center;border:1px solid black">${data.message}</td>
+          <td style="text-align:center;border:1px solid black">${
+            data.email
+          }</td>
+          <td style="text-align:center;border:1px solid black">${
+            data.phone
+          }</td>
+          <td style="text-align:center;border:1px solid black">${
+            data.message || ""
+          }</td>
         </tr>
       </table>`;
   return html;
 };
 export async function POST(request: Request) {
   const req = await request.json();
-  if (!req.name || !req.email || !req.phone || !req.message) {
+  if (!req.name || !req.email || !req.phone) {
     return NextResponse.json({ message: "Bad Request" });
   }
   try {

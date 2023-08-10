@@ -14,6 +14,12 @@ import "./styles/styles.css";
 import Loading from "../loading";
 
 const Contact = () => {
+  const standardData = {
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  };
   const [data, setData] = useState({
     name: "",
     phone: "",
@@ -77,7 +83,10 @@ const Contact = () => {
                   data.phone.length > 10
                 )
               }
-              onClick={() => sendContactForm(data)}
+              onClick={() => {
+                sendContactForm(data);
+                setData(standardData);
+              }}
               className="disabled:opacity-30 inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
             >
               Submit
