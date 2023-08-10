@@ -40,7 +40,7 @@ const BlogList = () => {
             <BsArrowRightShort size={28} />
           </div>
         </div>
-        <div className="w-full h-full flex flex-col lg:flex-row lg:flex-wrap justify-between px-4">
+        <div className="w-full h-full flex flex-col lg:flex-row lg:flex-wrap justify-between">
           {displayBlogs.map((item: any, index: number) => (
             <Link
               key={`dblogs-${index}`}

@@ -11,9 +11,9 @@ const Services = () => {
   );
 
   return (
-    <div className="flex bg-gray-100 flex-col items-center space-y-8 p-8">
+    <div className="flex bg-gray-100 flex-col items-center space-y-8 p-4">
       <h1 className="text-4xl">Our Services</h1>
-      <div className="flex flex-col w-full h-full space-y-4 px-8">
+      <div className="flex flex-col w-full h-full space-y-4">
         <div className="flex flex-wrap justify-center items-center w-full">
           {serviceSections.map((item: any, index: number) => (
             <p
