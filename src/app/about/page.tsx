@@ -12,15 +12,17 @@ const About = () => {
           <div className="flex flex-col space-y-4 items-center justify-center w-full">
             <h1 className="flex text-3xl text-primaryColor">Who we are</h1>
             <p>
-              IELTS Wizardz, your one stop destination for all your study abroad
-              needs, your virtual friend that supports and guides you on three
-              major aspects of studying abroad and brings you closer towards
-              realising your dreams. We are a team of highly qualified English
-              language experts with a passion for teaching, reading, writing and
-              counselling students to choose the best career path. We are
-              committed to not only providing the best of our services but also
-              to be affordable so as to cater to as many study abroad aspirants
-              as possible in their endeavour to achieve their dreams.
+              IELTS Wizardz is your one stop destination for all your study
+              abroad needs, your virtual friend that supports and guides you in
+              your endeavour to study abroad.
+            </p>
+            <p>
+              We are a team of highly qualified English language experts with a
+              passion for teaching, reading, writing and counselling students
+              for overseas admissions. We are committed to not only providing
+              the best of our services but also to be affordable so as to cater
+              to as many study abroad aspirants as possible in their pursuit of
+              achieving their dreams
             </p>
             <h1 className="flex text-3xl text-primaryColor">What we do</h1>
             <p>
@@ -30,25 +32,20 @@ const About = () => {
               choose from. Our highly qualified and experienced test-prep
               wizards are committed to helping students achieve their desired
               scores by providing training, guidance and support through a wide
-              range of resources tailored to their specific needs. Our mission
-              is to assist as many students as possible to help them take a step
-              closer to their goal. The test capsules developed by our founder
-              for each module/skill helps candidates achieve their target scores
-              with ease.
+              range of resources tailored to their specific needs.
             </p>
             <p>
               Our writing wizards are an amalgamation of analytical minds and
-              creative skills. They build up strong and compelling narratives
-              for your college applications. Storytelling is an art, and so is
-              creating personalised essays. They dig into the students&apos;
+              creative language skills. They build up strong and compelling
+              narratives for your college applications. Storytelling is an art,
+              and so is creating personalised essays. They dig into the students
               profiles, extract the right information and weave them into strong
               stories that best suit the needs of the universities. Our
               expertise and experience greatly lies in guiding students on Ivy
-              League application essays for both, bachelors and masters
-              programmes.
+              League admission essays.
             </p>
             <p>
-              As overseas admission wizards, we take each student on a journey
+              As overseas admissions wizards, we take each student on a journey
               of exploring and selecting various courses and universities that
               best fits their profile and ensure they get into their dream
               university. With over 700 universities in our bucket and 20000+
@@ -62,23 +59,10 @@ const About = () => {
           <div className="flex flex-col space-y-4 items-center justify-center w-full">
             <h1 className="flex text-3xl text-primaryColor">For Businesses</h1>
             <p>
-              We provide extensive services to test preparatory academies,
-              overseas admission consultancies, and publishing houses in
-              developing original and authentic test-prep practice and
-              full-length tests papers for various Indian and international
-              language proficiency and scholastic tests as per the latest
-              pattern and syllabus. If required, companies can also seek its
-              copyrights. We have had the proud privilege of working for some
-              renowned players in this domain.
-            </p>
-            <p>
-              We also extend our services to study abroad consultants in
-              preparing drafts for college essays, admission essays, SOPs,
-              Personal Statements, and LORs for their client students. If
-              required, we also offer 1-on-1 online sessions with the student
-              clients for gaining deeper insights into their profiles. All our
-              esteemed clientele from India, USA, Canada, UK and Australia avail
-              our services through the online mode.
+              We develop test-preparation practice papers for companies and
+              businesses in book publishing and the edtech domains. We also
+              provide admissions essays drafting services to Overseas admission
+              consultancies for their student clients.
             </p>
             <h1 className="flex text-3xl text-primaryColor">
               About Our Founder
@@ -94,7 +78,7 @@ const About = () => {
               development, academic writing, educational counselling and
               international student recruitment, she has gained deeper insights
               into the processes and sharpened her axe further to be able to
-              give it back to the society for its betterment.
+              give it back to the society.
             </p>
             <p>
               IELTS Wizardz has been her dream project. As the chief wizard, she

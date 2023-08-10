@@ -76,156 +76,46 @@ export const homeServiceSections = [
   {
     title: "Test preparation",
     subtitle:
-      "Our Professionals can help you with IELTS One Skill,IELTS Complete,TOEFL,PTE,SAT",
+      "Live and self-paced online training & preparation for proficiency tests like IELTS / TOEFL / PTE and scholastic tests such as the SAT.",
     logo: (
-      <svg
-        className="mx-auto"
-        width="46"
-        height="46"
-        viewBox="0 0 46 46"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M45 29V23C45 10.85 35.15 1 23 1C10.85 1 1 10.85 1 23V29"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+      <div className="flex items-center justify-center h-[42px] w-[42px] flex-shrink-0">
+        <img
+          className="w-[42px] object-contain h-[42px]"
+          src="/serviceshome/image6.png"
+          alt=""
         />
-        <path
-          d="M13 29H1V41C1 43.209 2.791 45 5 45H13V29Z"
-          fill="#D4D4D8"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z"
-          fill="#D4D4D8"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+      </div>
     ),
   },
   {
-    title: "Document Drafting",
-    subtitle: "We can help you with SOPs,LORs,Admission Essays",
-    logo: (
-      <svg
-        className="mx-auto"
-        width="46"
-        height="46"
-        viewBox="0 0 46 46"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M27 27H19V45H27V27Z"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 37H1V45H9V37Z"
-          fill="#D4D4D8"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M45 17H37V45H45V17Z"
-          fill="#D4D4D8"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M5 17L15 7L23 15L37 1"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M28 1H37V10"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Admission Assistance",
+    title: "Admission Essays",
     subtitle:
-      "We can help you with University Selection,Application Processing,Visa",
+      "We brainstorm with you to develop your university specific admission essays necessary for your applications to universities abroad.",
     logo: (
-      <svg
-        className="mx-auto"
-        width="42"
-        height="42"
-        viewBox="0 0 42 42"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M41 1H1V41H41V1Z"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+      <div className="flex items-center justify-center h-[42px] w-[42px] flex-shrink-0">
+        <img
+          className="w-[42px] object-contain h-[42px]"
+          src="/serviceshome/image7.png"
+          alt=""
         />
-        <path
-          d="M18 7H7V20H18V7Z"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+      </div>
+    ),
+  },
+  {
+    title: "Study Abroad",
+    subtitle:
+      "Your all-in-one guide that assists you at every step in your journey from course, country and university selection to securing your seat and getting your visa and accommodation.",
+    logo: (
+      <div className="flex items-center justify-center h-[42px] w-[42px] flex-shrink-0">
+        <img
+          className="w-[42px] object-contain h-[42px]"
+          src="/serviceshome/image8.png"
+          alt=""
         />
-        <path
-          d="M18 26H7V35H18V26Z"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M35 7H24V35H35V7Z"
-          fill="#D4D4D8"
-          stroke="#161616"
-          strokeWidth="2"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
+      </div>
     ),
   },
 ];
-
-{
-  /* <SVGFlag country='tr' flagWidth='2560' /> */
-}
 
 export const statsData = [
   {
