@@ -16,11 +16,8 @@ const BlogList = async () => {
   return (
     <div className="flex flex-col w-full h-full p-10">
       <div className="flex flex-col lg:w-[40%] space-y-4 py-8">
-        <h1 className="font-bold text-3xl">Read latest collection</h1>
-        <p>
-          Create custom landing pages with Rareblocks that converts more
-          visitors than any website.
-        </p>
+        <h1 className="font-bold text-3xl">Read our latest collection</h1>
+        <p>Tiny capsules on Study Abroad wisdom from our Wizards!</p>
       </div>
       <FilterDropdown
         activeFilter={activeFilter}

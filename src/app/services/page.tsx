@@ -30,7 +30,7 @@ const Services = () => {
         />
         <div className="flex w-full h-full space-x-8 p-8">
           <Slide right spy={activeIndex}>
-            <div className="flex lg:flex-row items-center justify-center max-md:flex-col flex-wrap h-full w-full lg:space-x-4 max-md:space-y-4 p-4">
+            <div className="flex lg:flex-row items-center justify-center max-md:flex-col flex-wrap h-full w-full max-md:space-y-4">
               {serviceSections[activeIndex].subTabs[activeSubTab].data.map(
                 (cardData: any, cardIndex: any) => (
                   <ServiceItem

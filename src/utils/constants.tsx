@@ -167,52 +167,90 @@ export const serviceSections = [
     tab: "Test Preparation",
     subTabs: [
       {
-        tab: "IELTS One Skill",
+        tab: "IELTS One-Skill",
         title: "IELTS One Skill Preparation",
         data: [
           {
-            title: "IELTS One Skill Live",
+            title: "One-skill Booster",
             subtitle:
-              "For those who need training for just one skill with mentor support live",
-            keyFeatures: "Key Features",
-            features: ["Personal Mentor Support", "Live Classes"],
-          },
-          {
-            title: "Writing Evaulation Service",
-            subtitle: "For those who wants evaluation for their preparation",
+              "For those who wish to boost their scores in any one section of the IELTS test",
             keyFeatures: "Key Features",
             features: [
-              "Personalised insights on their preparation",
-              "Detailed information on improvement areas",
+              "10 hrs. of live training-cum-practice",
+              "Evaluation and feedback by experts",
+              "Personal mentoring and support",
+            ],
+          },
+          {
+            title: "Writing Tasks Evaluation",
+            subtitle:
+              "For those who are worried about your IELTS Academic writing skills and want to get their essays evaluated",
+            keyFeatures: "Key Features",
+            features: [
+              "Combo: Task 1 + Task 2 (pack of 5/10/15 writeups)",
+              "Task 2: Pack of 5/10/15 writeups",
+              "Real time evaluation based on band descriptions",
+              "Predictive band scores",
+              "Feedback within 24-48 hrs",
             ],
           },
         ],
       },
       {
-        tab: "IELTS Complete",
+        tab: "IELTS Academic",
         title: "IELTS Complete Preparation",
         data: [
           {
-            title: "IELTS Plus Self Paced",
-            subtitle: "For those who need complete IELTS training",
+            title: "IELTS Plus",
+            subtitle:
+              "For those who need complete live training with online support",
             keyFeatures: "Key Features",
             features: [
-              "Recorded Sessions by professionals",
-              "24/7 Availability",
-              "Personal Mentor Support",
+              "4 weeks live online classes",
+              "Video recordings of each class",
+              "Up-to-date study materials",
+              "Cambridge certified trainers",
+              "2 full length mock tests with evaluation",
+              "Grammar and vocabulary sessions",
             ],
           },
           {
-            title: "IELTS Plus Live",
+            title: "IELTS Premium",
             subtitle:
-              "For those who need complete IELTS training with mentor support live",
-            keyFeatures: "Everything in IELTS Plus Self Paced, plus",
-            features: ["Live Classes"],
+              "For those who need complete live training with access to our exclusive ONLINE Portal treasures",
+            keyFeatures: "Key Features",
+            features: [
+              "6 weeks live online classes",
+              "Video recordings of each class",
+              "24x7 access to our ONLINE Portal for 6 months",
+              "10 timed Mock Tests with evaluation",
+              "40 Sectional tests for practice with evaluation",
+              "Weekend sessions on grammar and vocabulary",
+              "300+ videos on grammar, vocabulary and tips",
+              "100+ videos on trending topics, idioms and spellings",
+              "200+ Practice Exercises and Quizzes",
+              "Regular Doubt Solving Sessions",
+            ],
+          },
+          {
+            title: "IELTS Self-paced",
+            subtitle:
+              "For those who wish to prepare and practice at their own pace",
+            keyFeatures: "Key Features",
+            features: [
+              "24x7 access to our ONLINE Portal for 3 months",
+              "10 full-length timed Mock Tests with evaluation",
+              "40 Sectional tests for practice with evaluation",
+              "300+ self-paced lessons on grammar and vocabulary",
+              "100+ videos on trending topics, idioms and spellings",
+              "200+ Practice Exercises and Quizzes",
+              "Free English assessment and IELTS Diagnostic Test",
+            ],
           },
         ],
       },
       {
-        tab: "TOEFL",
+        tab: "TOEFL iBT",
         title: "TOEFL Complete Preparation",
         data: [
           {
@@ -239,44 +277,79 @@ export const serviceSections = [
         title: "PTE Complete Preparation",
         data: [
           {
-            title: "PTE Self Paced",
-            subtitle: "For those who need complete PTE training",
+            title: "PTE Plus",
+            subtitle:
+              "For those who need complete live training on PTE test with online support",
             keyFeatures: "Key Features",
             features: [
-              "Recorded Sessions by professionals",
-              "24/7 Availability",
-              "Personal Mentor Support",
+              "3 weeks of live online classes",
+              "Video recordings of each class",
+              "Up-to-date study materials",
+              "1 full length mock test with evaluation",
+              "Grammar and vocabulary sessions",
             ],
           },
           {
-            title: "PTE Live",
+            title: "PTE Premium",
             subtitle:
-              "For those who need complete PTE training with mentor support live",
-            keyFeatures: "Everything in PTE Self Paced, plus",
-            features: ["Live Classes"],
+              "For those who need complete live training with access to our exclusive ONLINE Portal treasure",
+            keyFeatures: "Key Features",
+            features: [
+              "6 weeks of live online classes ",
+              "Video recordings of each class",
+              "24x7 access to our ONLINE Portal for 6 months",
+              "14 timed Mock Tests with evaluation",
+              "300+ videos on grammar, vocabulary and tips",
+              "Weekend doubt solving sessions",
+              "Free English assessment Test",
+            ],
+          },
+          {
+            title: "PTE Self-paced",
+            subtitle:
+              "For those who wish to prepare and practice at their own pace",
+            keyFeatures: "Key Features",
+            features: [
+              "24x7 access to our ONLINE Portal for 6 months",
+              "14 timed Mock Test with evaluation",
+              "300+ videos on grammar, vocabulary and tips",
+              "Free English assessment Test",
+            ],
           },
         ],
       },
       {
-        tab: "SAT",
-        title: "SAT Complete Preparation",
+        tab: "SAT Digital",
+        title: "SAT Digital",
         data: [
           {
-            title: "SAT Self Paced",
-            subtitle: "For those who need complete SAT training",
+            title: "SAT Plus",
+            subtitle:
+              "For those who need complete live training on the new Digital SAT with online support",
             keyFeatures: "Key Features",
             features: [
-              "Recorded Sessions by professionals",
-              "24/7 Availability",
-              "Personal Mentor Support",
+              "6 weeks of live online classes",
+              "Video recordings of each class",
+              "Up-to-date study materials",
+              "7 full length mock test with evaluation",
+              "Personalized mentoring and support",
             ],
           },
           {
-            title: "SAT Live",
+            title: "SAT Premium",
             subtitle:
-              "For those who need complete SAT training with mentor support live",
-            keyFeatures: "Everything in SAT Self Paced, plus",
-            features: ["Live Classes"],
+              "For those who need complete live training with access to our exclusive ONLINE Portal treasures ",
+            keyFeatures: "Key Features",
+            features: [
+              "12 weeks of live online classes",
+              "Video recordings of each class",
+              "24x7 access to our ONLINE Portal for 6 months",
+              "10 timed Mock Tests with evaluation",
+              "45 sectional tests with evaluation",
+              "300+ videos on grammar, vocabulary and tips",
+              "Weekend Verbal and Math doubt solving sessions",
+              "Free English assessment Test",
+            ],
           },
         ],
       },
@@ -290,10 +363,18 @@ export const serviceSections = [
         title: "Document Drafting",
         data: [
           {
-            title: "Document Drafting",
-            subtitle: "For those who need assistance with document preparation",
+            title: "Document drafting",
+            subtitle:
+              "For those who need assistance in drafting or editing their university application essays",
             keyFeatures: "Key Features",
-            features: ["SOPs", "LORs", "Admission Essays"],
+            features: [
+              "Common app essays & Uni. specific essays",
+              "Statement of Purpose / Personal Statement ",
+              "Letter of Intent",
+              "LORs",
+              "Turnaround time 48 to 72 hours",
+              "Drafting by internationally recognized English language experts",
+            ],
           },
         ],
       },
@@ -307,13 +388,30 @@ export const serviceSections = [
         title: "Admission Assistance",
         data: [
           {
-            title: "Admission Assistance",
-            subtitle: "For those who need assistance with admission",
+            title: "CORE Services",
+            subtitle:
+              "For those who seek help in navigating through realizing their study abroad dream",
             keyFeatures: "Key Features",
             features: [
+              "Admissions Counseling",
+              "Profile Evaluation",
+              "Country and Course Selection",
               "University Selection",
-              "Application Processing",
-              "Visa",
+              "Application processing",
+              "Visa Consulting",
+            ],
+          },
+          {
+            title: "ALLIED Services",
+            subtitle:
+              "We assist you in easing out your journey to studying abroad",
+            keyFeatures: "Key Features",
+            features: [
+              "Scholarships",
+              "Education Loans",
+              "GIC Accounts",
+              "Air Ticketing",
+              "Accommodation",
             ],
           },
         ],

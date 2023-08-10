@@ -12,7 +12,6 @@ const FilterDropdown = async ({
 
   return (
     <ul className="menu menu-horizontal rounded-lg bg-base-200 space-x-1">
-      <li className="menu-title">Filter</li>
       <li onClick={() => setActiveFilter("")}>
         <a className={activeFilter === "" ? "active" : ""}>All</a>
       </li>
