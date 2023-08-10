@@ -22,12 +22,12 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .moving-text-m {
-    animation: marqueeM 20s alternate infinite;
+    animation: marqueeM 20s linear infinite;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .moving-text {
-    animation: marquee 35s alternate infinite;
+    animation: marquee 35s linear infinite;
   }
 }

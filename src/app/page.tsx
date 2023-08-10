@@ -1,4 +1,3 @@
-// import Faq from "@/components/home/Faq/Faq";
 import Stats from "@/components/home/Stats/Stats";
 import Testimonials from "@/components/home/Testimonials";
 import LogoCloud from "@/components/home/LogoCloud";
@@ -17,7 +16,6 @@ export default function Home() {
       <Universities />
       <Countries />
       <Testimonials />
-      {/* <Faq /> */}
     </div>
   );
 }

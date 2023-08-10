@@ -1,15 +1,16 @@
 import React, { Suspense } from "react";
-import aboutComputer from "../../assets/animations/aboutcomputer.json";
-import aboutSquare from "../../assets/animations/aboutsquare.json";
 import Loading from "../loading";
 import Animator from "@/components/Animator";
+import aboutUsFounderAnimation from "@/assets/animations/afs.json";
+import aboutUsWhoWeAre from "@/assets/animations/awwa.json";
+import aboutUsWhatWeDo from "@/assets/animations/awwd.json";
 
 const About = () => {
   return (
     <Suspense fallback={<Loading />}>
-      <div className="flex flex-col items-center space-y-8 p-8">
-        <div className="flex flex-col w-full h-full space-y-12">
-          <div className="flex flex-col space-y-4 items-center justify-center w-full">
+      <div className="flex flex-col items-center p-12 w-full h-full space-y-8">
+        <div className="flex max-md:flex-col items-center justify-center w-full lg:space-x-24 max-md:space-y-8">
+          <div className="flex flex-col w-full space-y-4">
             <h1 className="flex text-3xl text-primaryColor">Who we are</h1>
             <p>
               IELTS Wizardz is your one stop destination for all your study
@@ -24,6 +25,16 @@ const About = () => {
               to as many study abroad aspirants as possible in their pursuit of
               achieving their dreams
             </p>
+          </div>
+          <div className="flex w-full">
+            <Animator animationData={aboutUsWhoWeAre} />
+          </div>
+        </div>
+        <div className="flex max-md:flex-col items-center w-full lg:space-x-24 max-md:space-y-8">
+          <div className="flex w-full">
+            <Animator animationData={aboutUsWhatWeDo} />
+          </div>
+          <div className="flex flex-col w-full space-y-4">
             <h1 className="flex text-3xl text-primaryColor">What we do</h1>
             <p>
               IELTS Wizardz starts with the first step of providing expert
@@ -56,17 +67,19 @@ const About = () => {
               globally. We hand-hold them till they spread their wings and fly.
             </p>
           </div>
-          <div className="flex flex-col space-y-4 items-center justify-center w-full">
-            <h1 className="flex text-3xl text-primaryColor">For Businesses</h1>
-            <p>
-              We develop test-preparation practice papers for companies and
-              businesses in book publishing and the edtech domains. We also
-              provide admissions essays drafting services to Overseas admission
-              consultancies for their student clients.
-            </p>
-            <h1 className="flex text-3xl text-primaryColor">
-              About Our Founder
-            </h1>
+        </div>
+        <div className="flex w-full flex-col space-y-4 items-center justify-center">
+          <h1 className="text-3xl text-primaryColor">For Businesses</h1>
+          <p>
+            We develop test-preparation practice papers for companies and
+            businesses in book publishing and the edtech domains. We also
+            provide admissions essays drafting services to Overseas admission
+            consultancies for their student clients.
+          </p>
+        </div>
+        <div className="flex max-md:flex-col items-center w-full lg:space-x-24 max-md:space-y-8">
+          <div className="flex w-full flex-col space-y-4">
+            <h1 className="text-3xl text-primaryColor">About Our Founder</h1>
             <p>
               Amita Garg, a Trinity London certified international English
               Language trainer, a university gold-medalist, a British Council
@@ -90,6 +103,9 @@ const About = () => {
               uncomplicated manner and that they are able to realise their
               dreams.
             </p>
+          </div>
+          <div className="flex w-full">
+            <Animator animationData={aboutUsFounderAnimation} />
           </div>
         </div>
       </div>
