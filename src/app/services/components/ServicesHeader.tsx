@@ -42,9 +42,9 @@ const ServicesHeader = ({
               <label tabIndex={0} className="px-2">
                 <p>{item.tab}</p>
                 {!isDropdownOpen ? (
-                  <IconChevronDown size={16} />
+                  <IconChevronDown size={14} />
                 ) : (
-                  <IconChevronUp size={16} />
+                  <IconChevronUp size={14} />
                 )}
               </label>
               <ul
