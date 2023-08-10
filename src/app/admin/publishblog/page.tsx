@@ -11,7 +11,7 @@ const PublishBlog = () => {
   });
   return (
     <div className="flex flex-col items-center space-y-4 p-8 w-full h-full">
-      <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+      <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl">
         Publish Blog
       </h2>
       <h1 className="self-start font-semibold">Title</h1>

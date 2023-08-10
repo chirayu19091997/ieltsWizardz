@@ -38,7 +38,7 @@ const Testimonials = () => {
 
             <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
               <div className="flex flex-col overflow-hidden shadow-xl">
-                <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                <div className="flex flex-col justify-between flex-1 p-6 bg-backgroundColor lg:py-8 lg:px-7">
                   <div className="flex-1">
                     <div className="flex items-center">
                       <svg
@@ -111,7 +111,7 @@ const Testimonials = () => {
               </div>
 
               <div className="flex flex-col overflow-hidden shadow-xl">
-                <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                <div className="flex flex-col justify-between flex-1 p-6 bg-backgroundColor lg:py-8 lg:px-7">
                   <div className="flex-1">
                     <div className="flex items-center">
                       <svg
@@ -183,7 +183,7 @@ const Testimonials = () => {
               </div>
 
               <div className="flex flex-col overflow-hidden shadow-xl">
-                <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                <div className="flex flex-col justify-between flex-1 p-6 bg-backgroundColor lg:py-8 lg:px-7">
                   <div className="flex-1">
                     <div className="flex items-center">
                       <svg

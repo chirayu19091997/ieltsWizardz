@@ -1,4 +1,6 @@
 import {
+  BiSolidPhoneCall,
+  BiMailSend,
   BiLogoLinkedin,
   BiLogoFacebook,
   BiLogoInstagram,
@@ -32,5 +34,18 @@ export const Socials = [
     route: "https://wa.me/+919310888164",
     logo: <BiLogoWhatsapp />,
   },
-  { title: "LinkedIn", route: "/contact", logo: <BiLogoLinkedin /> },
+  // { title: "LinkedIn", route: "/contact", logo: <BiLogoLinkedin /> },
+];
+
+export const DirectContacts = [
+  {
+    title: "Phone",
+    route: "tel:9310888164",
+    logo: <BiSolidPhoneCall />,
+  },
+  {
+    title: "Email",
+    route: "mailto:ieltswizardz@gmail.com",
+    logo: <BiMailSend />,
+  },
 ];

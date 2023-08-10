@@ -101,7 +101,7 @@ const Chatbot = () => {
     <div className="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 lg:max-w-[40vw] max-w-[80vw] max-h-[80vh] items-end justify-end">
       {isChatExpanded && (
         <div className="flex flex-col p-2 justify-between h-[80vh] w-full rounded-xl bg-red-500">
-          <div className="flex w-full h-[10%] p-2 rounded-xl bg-white">
+          <div className="flex w-full h-[10%] p-2 rounded-xl bg-backgroundColor">
             <img
               className="flex-shrink-0 object-cover rounded-full w-7 h-7 mr-2"
               src="/martha.png"
@@ -150,7 +150,7 @@ const Chatbot = () => {
             })}
           </div>
           {enableInput && (
-            <div className="flex items-center rounded-lg p-2 space-x-4 w-full h-[10%] bg-white">
+            <div className="flex items-center rounded-lg p-2 space-x-4 w-full h-[10%] bg-backgroundColor">
               <input
                 type="text"
                 maxLength={30}
@@ -170,7 +170,7 @@ const Chatbot = () => {
         </div>
       )}
       <button
-        className="flex items-center justify-center w-14 h-14 rounded-xl p-4 bg-yellow-300"
+        className="flex items-center justify-center w-14 h-14 rounded-xl p-4 bg-primaryColor"
         onClick={() => setIsChatExpanded(!isChatExpanded)}
       >
         {!isChatExpanded ? (

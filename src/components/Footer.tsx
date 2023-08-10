@@ -1,4 +1,4 @@
-import { HeaderOptions, Socials } from "@/utils/constants";
+import { DirectContacts, HeaderOptions, Socials } from "@/utils/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -20,6 +20,18 @@ const Footer = () => {
             </p>
 
             <ul className="flex items-center space-x-3 mt-9">
+              {DirectContacts.map((item) => (
+                <li key={`direct-${item.title}`}>
+                  <Link
+                    href={item.route}
+                    target="_blank"
+                    title={item.title}
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                  >
+                    {item.logo}
+                  </Link>
+                </li>
+              ))}
               {Socials.map((item) => (
                 <li key={`socials-${item.title}`}>
                   <Link
@@ -36,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
               Company
             </p>
 
@@ -46,7 +58,7 @@ const Footer = () => {
                   <Link
                     href={item.route}
                     title=""
-                    className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    className="flex text-base  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {item.title}
                   </Link>
@@ -56,7 +68,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
               Help
             </p>
 
@@ -66,7 +78,7 @@ const Footer = () => {
                   <Link
                     href={item.route}
                     title=""
-                    className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    className="flex text-base  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >
                     {item.title}
                   </Link>
@@ -76,7 +88,7 @@ const Footer = () => {
           </div>
 
           <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
-            <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
+            <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
               Subscribe to newsletter
             </p>
 
@@ -90,7 +102,7 @@ const Footer = () => {
                   name="email"
                   id="email"
                   placeholder="Enter your email"
-                  className="block w-full p-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
+                  className="block w-full p-4  placeholder-gray-500 transition-all duration-200 bg-backgroundColor border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                 />
               </div>
 

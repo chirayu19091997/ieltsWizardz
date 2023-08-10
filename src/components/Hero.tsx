@@ -14,17 +14,17 @@ const Hero = () => {
             <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
               A social media for learners
             </p>
-            <h1 className="mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl">
+            <h1 className="mt-4 text-4xl font-bold  lg:mt-8 sm:text-6xl xl:text-8xl">
               Connect & learn from the experts
             </h1>
-            <p className="mt-4 text-base text-black lg:mt-8 sm:text-xl">
+            <p className="mt-4 text-base  lg:mt-8 sm:text-xl">
               Grow your career fast with right mentor.
             </p>
 
             <Link
               href="/contact"
               title=""
-              className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+              className="inline-flex items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:bg-secondaryColor focus:bg-secondaryColor"
               role="button"
             >
               Book a Demo
@@ -35,9 +35,10 @@ const Hero = () => {
               <Link
                 href="/contact"
                 title=""
-                className="text-black transition-all duration-200 hover:underline px-2"
+                className=" transition-all duration-200 px-2 text-base relative one"
               >
-                Get Free 1 on 1 Consultation
+                <span>Get Free 1 on 1 Consultation</span>
+                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-secondaryColor"></span>
               </Link>
             </p>
           </div>

@@ -1,28 +1,12 @@
 import React from "react";
 
-interface InputProps {
-  placeholder: string;
-  label: string;
-  type?: string;
-  otherProps?: any;
-  onChange: any;
-}
-
-const Input = ({
-  placeholder,
-  label,
-  type,
-  otherProps,
-  onChange,
-}: InputProps) => {
+const TextAreaInput = ({ placeholder, label, onChange }: any) => {
   return (
     <label
       htmlFor={label}
-      className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-4 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+      className="relative block overflow-hidden rounded-md border border-gray-200 px-3 pt-6 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
     >
-      <input
-        {...otherProps}
-        type={type || "text"}
+      <textarea
         id={label}
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
@@ -36,4 +20,4 @@ const Input = ({
   );
 };
 
-export default Input;
+export default TextAreaInput;

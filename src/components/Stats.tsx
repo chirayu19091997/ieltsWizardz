@@ -1,11 +1,12 @@
+"use client";
 import React from "react";
-
+import CountUp from "react-countup";
 const Stats = () => {
   return (
     <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl">
             Numbers tell our story
           </h2>
           {/* <p className="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
@@ -18,7 +19,7 @@ const Stats = () => {
           <div>
             <h3 className="font-bold text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                20+
+                <CountUp start={0} end={20} duration={3} />+
               </span>
             </h3>
             <p className="mt-4 text-xl font-medium text-gray-900">
@@ -32,7 +33,7 @@ const Stats = () => {
           <div>
             <h3 className="font-bold text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                5000+
+                <CountUp start={0} end={5000} duration={3} />+
               </span>
             </h3>
             <p className="mt-4 text-xl font-medium text-gray-900">
@@ -44,7 +45,7 @@ const Stats = () => {
           <div>
             <h3 className="font-bold text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                600+
+                <CountUp start={0} end={600} duration={3} />+
               </span>
             </h3>
             <p className="mt-4 text-xl font-medium text-gray-900">

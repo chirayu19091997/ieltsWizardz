@@ -2,6 +2,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
+import Chatbot from "@/components/Chatbot";
+import Highlighter from "@/components/Highlighter";
 
 export const metadata: Metadata = {
   title: {
@@ -20,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="noScroll">
+        <Highlighter />
         <Header />
         {children}
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );

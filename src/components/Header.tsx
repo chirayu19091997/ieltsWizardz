@@ -24,7 +24,7 @@ const Header = () => {
 
           <button
             type="button"
-            className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+            className="inline-flex p-2  transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
             onClick={() => setIsMenuVisible(!isMenuVisible)}
           >
             <HiMenu size={24} />
@@ -36,9 +36,10 @@ const Header = () => {
                 key={`Hnavigation-${item.title}`}
                 href={item.route}
                 title={item.title}
-                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+                className="text-base relative one"
               >
-                {item.title}
+                <span>{item.title}</span>
+                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-secondaryColor" />
               </Link>
             ))}
           </div>
@@ -46,7 +47,7 @@ const Header = () => {
           {/* <a
             href="#"
             title=""
-            className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+            className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-primaryColor hover: focus: focus:bg-primaryColor font-semibold text-white bg-black rounded-full"
             role="button"
           >
             Join Now
@@ -58,7 +59,7 @@ const Header = () => {
         style={{ display: isMenuVisible ? "" : "none" }}
       >
         <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-backgroundColor border-r overflow-y-auto">
           <div className="flex items-center mb-8">
             <Link className="mr-auto text-3xl font-bold leading-none" href="/">
               <img
@@ -79,7 +80,7 @@ const Header = () => {
               {HeaderOptions.map((item) => (
                 <li className="mb-1" key={`Hnavigation-${item.title}`}>
                   <Link
-                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-indigo-50 hover:text-primaryColor rounded"
+                    className="block p-4 text-sm font-semibold text-gray-500 hover:bg-indigo-50 hover:text-primaryColor rounded"
                     href={item.route}
                   >
                     {item.title}
