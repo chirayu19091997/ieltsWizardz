@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     "university admissions",
     "student support",
   ],
+  viewport: "width=device-width, initial-scale=1.0",
   description:
     "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
 };
