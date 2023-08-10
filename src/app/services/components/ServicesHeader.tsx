@@ -16,7 +16,7 @@ const ServicesHeader = ({
           item.subTabs.length <= 1 ? (
             <li
               key={`serviceheader-n-${index}`}
-              className={`px-1 items-center flex justify-center hover:cursor-pointer ${
+              className={`px-2 items-center flex justify-center hover:cursor-pointer ${
                 activeIndex === index
                   ? "bg-primaryColor rounded-md text-white"
                   : ""
@@ -38,7 +38,9 @@ const ServicesHeader = ({
               }`}
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
-              <label tabIndex={0}>{item.tab}</label>
+              <label tabIndex={0} className="px-2">
+                {item.tab}
+              </label>
               <ul
                 tabIndex={isDropdownOpen ? 0 : undefined}
                 className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-48"

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IconMessage2Up, IconMessage2X, IconSend } from "@tabler/icons-react";
 import Message from "./Message";
 import { sendContactForm } from "@/utils/api";
@@ -82,32 +82,22 @@ const Chatbot = () => {
     }
   };
 
-  //   const selectOption = (option: string) => {
-  //     if (astep <= 1) {
-  //       const payload = {
-  //         message: option,
-  //         options: [],
-  //         from: "user",
-  //       };
-  //       setAstep(astep + 1);
-  //       const systemMessage = {
-  //         message: steps[astep].message,
-  //         options: [],
-  //         from: "system",
-  //       };
-  //       setChat([...chat, payload, systemMessage]);
-  //       setEnableInput(!enableInput);
-  //       setUserDataExtracted({
-  //         ...userDataExtracted,
-  //         [steps[astep].field]: option,
-  //       });
-  //     }
-  //   };
+  const scrollToBottom = () => {
+    const ele = document.getElementById("chatContainer");
+    ele?.scrollTo({ top: ele.offsetHeight });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [chat]);
 
   return (
     <>
       {isChatExpanded && (
-        <div className="fixed flex flex-col justify-between p-2 overflow-y-auto noScroll z-[200] h-[60vh] max-h-[60vh] w-[30vw] max-md:w-[80vw] bottom-20 right-10 rounded-xl bg-secondaryColor">
+        <div
+          id="chatContainer"
+          className="fixed flex flex-col justify-between p-2 overflow-y-auto noScroll z-[200] h-[60vh] max-h-[60vh] w-[30vw] max-md:w-[80vw] bottom-20 right-10 rounded-xl bg-secondaryColor"
+        >
           {chat.map((item, index) => (
             <Message chatData={item} key={`message-${index}`} />
           ))}
@@ -124,6 +114,7 @@ const Chatbot = () => {
                 maxLength={30}
                 placeholder="Please Type your answer Here"
                 value={message}
+                autoFocus
                 onChange={(e) => setMessage(e.target.value)}
                 className="h-8 w-full border-none bg-transparent placeholder-gray-300 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
               />
