@@ -14,7 +14,7 @@ import { GiGraduateCap } from "react-icons/gi";
 
 export const Logo = (
   <img
-    className="w-auto h-8"
+    className="w-auto object-cover h-8"
     src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
     alt=""
   />

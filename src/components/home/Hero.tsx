@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
-import * as HeroAnimation from "../../assets/animations/heroAnimation.json";
+import HeroAnimation from "../../assets/animations/heroAnimation.json";
 import Animator from "../Animator";
 
 const Hero = () => {

@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
-import * as aboutComputer from "../../assets/animations/aboutcomputer.json";
-import * as aboutSquare from "../../assets/animations/aboutsquare.json";
+import aboutComputer from "../../assets/animations/aboutcomputer.json";
+import aboutSquare from "../../assets/animations/aboutsquare.json";
 import Loading from "../loading";
 import Animator from "@/components/Animator";
 

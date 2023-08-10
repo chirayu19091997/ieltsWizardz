@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
-import * as contactAnimation from "../../assets/animations/contact.json";
+import contactAnimation from "../../assets/animations/contact.json";
 import Input from "@/components/Input";
 import TextAreaInput from "@/components/TextAreaInput";
 import { useSearchParams } from "next/navigation";
