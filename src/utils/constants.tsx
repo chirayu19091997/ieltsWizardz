@@ -431,3 +431,10 @@ export const serviceSections = [
     ],
   },
 ];
+
+export const CountriesData = [
+  { title: "United States", image: "/us.svg" },
+  { title: "Canada", image: "/canada.svg" },
+  { title: "Australia", image: "/australia.svg" },
+  { title: "New Zealand", image: "/newzeland.svg" },
+];

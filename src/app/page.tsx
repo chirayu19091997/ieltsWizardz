@@ -5,6 +5,7 @@ import LogoCloud from "@/components/home/LogoCloud";
 import Hero from "@/components/home/Hero";
 import ServicesHome from "@/components/home/ServicesHome";
 import Universities from "@/components/home/Universities/Universities";
+import Countries from "@/components/home/Countries";
 
 export default function Home() {
   return (
@@ -13,8 +14,8 @@ export default function Home() {
       <ServicesHome />
       <LogoCloud />
       <Stats />
-      {/* countries */}
       <Universities />
+      <Countries />
       <Testimonials />
       {/* <Faq /> */}
     </div>
