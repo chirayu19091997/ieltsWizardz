@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
-import CountUp from "react-countup";
 // @ts-ignore
 import { Fade } from "react-reveal";
+import StatsCountItem from "./StatsCountItem";
 const Stats = () => {
   const statsData = [
     {
@@ -34,31 +33,31 @@ const Stats = () => {
             sint. Velit officia consequat duis.
           </p> */}
         </div>
-        <Fade bottom>
-          <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
-            {statsData.map((statItem, statIndex) => (
-              <div key={`stats-${statIndex}`}>
-                <h3 className="font-bold text-7xl">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                    <CountUp
-                      enableScrollSpy={true}
-                      start={statItem.stats - statItem.stats * 0.5}
-                      end={statItem.stats}
-                      duration={3}
-                    />
-                    +
-                  </span>
-                </h3>
-                <p className="mt-4 text-xl font-medium text-gray-900">
-                  {statItem.title}
-                </p>
-                <p className="text-base mt-0.5 text-gray-500">
-                  {statItem.subTitle}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Fade>
+        {/* <Fade bottom> */}
+        <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+          {statsData.map((statItem, statIndex) => (
+            <div key={`stats-${statIndex}`}>
+              <h3 className="font-bold text-7xl">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
+                  <StatsCountItem
+                    enableScrollSpy={true}
+                    start={statItem.stats - statItem.stats * 0.5}
+                    end={statItem.stats}
+                    duration={3}
+                  />
+                  +
+                </span>
+              </h3>
+              <p className="mt-4 text-xl font-medium text-gray-900">
+                {statItem.title}
+              </p>
+              <p className="text-base mt-0.5 text-gray-500">
+                {statItem.subTitle}
+              </p>
+            </div>
+          ))}
+        </div>
+        {/* </Fade> */}
       </div>
     </section>
   );

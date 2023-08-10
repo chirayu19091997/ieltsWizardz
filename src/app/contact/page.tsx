@@ -3,26 +3,21 @@ import Link from "next/link";
 import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import * as contactAnimation from "../../assets/animations/contact.json";
-import Lottie from "react-lottie";
 import Input from "@/components/Input";
 import TextAreaInput from "@/components/TextAreaInput";
 import { useSearchParams } from "next/navigation";
+import Animator from "@/components/Animator";
 
 const Contact = () => {
   const searchParams = useSearchParams();
   const message = searchParams.get("message");
+
   return (
     <section className="p-6 max-md:p-4">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: contactAnimation,
-              }}
-            />
+            <Animator animationData={contactAnimation} />
           </div>
           <div className="flex flex-col items-center justify-between w-full h-full p-4 px-8 shadow-xl border rounded-lg">
             <p className="text-base font-semibold tracking-wider text-primaryColor uppercase my-4">

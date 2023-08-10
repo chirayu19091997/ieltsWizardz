@@ -1,9 +1,8 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import * as HeroAnimation from "../../assets/animations/heroAnimation.json";
-import Lottie from "react-lottie";
+import Animator from "../Animator";
 
 const Hero = () => {
   return (
@@ -44,21 +43,7 @@ const Hero = () => {
           </div>
 
           <div className="h-[80%]">
-            {/* <img
-              className="w-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
-              alt=""
-            /> */}
-            <Lottie
-              options={{
-                loop: true,
-                autoplay: true,
-                animationData: HeroAnimation,
-                // rendererSettings: {
-                // 	preserveAspectRatio: "xMidYMid slice",
-                // },
-              }}
-            />
+            <Animator animationData={HeroAnimation} />
           </div>
         </div>
       </div>
