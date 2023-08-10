@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.noScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.noScroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.one:hover span:last-child {
+  width: 100%;
+}
+
+.custom-loader {
+  width: 120px;
+  height: 22px;
+  border-radius: 20px;
+  color: #e66304;
+  border: 2px solid;
+  position: relative;
+}
+
+.custom-loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: #e66304;
+  animation: p6 2s infinite;
+}
+
+@keyframes p6 {
+  100% {
+    inset: 0;
+  }
+}

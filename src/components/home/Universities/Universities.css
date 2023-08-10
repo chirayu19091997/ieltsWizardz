@@ -1,0 +1,33 @@
+.moving-text:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-370%);
+  }
+}
+
+@keyframes marqueeM {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-1400%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text-m {
+    animation: marqueeM 20s linear infinite;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text {
+    animation: marquee 35s linear infinite;
+  }
+}
