@@ -16,7 +16,22 @@ export const metadata: Metadata = {
     default: "IELTS Widardz",
   },
   category: "education",
-  // description: "IELTS Widardz",
+  keywords: [
+    "study abroad",
+    "education services",
+    "international students",
+    "IELTS preparation",
+    "TOEFL preparation",
+    "SAT preparation",
+    "PTE preparation",
+    "document drafting",
+    "admission assistance",
+    "study abroad programs",
+    "university admissions",
+    "student support",
+  ],
+  description:
+    "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
 };
 
 export default function RootLayout({
