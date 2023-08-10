@@ -7,7 +7,7 @@ const Universities = () => {
     <section className="py-12 sm:py-16 lg:py-20">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="xl:flex xl:items-center xl:justify-between overflow-hidden">
-          <div className="flex w-full space-x-4 moving-text items-center">
+          <div className="flex w-full space-x-4 moving-text max-md:moving-text-m items-center">
             {logoSlides.map((item, index) => (
               <img
                 key={`logo-${index}`}
