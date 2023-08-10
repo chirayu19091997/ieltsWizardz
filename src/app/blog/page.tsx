@@ -1,26 +1,12 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import BlogTile from "./components/blogTile";
 import Link from "next/link";
-import { fetchData } from "@/utils/contentful";
-import TextHover from "@/components/TextHover";
+import { fetchData } from "../../utils/contentful";
 
 export const revalidate = 604800;
 
-const BlogList = () => {
-  const [allBlogs, setAllBlogs] = useState<any>([]);
-  const [displayBlogs, setDisplayBlogs] = useState<any>([]);
-
-  useEffect(() => {
-    fetchData("pageBlogPost").then((res: any) => {
-      setAllBlogs(res);
-      setDisplayBlogs(res.splice(0, 6));
-    });
-  }, []);
-
-  const onShowAllClick = () => {
-    setDisplayBlogs(allBlogs);
-  };
+const BlogList = async () => {
+  const displayBlogs: any = await fetchData("pageBlogPost");
 
   return (
     <div>
@@ -31,12 +17,6 @@ const BlogList = () => {
             Create custom landing pages with Rareblocks that converts more
             visitors than any website.
           </p>
-          <div
-            className="flex font-semibold items-center"
-            onClick={onShowAllClick}
-          >
-            <TextHover text="See all articles" className="text-lg" />
-          </div>
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:flex-wrap justify-between">
           {displayBlogs &&

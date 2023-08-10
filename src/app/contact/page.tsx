@@ -10,6 +10,7 @@ import { sendContactForm } from "@/utils/api";
 import { emailRegex } from "@/utils/constants";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
+import "./styles/styles.css";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -29,30 +30,25 @@ const Contact = () => {
               Leave us a message
             </p>
             <div className="flex flex-col w-full h-full space-y-4">
-              <div className="flex w-full space-x-4">
+              <div className="flex max-md:flex-col w-full max-md:space-y-4 lg:space-x-4">
                 <Input
                   label="Name"
                   otherProps={{ minLength: 3 }}
                   value={data.name}
                   onChange={(i: any) => setData({ ...data, name: i })}
                 />
-                {/* <Input
-                  type="number"
-                  label="Phone"
-                  otherProps={{ minLength: 10, maxLength: 10 }}
-                  value={data.phone}
-                  onChange={(i: any) => setData({ ...data, phone: i })}
-                /> */}
-
-                <PhoneInput
-                  country={"in"}
-                  value={data.phone}
-                  onChange={(phone) => {
-                    setData({ ...data, phone });
-                  }}
-                  containerClass="h-[85%]"
-                  inputClass="h-full"
-                />
+                <div className="w-full">
+                  <PhoneInput
+                    country={"in"}
+                    value={data.phone}
+                    onChange={(phone) => {
+                      setData({ ...data, phone });
+                    }}
+                    containerClass="h-[85%]"
+                    inputClass="h-full"
+                    dropdownClass="noScroll"
+                  />
+                </div>
               </div>
               <div className="w-full">
                 <Input

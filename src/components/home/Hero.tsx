@@ -12,13 +12,13 @@ const Hero = () => {
         <div className="grid items-start grid-cols-1 lg:gap-12 max-md:gap-6 lg:grid-cols-2">
           <div className="py-8">
             <p className="text-base font-semibold tracking-wider text-primaryColor uppercase">
-              A social media for learners
+              A COMMUNITY FOR LEARNERS
             </p>
             <h1 className="mt-4 text-2xl font-bold  lg:mt-8 sm:text-4xl xl:text-6xl">
-              Connect & learn from the experts
+              Connect & learn from our wizards
             </h1>
             <p className="mt-4 text-base  lg:mt-8 sm:text-xl">
-              Grow your career fast with right mentor.
+              Build an ultimate study abroad career with IELTS Wizardz
             </p>
 
             <Link
