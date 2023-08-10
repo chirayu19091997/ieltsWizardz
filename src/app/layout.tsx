@@ -35,7 +35,13 @@ export default function RootLayout({
         </Suspense>
         <Toaster
           position="top-right"
-          toastOptions={{ duration: 5000 }}
+          toastOptions={{
+            duration: 4000,
+            style: {
+              backgroundColor: "#e66304",
+              color: "#ffffff",
+            },
+          }}
           reverseOrder={false}
         />
       </body>
