@@ -7,6 +7,11 @@ import {
   BiLogoWhatsapp,
 } from "react-icons/bi";
 
+import { PiExamFill } from "react-icons/pi";
+import { MdOutlineDocumentScanner } from "react-icons/md";
+import { FcServices } from "react-icons/fc";
+import { GiGraduateCap } from "react-icons/gi";
+
 export const Logo = (
   <img
     className="w-auto h-8"
@@ -222,5 +227,30 @@ export const serviceSections = [
         features: ["University Selection", "Application Processing", "Visa"],
       },
     ],
+  },
+];
+
+export const homeServiceSections = [
+  {
+    title: "How can we help you?",
+    subtitle: "Click here to have a look at our services",
+    logo: <FcServices size={48} />,
+  },
+  {
+    title: "Test preparation",
+    subtitle:
+      "Our Professionals can help you with IELTS One Skill,IELTS Complete,TOEFL,PTE,SAT",
+    logo: <PiExamFill size={48} />,
+  },
+  {
+    title: "Document Drafting",
+    subtitle: "We can help you with SOPs,LORs,Admission Essays",
+    logo: <MdOutlineDocumentScanner size={48} />,
+  },
+  {
+    title: "Admission Assistance",
+    subtitle:
+      "We can help you with University Selection,Application Processing,Visa",
+    logo: <GiGraduateCap size={48} />,
   },
 ];

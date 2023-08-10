@@ -2,13 +2,13 @@ import React from "react";
 
 const Steps = () => {
   return (
-    <div className="bg-gray-200 py-16 flex flex-col justify-center space-y-16">
-      <h2 className="w-full text-center text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">
+    <div className="bg-white py-8 sm:py-12 lg:py-16 flex flex-col justify-center space-y-16">
+      <h2 className="w-full text-center text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
         Steps
       </h2>
       <div className="flex ">
         <div className="w-1/3  text-center px-6">
-          <div className="bg-gray-300 border border-black  rounded-lg flex items-center justify-center shadow-xl">
+          <div className="bg-gray-300 rounded-lg flex items-center justify-center shadow-xl">
             <div className="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,14 +38,14 @@ const Steps = () => {
           </svg>
         </div>
         <div className="w-1/3 text-center px-6">
-          <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+          <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200 shadow-xl">
             <div className="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
               <svg
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
               >
                 <path d="M24 22h-24v-20h24v20zm-1-19h-22v18h22v-18zm-4 13v1h-4v-1h4zm-6.002 1h-10.997l-.001-.914c-.004-1.05-.007-2.136 1.711-2.533.789-.182 1.753-.404 1.892-.709.048-.108-.04-.301-.098-.407-1.103-2.036-1.305-3.838-.567-5.078.514-.863 1.448-1.359 2.562-1.359 1.105 0 2.033.488 2.545 1.339.737 1.224.542 3.033-.548 5.095-.057.106-.144.301-.095.41.14.305 1.118.531 1.83.696 1.779.41 1.773 1.503 1.767 2.56l-.001.9zm-9.998-1h8.999c.003-1.014-.055-1.27-.936-1.473-1.171-.27-2.226-.514-2.57-1.267-.174-.381-.134-.816.119-1.294.921-1.739 1.125-3.199.576-4.111-.332-.551-.931-.855-1.688-.855-.764 0-1.369.31-1.703.871-.542.91-.328 2.401.587 4.09.259.476.303.912.13 1.295-.342.757-1.387.997-2.493 1.252-.966.222-1.022.478-1.021 1.492zm18-3v1h-6v-1h6zm0-3v1h-6v-1h6zm0-3v1h-6v-1h6z" />
               </svg>
@@ -69,14 +69,14 @@ const Steps = () => {
           </svg>
         </div>
         <div className="w-1/3 text-center px-6">
-          <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200">
+          <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200 shadow-xl">
             <div className="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
               <svg
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
               >
                 <path d="M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z" />
               </svg>

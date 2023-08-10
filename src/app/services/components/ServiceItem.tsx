@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { AiOutlineCheck } from "react-icons/ai";
 
-const ServiceItem = ({ cardData, activeIndex }: any) => {
+const ServiceItem = ({ cardData }: any) => {
   return (
     <div className="flex flex-col bg-white space-y-4 lg:w-1/3 h-80vh p-4 shadow-xl border rounded-lg">
       <div className="w-full h-36">
