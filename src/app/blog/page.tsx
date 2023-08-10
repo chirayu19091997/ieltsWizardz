@@ -3,13 +3,20 @@ import React, { useEffect, useState } from "react";
 import { BsArrowRightShort } from "react-icons/bs";
 import BlogTile from "./components/blogTile";
 import Link from "next/link";
+import { fetchData } from "@/utils/contentful";
 
-const BlogList = () => {
+const BlogList = async () => {
   const [allBlogs, setAllBlogs] = useState<any>([]);
   const [displayBlogs, setDisplayBlogs] = useState<any>([]);
 
   useEffect(() => {
-    const Data = new Array(12).fill(0);
+    const Data = new Array(12).fill({
+      thumbnailUrl: "/t1.png",
+      tag: "Career",
+      publishedDate: "April 09, 2022",
+      title: "How a visual artist redefines success in graphic design",
+    });
+    // fetchData("pageLanding");
     setAllBlogs([...Data]);
     setDisplayBlogs([...Data.splice(0, 6)]);
   }, []);
@@ -42,7 +49,7 @@ const BlogList = () => {
               href={`/blog/${index}`}
               className="lg:w-[40%] cursor-pointer"
             >
-              <BlogTile />
+              <BlogTile blogData={item} />
             </Link>
           ))}
         </div>

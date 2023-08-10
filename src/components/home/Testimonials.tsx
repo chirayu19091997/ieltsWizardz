@@ -1,7 +1,11 @@
 import React from "react";
-import { testimonialData } from "@/utils/constants";
+import { fetchData } from "@/utils/contentful";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import Image from "next/image";
 
-const Testimonials = () => {
+const Testimonials = async () => {
+  const reviewData = await fetchData("review");
+
   return (
     <section className="py-12 sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -38,7 +42,7 @@ const Testimonials = () => {
             </div>
 
             <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
-              {testimonialData.map((testimonial, tIndex) => (
+              {reviewData.map((testimonial: any, tIndex: number) => (
                 <div
                   className="flex flex-col overflow-hidden shadow-xl"
                   key={`testimonial-${tIndex}`}
@@ -46,7 +50,7 @@ const Testimonials = () => {
                   <div className="flex flex-col justify-between flex-1 p-6 bg-backgroundColor lg:py-8 lg:px-7">
                     <div className="flex-1">
                       <div className="flex items-center">
-                        {Array(5)
+                        {Array(testimonial.fields.rating)
                           .fill(0)
                           .map((item: number, index: number) => (
                             <svg
@@ -63,23 +67,25 @@ const Testimonials = () => {
 
                       <blockquote className="flex-1 mt-8">
                         <p className="text-lg leading-relaxed text-gray-900 font-pj">
-                          “{testimonial.review}”
+                          {documentToReactComponents(
+                            testimonial.fields.content
+                          )}
                         </p>
                       </blockquote>
                     </div>
 
                     <div className="flex items-center mt-8">
-                      <img
+                      <Image
                         className="flex-shrink-0 object-contain rounded-full w-11 h-11"
-                        src={testimonial.imageUrl}
+                        src={`https:${testimonial.fields.author.fields.avatar.fields.file.url}`}
                         alt=""
                       />
                       <div className="ml-4">
                         <p className="text-base font-bold text-gray-900 font-pj">
-                          {testimonial.name}
+                          {testimonial.fields.author.fields.name}
                         </p>
                         <p className="mt-0.5 text-sm font-pj text-gray-600">
-                          {testimonial.pursuing}
+                          {testimonial.fields.author.fields.authorInfo}
                         </p>
                       </div>
                     </div>

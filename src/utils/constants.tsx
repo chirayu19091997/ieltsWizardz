@@ -67,30 +67,6 @@ export const DirectContacts = [
   },
 ];
 
-export const testimonialData = [
-  {
-    name: "Ishita",
-    imageUrl: "/image12.png",
-    pursuing: "MBA in Canada",
-    review: `I really liked the learning techniques and methods. I'm really grateful to the teachers for helping me to understand in the best possible way. Teachers are very friendly, they give proper one on one attention to every student  . Keep growing and shining the same #ieltswizardz ✨`,
-  },
-  {
-    name: "Hitansh Agrawal",
-    imageUrl: "/image26.png",
-    pursuing: "BSc in Singapore",
-    review: `I have enjoyed learning with IELTS Wizardz. I received 7.5 bands in 2 weeks of preparation, this became possible only because of them and their supporting staff.`,
-  },
-  {
-    name: "Jenny Wilson",
-    imageUrl:
-      "https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png",
-    pursuing: "Graphic Designer",
-    review: `I cannot believe that I have got a brand new landing
-    page after getting Omega. It was super easy to edit and
-    publish.`,
-  },
-];
-
 export const serviceSections = [
   {
     tab: "IELTS One Skill",

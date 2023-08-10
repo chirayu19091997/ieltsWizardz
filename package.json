@@ -1,6 +1,6 @@
 {
   "name": "ielts-wizardz",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,11 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.17.0",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
+    "contentful": "^10.3.5",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
-    "firebase": "^10.0.0",
     "next": "^13.4.9",
     "postcss": "8.4.24",
     "react": "18.2.0",

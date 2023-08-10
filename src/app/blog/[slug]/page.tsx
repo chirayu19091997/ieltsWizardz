@@ -4,8 +4,12 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link";
 
 const Blog = () => {
-  const Data = new Array(3).fill(0);
-  //   useEffect(() => {}, []);
+  const Data = new Array(3).fill({
+    thumbnailUrl: "/t1.png",
+    tag: "Career",
+    publishedDate: "April 09, 2022",
+    title: "How a visual artist redefines success in graphic design",
+  });
   return (
     <div className="flex lg:flex-row flex-col w-full h-full py-8 px-8 lg:space-x-8 max-md:space-y-8 max-md:mb-8">
       <div className="flex flex-col w-full h-[80vh] max-md:min-h-full bg-slate-100 rounded-lg p-4 space-y-4 overflow-auto noScroll">
@@ -39,7 +43,7 @@ const Blog = () => {
               href={`/blog/${index}`}
               className="cursor-pointer"
             >
-              <BlogTile />
+              <BlogTile blogData={item} />
             </Link>
           ))}
         </div>
