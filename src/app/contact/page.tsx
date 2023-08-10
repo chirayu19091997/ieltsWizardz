@@ -9,7 +9,7 @@ import TextAreaInput from "@/components/TextAreaInput";
 
 const Contact = () => {
   return (
-    <section className="bg-backgroundColor bg-opacity-30 p-6 max-md:p-4">
+    <section className="p-6 max-md:p-4">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
@@ -22,7 +22,7 @@ const Contact = () => {
             />
           </div>
           <div className="flex flex-col items-center justify-between w-full h-full p-4 px-8 shadow-xl border rounded-lg">
-            <p className="text-base font-semibold tracking-wider text-secondaryColor uppercase my-4">
+            <p className="text-base font-semibold tracking-wider text-tertiaryColor uppercase my-4">
               Leave us a message
             </p>
             <div className="w-full space-y-4">
@@ -66,7 +66,7 @@ const Contact = () => {
               <Link
                 href="/contact"
                 title=""
-                className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor rounded-full hover:bg-secondaryColor focus:bg-secondaryColor"
+                className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-tertiaryColor text-secondaryTextColor rounded-full hover:bg-quadraColor focus:bg-quadraColor"
                 role="button"
               >
                 Submit

@@ -9,16 +9,16 @@ import curvy from "@/assets/curves/wavesOpacity.svg";
 
 const Hero = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 gradientss bg-opacity-30 relative">
+    <section className="gradientss bg-opacity-30 relative">
       <Image
         src={curvy}
         className="absolute h-36 rotate-180 opacity-50 bottom-0 w-full"
         alt="curvy"
       />
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div>
-            <p className="text-base font-semibold tracking-wider text-secondaryColor uppercase">
+        <div className="grid items-start grid-cols-1 lg:gap-12 max-md:gap-6 lg:grid-cols-2">
+          <div className="py-12">
+            <p className="text-base font-semibold tracking-wider text-quadraColor uppercase">
               A social media for learners
             </p>
             <h1 className="mt-4 text-2xl font-bold  lg:mt-8 sm:text-4xl xl:text-6xl">
@@ -31,7 +31,7 @@ const Hero = () => {
             <Link
               href="/contact"
               title=""
-              className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:bg-secondaryColor focus:bg-secondaryColor"
+              className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-tertiaryColor rounded-full lg:mt-16 hover:bg-quadraColor focus:bg-quadraColor"
               role="button"
             >
               Book a Demo
@@ -45,12 +45,12 @@ const Hero = () => {
                 className=" transition-all duration-200 px-2 text-base relative one"
               >
                 <span>Get Free 1 on 1 Consultation</span>
-                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-secondaryColor"></span>
+                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-tertiaryColor"></span>
               </Link>
             </p>
           </div>
 
-          <div>
+          <div className="h-[80%]">
             {/* <img
               className="w-full"
               src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"

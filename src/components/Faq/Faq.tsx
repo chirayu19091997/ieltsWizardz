@@ -8,12 +8,12 @@ const Faq = () => {
   const onFAQClick = () => {};
   return (
     <section className="py-12 sm:py-16 lg:py-24 gradientss relative">
-      {/* <Image
+      <Image
         src={curvy}
-        className="absolute h-36 rotate-180 opacity-50 bottom-0 w-full"
+        className="absolute h-20 rotate-180 opacity-50 bottom-0 w-full"
         alt="curvy"
       />
-      <Image
+      {/* <Image
         src={curvy}
         className="absolute h-36  opacity-50 top-0 w-full"
         alt="curvy"
@@ -37,7 +37,7 @@ const Faq = () => {
                 <a
                   href="#"
                   title=""
-                  className="text-blue-600 transition-all duration-200 hover:underline"
+                  className="text-tertiaryColor transition-all duration-200 hover:underline"
                 >
                   aliqua dolor
                 </a>
@@ -53,7 +53,7 @@ const Faq = () => {
                 <a
                   href="#"
                   title=""
-                  className="text-blue-600 transition-all duration-200 hover:underline"
+                  className="text-tertiaryColor transition-all duration-200 hover:underline"
                 >
                   aliqua dolor
                 </a>
@@ -67,7 +67,7 @@ const Faq = () => {
           Didn’t find the answer you are looking for?
           <Link
             href="/contact"
-            className="ml-2 font-medium text-blue-600 transition-all cursor-pointer duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline"
+            className="ml-2 font-medium text-tertiaryColor transition-all cursor-pointer duration-200 hover:text-quadraColor focus:text-quadraColor hover:underline"
           >
             Contact our support
           </Link>

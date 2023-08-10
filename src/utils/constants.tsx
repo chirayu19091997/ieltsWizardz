@@ -10,9 +10,9 @@ import {
 export const HeaderOptions = [
   { title: "About", route: "/about" },
   { title: "Services", route: "/services" },
-  // { title: "Pricing", route: "/pricing" },
   { title: "Blog", route: "/blog" },
   { title: "Contact Us", route: "/contact" },
+  // { title: "Pricing", route: "/pricing" },
   //   Features
   //   Solutions
   //   Resources

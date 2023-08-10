@@ -11,15 +11,18 @@ const Highlighter = () => {
       <div className="flex justify-between w-full bg-primaryColor">
         <div></div>
         <ul className="flex space-x-2 p-2">
-          {DirectContacts.map((item) => (
+          {DirectContacts.slice(0, 1).map((item) => (
             <li key={`direct-${item.title}`}>
               <Link
                 href={item.route}
                 target="_blank"
                 title={item.title}
-                className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full hover:bg-quadraColor focus:bg-quadraColor"
               >
-                {item.logo}
+                <span className="flex items-center justify-center h-7 px-2 space-x-2">
+                  {item.logo}
+                  <p>9310888164</p>
+                </span>
               </Link>
             </li>
           ))}
@@ -29,7 +32,7 @@ const Highlighter = () => {
                 href={item.route}
                 target="_blank"
                 title={item.title}
-                className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+                className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-quadraColor focus:bg-quadraColor"
               >
                 {item.logo}
               </Link>

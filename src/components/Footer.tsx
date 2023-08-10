@@ -26,7 +26,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-quadraColor focus:bg-quadraColor"
                   >
                     {item.logo}
                   </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
                     href={item.route}
                     target="_blank"
                     title={item.title}
-                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-secondaryColor focus:bg-secondaryColor"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-quadraColor focus:bg-quadraColor"
                   >
                     {item.logo}
                   </Link>
@@ -58,7 +58,7 @@ const Footer = () => {
                   <Link
                     href={item.route}
                     title=""
-                    className="flex text-base  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    className="flex text-base  transition-all duration-200 hover:text-tertiaryColor focus:text-tertiaryColor"
                   >
                     {item.title}
                   </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
                   <Link
                     href={item.route}
                     title=""
-                    className="flex text-base  transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
+                    className="flex text-base  transition-all duration-200 hover:text-tertiaryColor focus:text-tertiaryColor"
                   >
                     {item.title}
                   </Link>
@@ -89,7 +89,8 @@ const Footer = () => {
 
           <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
             <p className="text-sm font-semibold tracking-widest text-gray-500 uppercase">
-              Subscribe to newsletter
+              Subscribe
+              {/* to newsletter */}
             </p>
 
             <form action="#" method="POST" className="mt-6">
@@ -108,7 +109,7 @@ const Footer = () => {
 
               <button
                 type="submit"
-                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-primaryColor rounded-md hover:bg-secondaryColor focus:bg-secondaryColor"
+                className="inline-flex items-center justify-center px-6 py-4 mt-3 font-semibold text-white transition-all duration-200 bg-tertiaryColor rounded-md hover:bg-quadraColor focus:bg-quadraColor"
               >
                 Subscribe
               </button>

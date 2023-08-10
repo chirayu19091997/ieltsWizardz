@@ -11,7 +11,7 @@ interface FaqItemProps {
 const FaqItem = ({ title, description }: FaqItemProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div className="w-full transition-all duration-200 bg-backgroundColor border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+    <div className="w-full transition-all duration-200 bg-backgroundColor rounded-lg border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
       <button
         type="button"
         className="flex items-center justify-between w-full px-4 py-5 sm:p-6"

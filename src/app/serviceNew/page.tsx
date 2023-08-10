@@ -1,7 +1,8 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import ServiceItem from "./components/ServiceItem";
 
-const Services = () => {
+const ServiceNew = () => {
   const serviceSections = [
     {
       tab: "IELTS One Skill",
@@ -152,23 +153,42 @@ const Services = () => {
       ],
     },
   ];
-
-  const onContactClick = (service: object) => {};
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeCardsData, setActiveCardsData] = useState(
+    serviceSections[0].data
+  );
 
   return (
-    <div className="flex flex-col space-y-4 p-6">
-      {serviceSections.map((item: any, index: number) => (
-        <>
-          <h1 className="font-bold text-3xl text-center py-6">{item.title}</h1>
-          <ServiceItem
-            services={item.data}
-            isAlternate={index % 2 === 0}
-            key={`serviceSection-${index}`}
-          />
-        </>
-      ))}
+    <div className="flex flex-col items-center space-y-8 p-8">
+      <h1 className="text-4xl">Our Services</h1>
+      <div className="flex flex-col w-full h-full space-y-4 px-8">
+        <div className="flex flex-wrap justify-center items-center w-full">
+          {serviceSections.map((item: any, index: number) => (
+            <p
+              className={`p-2 m-1 px-4 rounded-full cursor-pointer ${
+                activeIndex === index ? "bg-tertiaryColor" : "bg-slate-100"
+              } ${
+                activeIndex === index
+                  ? "text-secondaryTextColor"
+                  : "text-primaryTextColor"
+              }`}
+              onClick={() => {
+                setActiveIndex(index);
+                setActiveCardsData(item.data);
+              }}
+            >
+              {item.tab}
+            </p>
+          ))}
+        </div>
+        <div className="flex lg:flex-row max-md:flex-col flex-wrap h-full w-full lg:space-x-4 max-md:space-y-4 p-4">
+          {activeCardsData.map((cardData, cardIndex) => (
+            <ServiceItem cardData={cardData} key={`card-${cardIndex}`} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Services;
+export default ServiceNew;
