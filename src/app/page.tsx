@@ -4,7 +4,7 @@ import Testimonials from "@/components/home/Testimonials";
 import LogoCloud from "@/components/home/LogoCloud";
 import Hero from "@/components/home/Hero";
 // import Steps from "@/components/home/Steps";
-// import ServicesHome from "@/components/home/ServicesHome";
+import ServicesHome from "@/components/home/ServicesHome";
 // import Universities from "@/components/home/Universities";
 import NewServicesHome from "@/components/home/newServicesHome";
 
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="bg-backgroundColor">
       <Hero />
-      {/* <ServicesHome /> */}
+      <ServicesHome />
       <NewServicesHome />
       {/* <Steps /> */}
       <Stats />

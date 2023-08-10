@@ -1,24 +1,8 @@
 import React from "react";
 import StatsCountItem from "./StatsCountItem";
-const Stats = () => {
-  const statsData = [
-    {
-      title: "Years of experience",
-      subTitle: "Creating the successful path",
-      stats: 20,
-    },
-    {
-      title: "Students trained",
-      subTitle: "In last 6 years",
-      stats: 5000,
-    },
-    {
-      title: "Universities",
-      subTitle: "Working for your success",
-      stats: 600,
-    },
-  ];
+import { statsData } from "@/utils/constants";
 
+const Stats = () => {
   return (
     <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">

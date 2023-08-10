@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { TbMessage2Up, TbMessage2X } from "react-icons/tb";
 import Message from "./Message";
 import { AiOutlineSend } from "react-icons/ai";
+import { sendContactForm } from "@/utils/api";
 
 const Chatbot = () => {
   const [isChatExpanded, setIsChatExpanded] = useState(false);
@@ -52,6 +53,12 @@ const Chatbot = () => {
         };
 
         setChat([...chat, payload, systemMessage]);
+        sendContactForm({
+          name: userDataExtracted.name,
+          email: userDataExtracted.email,
+          phone: userDataExtracted.phone,
+          message: userDataExtracted.course,
+        });
         setEnableInput(!enableInput);
         setTimeout(() => setIsChatExpanded(!isChatExpanded), 2000);
         return;
@@ -106,7 +113,13 @@ const Chatbot = () => {
             <Message chatData={item} key={`message-${index}`} />
           ))}
           {enableInput && (
-            <div className="flex mt-2 items-center border rounded-lg p-6 pr-2 space-x-4 w-full h-[10%] bg-backgroundColor">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                sendMessage();
+              }}
+              className="flex mt-2 items-center border rounded-lg p-6 pr-2 space-x-4 w-full h-[10%] bg-backgroundColor"
+            >
               <input
                 type="text"
                 maxLength={30}
@@ -116,12 +129,12 @@ const Chatbot = () => {
                 className="h-8 w-full border-none bg-transparent placeholder-gray-300 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
               />
               <button
+                type="submit"
                 className="bg-gray-200 rounded-full h-8 w-8 text-center flex items-center justify-center p-2"
-                onClick={sendMessage}
               >
                 <AiOutlineSend size={24} color="black" />
               </button>
-            </div>
+            </form>
           )}
         </div>
       )}

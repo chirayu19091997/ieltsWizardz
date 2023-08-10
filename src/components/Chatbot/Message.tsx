@@ -4,14 +4,14 @@ const Message = ({ chatData }: any) => {
   return chatData.from === "system" ? (
     <div className="chat chat-start">
       <div className="chat-image avatar">
-        <div className="w-10 rounded-full">
-          <img src="/martha.png" />
+        <div className="w-10 bg-white rounded-full">
+          <img src="/logo.png" />
         </div>
       </div>
-      <div className="chat-header">
-        Martha
-        {/* <time className="text-xs opacity-50">12:45</time> */}
-      </div>
+      {/* <div className="chat-header">
+        IELTS Wizardz
+        <time className="text-xs opacity-50">12:45</time>
+      </div> */}
       <div className="chat-bubble">{chatData.message}</div>
     </div>
   ) : (

@@ -6,6 +6,7 @@ import Input from "@/components/Input";
 import TextAreaInput from "@/components/TextAreaInput";
 import { useSearchParams } from "next/navigation";
 import Animator from "@/components/Animator";
+import { sendContactForm } from "@/utils/api";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -62,7 +63,7 @@ const Contact = () => {
                 We will get back to you soon.
               </p>
               <button
-                onClick={() => {}}
+                onClick={() => sendContactForm(data)}
                 className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
               >
                 Submit

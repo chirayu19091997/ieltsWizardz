@@ -16,6 +16,11 @@ export const Logo = (
   <img className="w-auto object-cover h-9" src="/titledlogo.png" alt="" />
 );
 
+export const clientData = {
+  email: "ieltswizardz@gmail.com",
+  phone: "+919310888164",
+};
+
 export const HeaderOptions = [
   { title: "About", route: "/about" },
   { title: "Services", route: "/services" },
@@ -45,7 +50,7 @@ export const Socials = [
   },
   {
     title: "Whatsapp",
-    route: "https://wa.me/+919310888164",
+    route: `https://wa.me/${clientData.phone}`,
     logo: <BiLogoWhatsapp />,
   },
 ];
@@ -53,12 +58,12 @@ export const Socials = [
 export const DirectContacts = [
   {
     title: "Phone",
-    route: "tel:9310888164",
+    route: `tel:${clientData.phone}`,
     logo: <BiSolidPhoneCall />,
   },
   {
     title: "Email",
-    route: "mailto:ieltswizardz@gmail.com",
+    route: `mailto:${clientData.email}`,
     logo: <BiMailSend />,
   },
 ];
@@ -226,5 +231,27 @@ export const homeServiceSections = [
     subtitle:
       "We can help you with University Selection,Application Processing,Visa",
     logo: <GiGraduateCap size={48} />,
+  },
+];
+
+{
+  /* <SVGFlag country='tr' flagWidth='2560' /> */
+}
+
+export const statsData = [
+  {
+    title: "Years of experience",
+    subTitle: "Creating the successful path",
+    stats: 20,
+  },
+  {
+    title: "Students trained",
+    subTitle: "In last 6 years",
+    stats: 5000,
+  },
+  {
+    title: "Universities",
+    subTitle: "Working for your success",
+    stats: 700,
   },
 ];
