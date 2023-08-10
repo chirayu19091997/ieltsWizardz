@@ -1,6 +1,9 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
+import * as HeroAnimation from "../assets/animations/heroAnimation.json";
+import Lottie from "react-lottie";
 
 const Hero = () => {
   return (
@@ -27,13 +30,33 @@ const Hero = () => {
               Book a Demo
               <FiArrowRightCircle size={18} className="ml-8" />
             </Link>
+            <p className="mt-5 text-gray-600">
+              Don't know what to choose?
+              <Link
+                href="/contact"
+                title=""
+                className="text-black transition-all duration-200 hover:underline px-2"
+              >
+                Get Free 1 on 1 Consultation
+              </Link>
+            </p>
           </div>
 
           <div>
-            <img
+            {/* <img
               className="w-full"
               src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
               alt=""
+            /> */}
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: HeroAnimation,
+                // rendererSettings: {
+                // 	preserveAspectRatio: "xMidYMid slice",
+                // },
+              }}
             />
           </div>
         </div>

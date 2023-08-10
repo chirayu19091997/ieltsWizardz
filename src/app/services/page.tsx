@@ -4,6 +4,7 @@ import ServiceItem from "./components/ServiceItem";
 const Services = () => {
   const serviceSections = [
     {
+      title: "IELTS One Skill Preparation",
       data: [
         {
           title: "IELTS One Skill Self Paced",
@@ -34,6 +35,7 @@ const Services = () => {
       ],
     },
     {
+      title: "IELTS Complete Preparation",
       data: [
         {
           title: "IELTS Plus Self Paced",
@@ -55,6 +57,7 @@ const Services = () => {
       ],
     },
     {
+      title: "TOEFL Complete Preparation",
       data: [
         {
           title: "TOEFL Self Paced",
@@ -76,6 +79,7 @@ const Services = () => {
       ],
     },
     {
+      title: "PTE Complete Preparation",
       data: [
         {
           title: "PTE Self Paced",
@@ -97,6 +101,7 @@ const Services = () => {
       ],
     },
     {
+      title: "SAT Complete Preparation",
       data: [
         {
           title: "SAT Self Paced",
@@ -118,6 +123,7 @@ const Services = () => {
       ],
     },
     {
+      title: "Document Drafting",
       data: [
         {
           title: "Document Drafting",
@@ -125,6 +131,11 @@ const Services = () => {
           keyFeatures: "Key Features",
           features: ["SOPs", "LORs", "Admission Essays"],
         },
+      ],
+    },
+    {
+      title: "Admission Assistance",
+      data: [
         {
           title: "Admission Assistance",
           subtitle: "For those who need assistance with admission",
@@ -139,13 +150,15 @@ const Services = () => {
 
   return (
     <div className="flex flex-col space-y-4 p-6">
-      <h1 className="font-bold text-3xl text-center">Services</h1>
       {serviceSections.map((item: any, index: number) => (
-        <ServiceItem
-          services={item.data}
-          isAlternate={index % 2 === 0}
-          key={`serviceSection-${index}`}
-        />
+        <>
+          <h1 className="font-bold text-3xl text-center py-6">{item.title}</h1>
+          <ServiceItem
+            services={item.data}
+            isAlternate={index % 2 === 0}
+            key={`serviceSection-${index}`}
+          />
+        </>
       ))}
     </div>
   );
