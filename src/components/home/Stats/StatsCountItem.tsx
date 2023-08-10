@@ -5,8 +5,7 @@ import CountUp from "react-countup";
 const StatsCountItem = ({ enableScrollSpy, start, end, duration }: any) => {
   return (
     <CountUp
-      enableScrollSpy={enableScrollSpy}
-      start={start || 0.5}
+      enableScrollSpy={enableScrollSpy || false}
       end={end}
       duration={duration || 3}
     />

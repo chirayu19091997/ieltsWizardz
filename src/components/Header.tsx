@@ -13,7 +13,6 @@ const Header = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 lg:h-20">
           <Link href="/">{Logo}</Link>
-
           <button
             type="button"
             className="inline-flex p-2  transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
@@ -75,24 +74,6 @@ const Header = () => {
               ))}
             </ul>
           </div>
-          {/* <div className="mt-auto">
-            {!authState?.isLogin ? (
-              <div className="pt-6">
-                <Link
-                  className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold  bg-gray-50 hover:bg-gray-100 rounded-xl"
-                  href="/login"
-                >
-                  Sign in
-                </Link>
-                <Link
-                  className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-primaryColor hover:bg-indigo-700  rounded-xl"
-                  href="/signup"
-                >
-                  Sign Up
-                </Link>
-              </div>
-            ) : null}
-          </div> */}
         </nav>
       </div>
     </nav>

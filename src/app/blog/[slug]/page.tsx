@@ -8,9 +8,13 @@ import TextHover from "@/components/TextHover";
 export const revalidate = 604800;
 
 const Blog = async ({ params }: any) => {
-  const blogDetails: any = await fetchData("pageBlogPost", {
-    "fields.slug": params.slug,
-  });
+  const blogDetails: any = await fetchData(
+    "pageBlogPost",
+    {
+      "fields.slug": params.slug,
+    },
+    "blog"
+  );
 
   return (
     <div className="flex lg:flex-row flex-col w-full h-full py-8 px-8 lg:space-x-8 max-md:space-y-8 max-md:mb-8">

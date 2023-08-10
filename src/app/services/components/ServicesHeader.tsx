@@ -16,17 +16,17 @@ const ServicesHeader = ({
           item.subTabs.length <= 1 ? (
             <li
               key={`serviceheader-n-${index}`}
-              className={
+              className={`px-4 items-center flex justify-center hover:cursor-pointer ${
                 activeIndex === index
                   ? "bg-primaryColor rounded-md text-white"
                   : ""
-              }
+              }`}
               onClick={() => {
                 setActiveIndex(index);
                 setActiveSubTab(0);
               }}
             >
-              <a>{item.tab}</a>
+              {item.tab}
             </li>
           ) : (
             <li
@@ -51,13 +51,13 @@ const ServicesHeader = ({
                       setActiveSubTab(subIndex);
                       setIsDropdownOpen(!isDropdownOpen);
                     }}
-                    className={
+                    className={`hover:cursor-pointer px-2 ${
                       activeIndex === index && activeSubTab === subIndex
                         ? "border border-primaryColor rounded-md text-black"
                         : "text-black"
-                    }
+                    }`}
                   >
-                    <a>{subItem.tab}</a>
+                    {subItem.tab}
                   </li>
                 ))}
               </ul>

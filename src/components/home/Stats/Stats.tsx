@@ -22,7 +22,6 @@ const Stats = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
                   <StatsCountItem
                     enableScrollSpy={true}
-                    start={0.5}
                     end={statItem.stats}
                     duration={2}
                   />

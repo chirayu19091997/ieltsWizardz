@@ -46,7 +46,7 @@ const Testimonials = async () => {
             <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
               {reviewData.map((testimonial: any, tIndex: number) => (
                 <div
-                  className="flex flex-col overflow-hidden shadow-xl"
+                  className="flex flex-col overflow-hidden shadow-xl hover:scale-105 ease-in-out duration-500"
                   key={`testimonial-${tIndex}`}
                 >
                   <div className="flex flex-col justify-between flex-1 p-6 bg-backgroundColor lg:py-8 lg:px-7">
@@ -68,11 +68,11 @@ const Testimonials = async () => {
                       </div>
 
                       <blockquote className="flex-1 mt-8">
-                        <p className="text-lg leading-relaxed text-gray-900 font-pj">
+                        <div className="text-lg leading-relaxed text-gray-900 font-pj">
                           {documentToReactComponents(
                             testimonial.fields.content
                           )}
-                        </p>
+                        </div>
                       </blockquote>
                     </div>
 

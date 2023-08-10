@@ -5,10 +5,19 @@ const client = createClient({
   accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_KEY || "",
 });
 
-export const fetchData = async (type: string, otherParams?: object) => {
+export const fetchData = async (
+  type: string,
+  otherParams?: object,
+  module?: string
+) => {
   const res = await client.getEntries({ content_type: type, ...otherParams });
-  if (otherParams) {
+  if (module === "blog") {
     return res.items[0];
   }
   return res.items;
+};
+
+export const getTags = async () => {
+  const tags = await client.getTags();
+  return tags.items;
 };
