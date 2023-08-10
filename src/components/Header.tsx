@@ -1,0 +1,114 @@
+"use client";
+import { HeaderOptions } from "@/utils/constants";
+import Link from "next/link";
+import React, { useState } from "react";
+import { RxCross1 } from "react-icons/rx";
+import { HiMenu } from "react-icons/hi";
+
+const Header = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  return (
+    <header className="bg-[#FCF8F1] bg-opacity-30">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex-shrink-0">
+            <Link href="/" title="" className="flex">
+              <img
+                className="w-auto h-8"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                alt=""
+              />
+            </Link>
+          </div>
+
+          <button
+            type="button"
+            className="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+            onClick={() => setIsMenuVisible(!isMenuVisible)}
+          >
+            <HiMenu size={24} />
+          </button>
+
+          <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+            {HeaderOptions.map((item, index) => (
+              <Link
+                href={item.route}
+                title={item.title}
+                className="text-base text-black transition-all duration-200 hover:text-opacity-80"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+
+          {/* <a
+            href="#"
+            title=""
+            className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-yellow-300 hover:text-black focus:text-black focus:bg-yellow-300 font-semibold text-white bg-black rounded-full"
+            role="button"
+          >
+            Join Now
+          </a> */}
+        </div>
+      </div>
+      <div
+        className="navbar-menu relative z-50"
+        style={{ display: isMenuVisible ? "" : "none" }}
+      >
+        <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav className="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+          <div className="flex items-center mb-8">
+            <Link className="mr-auto text-3xl font-bold leading-none" href="/">
+              <img
+                className="w-auto h-8"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
+                alt=""
+              />
+            </Link>
+            <button
+              className="navbar-close"
+              onClick={() => setIsMenuVisible(false)}
+            >
+              <RxCross1 size={24} />
+            </button>
+          </div>
+          <div>
+            <ul>
+              {HeaderOptions.map((item) => (
+                <li className="mb-1" key={item.title}>
+                  <Link
+                    className="block p-4 text-sm font-semibold text-gray-400 hover:bg-indigo-50 hover:text-primaryColor rounded"
+                    href={item.route}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* <div className="mt-auto">
+            {!authState?.isLogin ? (
+              <div className="pt-6">
+                <Link
+                  className="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold  bg-gray-50 hover:bg-gray-100 rounded-xl"
+                  href="/login"
+                >
+                  Sign in
+                </Link>
+                <Link
+                  className="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-primaryColor hover:bg-indigo-700  rounded-xl"
+                  href="/signup"
+                >
+                  Sign Up
+                </Link>
+              </div>
+            ) : null}
+          </div> */}
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
