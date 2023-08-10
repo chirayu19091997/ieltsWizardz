@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 
 const Steps = () => {
   return (
@@ -6,7 +7,7 @@ const Steps = () => {
       <h2 className="w-full text-center text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">
         Steps
       </h2>
-      <div className="flex ">
+      <div className="flex max-md:flex-col items-center justify-center max-md:space-y-4">
         <div className="w-1/3  text-center px-6">
           <div className="bg-gray-300 rounded-lg flex items-center justify-center shadow-xl">
             <div className="w-1/3 bg-transparent h-20 flex items-center justify-center icon-step">
@@ -28,14 +29,8 @@ const Steps = () => {
           </div>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z" />
-          </svg>
+          <FaArrowRight className="max-md:hidden" size={26} />
+          <FaArrowDown className="lg:hidden" size={26} />
         </div>
         <div className="w-1/3 text-center px-6">
           <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200 shadow-xl">
@@ -59,14 +54,8 @@ const Steps = () => {
           </div>
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M14 2h-7.229l7.014 7h-13.785v6h13.785l-7.014 7h7.229l10-10z" />
-          </svg>
+          <FaArrowRight className="max-md:hidden" size={26} />
+          <FaArrowDown className="lg:hidden" size={26} />
         </div>
         <div className="w-1/3 text-center px-6">
           <div className="bg-gray-300 rounded-lg flex items-center justify-center border border-gray-200 shadow-xl">

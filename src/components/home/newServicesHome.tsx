@@ -9,7 +9,7 @@ const NewServicesHome = () => {
     <section className="py-12 bg-gray-50 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-          <div className="h-[80vh]">
+          <div className="h-[80vh] max-md:hidden">
             <Lottie
               options={{
                 loop: true,
