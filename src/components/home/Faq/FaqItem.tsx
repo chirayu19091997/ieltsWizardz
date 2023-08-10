@@ -26,7 +26,7 @@ const FaqItem = ({ title, description }: FaqItemProps) => {
       </button>
 
       {isExpanded && (
-        <div className="animate__animated animate__fadeInDown px-4 pb-5 sm:px-6 sm:pb-6">
+        <div className="animate__animated animate__fadeInDown animate__faster px-4 pb-5 sm:px-6 sm:pb-6">
           {description}
         </div>
       )}

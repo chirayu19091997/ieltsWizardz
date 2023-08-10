@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useState } from "react";
 import { FiArrowRightCircle } from "react-icons/fi";
 import contactAnimation from "../../assets/animations/contact.json";

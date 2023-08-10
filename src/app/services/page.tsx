@@ -4,6 +4,7 @@ import ServiceItem from "./components/ServiceItem";
 import { serviceSections } from "@/utils/constants";
 // @ts-ignore
 import { Slide } from "react-reveal";
+
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeCardsData, setActiveCardsData] = useState(

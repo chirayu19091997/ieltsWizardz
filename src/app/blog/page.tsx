@@ -7,20 +7,19 @@ import { fetchData } from "@/utils/contentful";
 
 export const revalidate = 604800;
 
-const BlogList = async () => {
+const BlogList = () => {
   const [allBlogs, setAllBlogs] = useState<any>([]);
   const [displayBlogs, setDisplayBlogs] = useState<any>([]);
 
   useEffect(() => {
-    const Data = new Array(12).fill({
-      thumbnailUrl: "/t1.png",
-      tag: "Career",
-      publishedDate: "April 09, 2022",
-      title: "How a visual artist redefines success in graphic design",
+    fetchData("pageBlogPost").then((res: any) => {
+      setAllBlogs(res);
+      if (res.length > 6) {
+        setDisplayBlogs(res.splice(0, 6));
+      } else {
+        setDisplayBlogs(res);
+      }
     });
-    // fetchData("pageLanding");
-    setAllBlogs([...Data]);
-    setDisplayBlogs([...Data.splice(0, 6)]);
   }, []);
 
   const onShowAllClick = () => {
@@ -45,15 +44,16 @@ const BlogList = async () => {
           </div>
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:flex-wrap justify-between">
-          {displayBlogs.map((item: any, index: number) => (
-            <Link
-              key={`dblogs-${index}`}
-              href={`/blog/${index}`}
-              className="lg:w-[40%] cursor-pointer"
-            >
-              <BlogTile blogData={item} />
-            </Link>
-          ))}
+          {displayBlogs &&
+            displayBlogs.map((item: any) => (
+              <Link
+                key={item.fields.slug}
+                href={`/blog/${item.fields.slug}`}
+                className="lg:w-[40%] cursor-pointer"
+              >
+                <BlogTile blogData={item} />
+              </Link>
+            ))}
         </div>
       </div>
     </div>

@@ -1,35 +1,37 @@
+import moment from "moment";
 import Image from "next/image";
 import React from "react";
 
 interface BlogTileProps {
-  blogData: blogDataProps;
-}
-
-interface blogDataProps {
-  thumbnailUrl: string;
-  tag: string;
-  publishedDate: string;
-  title: string;
+  blogData: {
+    fields: {
+      thumbnail: any;
+      category: string;
+      publishedDate: string;
+      title: string;
+    };
+  };
 }
 
 const BlogTile = ({ blogData }: BlogTileProps) => {
+  const { thumbnail, title, publishedDate, category } = blogData.fields;
   return (
     <div className="flex space-x-4 py-4">
       <Image
-        src={blogData.thumbnailUrl}
+        src={`https:${thumbnail.fields.file.url}`}
         alt="Blog Thumbnail"
-        className="rounded-2xl border-2"
-        width={100}
-        height={100}
+        className="rounded-2xl w-[100px] h-[100px] object-cover border-2"
+        width={thumbnail.fields.file.details.image.width}
+        height={thumbnail.fields.file.details.image.height}
         priority
       />
       <div>
         <div className="flex items-center space-x-2">
-          <p>{blogData.tag}</p>
+          <p>{category}</p>
           <div className="h-1 w-1 rounded-full bg-black" />
-          <p>{blogData.publishedDate}</p>
+          <p>{moment(publishedDate).format("MMM DD, YYYY")}</p>
         </div>
-        <h1 className="font-bold text-md">{blogData.title}</h1>
+        <h1 className="font-bold text-md">{title}</h1>
       </div>
     </div>
   );

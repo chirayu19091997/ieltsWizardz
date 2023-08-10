@@ -7,5 +7,8 @@ const client = createClient({
 
 export const fetchData = async (type: string, otherParams?: object) => {
   const res = await client.getEntries({ content_type: type, ...otherParams });
+  if (otherParams) {
+    return res.items[0];
+  }
   return res.items;
 };

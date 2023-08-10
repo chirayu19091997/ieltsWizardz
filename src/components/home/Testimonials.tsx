@@ -6,7 +6,7 @@ import Image from "next/image";
 export const revalidate = 604800;
 
 const Testimonials = async () => {
-  const reviewData = await fetchData("review");
+  const reviewData: any = await fetchData("review");
 
   return (
     <section className="py-12 sm:py-16 lg:py-20">
