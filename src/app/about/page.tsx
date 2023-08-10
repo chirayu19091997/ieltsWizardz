@@ -17,11 +17,11 @@ const About = () => {
                 in comprehending prominent English language proficiency exams
                 like IELTS, PTE, TOEFL, and more. Embark on a transformative
                 journey that will make your dream of studying in your desired
-                overseas university a reality. Regardless of whether you're a
-                novice or someone seeking to improve their scores, we provide an
-                extensive array of resources and support to aid you in attaining
-                the target score on your chosen exam. Join us as we embark
-                together on the path to success, and together, we shall
+                overseas university a reality. Regardless of whether you&apos;re
+                a novice or someone seeking to improve their scores, we provide
+                an extensive array of resources and support to aid you in
+                attaining the target score on your chosen exam. Join us as we
+                embark together on the path to success, and together, we shall
                 accomplish your aspirations.
               </p>
               <h1 className="flex text-3xl text-primaryColor">Who we are</h1>
