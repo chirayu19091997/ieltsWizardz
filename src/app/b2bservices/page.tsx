@@ -2,6 +2,27 @@ import Animator from "@/components/Animator";
 import React from "react";
 import forBusinessAnimation from "@/assets/animations/fb.json";
 import "./b2bStyles.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | IELTS Widardz",
+    default: "IELTS Widardz",
+  },
+  keywords: [
+    "overseas admission consultancies",
+    "publishing houses",
+    "international language proficiency and standardized tests",
+    "test-prep",
+    "study abroad",
+    "study abroad consultants",
+    "college essays",
+    "admission essays",
+    "SOPs",
+    "Personal Statements",
+    "LORs",
+  ],
+};
 
 const B2BServices = () => {
   return (

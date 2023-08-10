@@ -5,7 +5,7 @@ import Link from "next/link";
 import { fetchData } from "../../utils/contentful";
 import FilterDropdown from "./components/filterDropdown";
 
-export const revalidate = 604800;
+export const revalidate = 1;
 
 const BlogList = async () => {
   const [activeFilter, setActiveFilter] = useState("");

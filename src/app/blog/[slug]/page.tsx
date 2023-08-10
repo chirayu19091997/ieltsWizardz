@@ -5,7 +5,7 @@ import { fetchData } from "@/utils/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import TextHover from "@/components/TextHover";
 
-export const revalidate = 604800;
+export const revalidate = 1;
 
 const Blog = async ({ params }: any) => {
   const blogDetails: any = await fetchData(

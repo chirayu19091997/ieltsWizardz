@@ -4,7 +4,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Image from "next/image";
 import HeadingText from "../HeadingText";
 
-export const revalidate = 604800;
+export const revalidate = 1;
 
 const Testimonials = async () => {
   const reviewData: any = await fetchData("review");
