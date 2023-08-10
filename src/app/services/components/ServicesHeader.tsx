@@ -16,7 +16,7 @@ const ServicesHeader = ({
           item.subTabs.length <= 1 ? (
             <li
               key={`serviceheader-n-${index}`}
-              className={`px-4 items-center flex justify-center hover:cursor-pointer ${
+              className={`px-1 items-center flex justify-center hover:cursor-pointer ${
                 activeIndex === index
                   ? "bg-primaryColor rounded-md text-white"
                   : ""
@@ -41,7 +41,7 @@ const ServicesHeader = ({
               <label tabIndex={0}>{item.tab}</label>
               <ul
                 tabIndex={isDropdownOpen ? 0 : undefined}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-48"
+                className="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-48"
               >
                 {item.subTabs.map((subItem, subIndex) => (
                   <li
@@ -51,7 +51,7 @@ const ServicesHeader = ({
                       setActiveSubTab(subIndex);
                       setIsDropdownOpen(!isDropdownOpen);
                     }}
-                    className={`hover:cursor-pointer px-2 ${
+                    className={`hover:cursor-pointer px-1 ${
                       activeIndex === index && activeSubTab === subIndex
                         ? "border border-primaryColor rounded-md text-black"
                         : "text-black"

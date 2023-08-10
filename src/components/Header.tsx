@@ -63,7 +63,11 @@ const Header = () => {
           <div>
             <ul>
               {HeaderOptions.map((item) => (
-                <li className="mb-1" key={`Hnavigation-${item.title}`}>
+                <li
+                  className="mb-1"
+                  key={`Hnavigation-${item.title}`}
+                  onClick={() => setIsMenuVisible(!isMenuVisible)}
+                >
                   <Link
                     className="block p-4 text-sm font-semibold text-gray-500 hover:bg-indigo-50 hover:text-secondaryColor rounded"
                     href={item.route}

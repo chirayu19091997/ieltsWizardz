@@ -12,7 +12,7 @@ const Chatbot = () => {
   const [chat, setChat] = useState([
     {
       message:
-        "Hi!, In order to assist you better.Please let me know what are you looking for?",
+        "Hi! In order to assist you better, please let me know what you are looking for?",
       options: ["IELTS", "TOEFL", "SAT", "PTE", "OTHER"],
       from: "system",
     },
@@ -25,14 +25,14 @@ const Chatbot = () => {
   });
   const steps = [
     { message: "", field: "course" },
-    { message: "Sure! Lets get started with your name", field: "name" },
+    { message: "Great! Let's get started with your name.", field: "name" },
     {
-      message: `Hey there! now please let me know your email we won't spam you`,
+      message: `Thanks! Now please let me know your email. We won't spam you.`,
       field: "email",
     },
     {
       message:
-        "Noted! now please let me know your phone number we won't spam you",
+        "Noted! Share your contact number so that we can reach out to you at the earliest. We won't spam you at all.",
       field: "phone",
     },
   ];
@@ -46,7 +46,7 @@ const Chatbot = () => {
           from: "user",
         };
         const systemMessage = {
-          message: "Our team will reach out to you soon !",
+          message: "Our team will reach out to you soon!",
           options: [],
           from: "system",
         };
@@ -59,7 +59,7 @@ const Chatbot = () => {
           message: userDataExtracted.course,
         });
         setEnableInput(!enableInput);
-        setTimeout(() => setIsChatExpanded(!isChatExpanded), 2000);
+        setTimeout(() => setIsChatExpanded(!isChatExpanded), 5000);
         return;
       }
       const payload = {

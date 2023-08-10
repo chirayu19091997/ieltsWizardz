@@ -29,7 +29,7 @@ const Hero = () => {
               Book a Consultation
               <IconCircleArrowRight size={18} className="ml-8" />
             </Link>
-            <p className="flex mt-5 space-x-2 text-gray-600">
+            <p className="flex max-md:flex-col mt-5 space-x-2 text-gray-600">
               <span>Don&apos;t know what to choose?</span>
               <Link href="/contact">
                 <TextHover text="Get Free 1 on 1 Consultation" />

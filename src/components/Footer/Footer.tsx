@@ -16,11 +16,6 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
             {Logo}
 
-            <p className="text-base leading-relaxed text-gray-600 mt-7">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-            </p>
-
             <ul className="flex items-center space-x-3 mt-9">
               {DirectContacts.map((item) => (
                 <li key={`direct-${item.title}`}>

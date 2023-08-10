@@ -4,8 +4,8 @@ const Message = ({ chatData }: any) => {
   return chatData.from === "system" ? (
     <div className="chat chat-start">
       <div className="chat-image avatar">
-        <div className="w-10 bg-white rounded-full">
-          <img src="/logo.png" />
+        <div className="w-10 p-2 bg-white rounded-full">
+          <img src="/logo.png" className="bg-white mix-blend-multiply" />
         </div>
       </div>
       {/* <div className="chat-header">
