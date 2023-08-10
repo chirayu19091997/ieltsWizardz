@@ -4,7 +4,7 @@ import { statsData } from "@/utils/constants";
 
 const Stats = () => {
   return (
-    <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
+    <section className="bg-gray-50 py-12 sm:py-16 lg:py-20">
       <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight  sm:text-4xl lg:text-5xl">

@@ -4,7 +4,7 @@ import Testimonials from "@/components/home/Testimonials";
 import LogoCloud from "@/components/home/LogoCloud";
 import Hero from "@/components/home/Hero";
 import ServicesHome from "@/components/home/ServicesHome";
-import Universities from "@/components/home/Universities";
+import Universities from "@/components/home/Universities/Universities";
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
       <LogoCloud />
       <Stats />
       {/* countries */}
-      <Testimonials />
       <Universities />
+      <Testimonials />
       {/* <Faq /> */}
     </div>
   );

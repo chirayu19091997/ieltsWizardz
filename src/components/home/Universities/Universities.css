@@ -1,0 +1,18 @@
+.moving-text:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-370%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .moving-text {
+    animation: marquee 35s alternate infinite;
+  }
+}
