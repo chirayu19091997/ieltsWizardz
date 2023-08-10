@@ -1,4 +1,5 @@
 import { serviceSections } from "@/utils/constants";
+import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import React, { useState } from "react";
 
 const ServicesHeader = ({
@@ -39,7 +40,12 @@ const ServicesHeader = ({
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <label tabIndex={0} className="px-2">
-                {item.tab}
+                <p>{item.tab}</p>
+                {!isDropdownOpen ? (
+                  <IconChevronDown size={16} />
+                ) : (
+                  <IconChevronUp size={16} />
+                )}
               </label>
               <ul
                 tabIndex={isDropdownOpen ? 0 : undefined}
