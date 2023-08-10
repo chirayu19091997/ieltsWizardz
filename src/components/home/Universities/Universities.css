@@ -11,6 +11,30 @@
   }
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-370%);
+  }
+}
+
+@keyframes marqueeM {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-1400%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .moving-text {
+    animation: marqueeM 20s alternate infinite;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .moving-text {
     animation: marquee 35s alternate infinite;
