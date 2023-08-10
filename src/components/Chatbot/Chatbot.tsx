@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { TbMessage2Up, TbMessage2X } from "react-icons/tb";
+import { IconMessage2Up, IconMessage2X, IconSend } from "@tabler/icons-react";
 import Message from "./Message";
-import { AiOutlineSend } from "react-icons/ai";
 import { sendContactForm } from "@/utils/api";
 
 const Chatbot = () => {
@@ -13,7 +12,7 @@ const Chatbot = () => {
   const [chat, setChat] = useState([
     {
       message:
-        "Hi!,I am martha your personal assistant. In order to assist you better. What are you looking for?",
+        "Hi!, In order to assist you better.Please let me know what are you looking for?",
       options: ["IELTS", "TOEFL", "SAT", "PTE", "OTHER"],
       from: "system",
     },
@@ -132,7 +131,7 @@ const Chatbot = () => {
                 type="submit"
                 className="bg-gray-200 rounded-full h-8 w-8 text-center flex items-center justify-center p-2"
               >
-                <AiOutlineSend size={24} color="black" />
+                <IconSend size={24} color="black" />
               </button>
             </form>
           )}
@@ -144,9 +143,9 @@ const Chatbot = () => {
         onClick={() => setIsChatExpanded(!isChatExpanded)}
       >
         {!isChatExpanded ? (
-          <TbMessage2Up size={32} />
+          <IconMessage2Up size={32} />
         ) : (
-          <TbMessage2X size={32} />
+          <IconMessage2X size={32} />
         )}
       </button>
     </>

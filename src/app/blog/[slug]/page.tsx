@@ -1,9 +1,9 @@
 import React from "react";
 import BlogTile from "../components/blogTile";
-import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link";
 import { fetchData } from "@/utils/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import TextHover from "@/components/TextHover";
 
 export const revalidate = 604800;
 
@@ -37,8 +37,7 @@ const Blog = async ({ params }: any) => {
           href="/blog"
           className="flex font-semibold justify-center text-center items-center cursor-pointer transition ease-in-out delay-300 duration-800 hover:space-x-1"
         >
-          <p className="text-lg">See all articles</p>
-          <BsArrowRightShort size={28} />
+          <TextHover text="See all articles" className="text-lg" />
         </Link>
       </div>
     </div>

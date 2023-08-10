@@ -31,7 +31,7 @@ const Universities = () => {
               {logoSlides[activeIndex].map((item, index) => (
                 <img
                   key={`logo-${activeIndex}-${index}`}
-                  className="object-contain w-auto mx-auto h-24 mix-blend-multiply"
+                  className="object-contain w-auto mx-auto h-32 mix-blend-multiply"
                   src={item}
                   alt=""
                 />

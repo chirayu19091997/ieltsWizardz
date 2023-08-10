@@ -20,8 +20,6 @@ const generateEmailContent = (data: any) => {
 };
 export async function POST(request: Request) {
   const req = await request.json();
-  console.log(req);
-  console.log(process.env.NEXT_PUBLIC_EMAIL, process.env.NEXT_PUBLIC_PASSWORD);
   if (!req.name || !req.email || !req.phone || !req.message) {
     return NextResponse.json({ message: "Bad Request" });
   }

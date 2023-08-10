@@ -1,15 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import { FiArrowRightCircle } from "react-icons/fi";
+import { IconCircleArrowRight } from "@tabler/icons-react";
 import HeroAnimation from "../../assets/animations/heroAnimation.json";
 import Animator from "../Animator";
+import TextHover from "../TextHover";
 
 const Hero = () => {
   return (
-    <section className="bg-opacity-30">
+    <section>
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid items-start grid-cols-1 lg:gap-12 max-md:gap-6 lg:grid-cols-2">
-          <div className="py-12">
+          <div className="py-8">
             <p className="text-base font-semibold tracking-wider text-primaryColor uppercase">
               A social media for learners
             </p>
@@ -22,27 +23,21 @@ const Hero = () => {
 
             <Link
               href="/contact"
-              title=""
               className="inline-flex text-secondaryTextColor items-center px-6 py-4 mt-8 font-semibold  transition-all duration-200 bg-primaryColor rounded-full lg:mt-16 hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
               role="button"
             >
               Book a Demo
-              <FiArrowRightCircle size={18} className="ml-8" />
+              <IconCircleArrowRight size={18} className="ml-8" />
             </Link>
-            <p className="mt-5 text-gray-600">
-              Don&apos;t know what to choose?
-              <Link
-                href="/contact"
-                title=""
-                className="transition-all duration-200 mx-2 text-base relative one"
-              >
-                <span>Get Free 1 on 1 Consultation</span>
-                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-primaryColor"></span>
+            <p className="flex mt-5 space-x-2 text-gray-600">
+              <span>Don&apos;t know what to choose?</span>
+              <Link href="/contact">
+                <TextHover text="Get Free 1 on 1 Consultation" />
               </Link>
             </p>
           </div>
 
-          <div className="h-[80%]">
+          <div className="flex w-full h-[90%]">
             <Animator animationData={HeroAnimation} />
           </div>
         </div>

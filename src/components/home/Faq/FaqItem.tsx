@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import { IconMinus, IconPlus } from "@tabler/icons-react";
 
 interface FaqItemProps {
   title: string;
@@ -19,9 +19,9 @@ const FaqItem = ({ title, description }: FaqItemProps) => {
         <span className="flex text-lg font-semibold ">{title}</span>
 
         {isExpanded ? (
-          <AiOutlineMinus className="text-gray-600" size={24} />
+          <IconMinus className="text-gray-600" size={24} />
         ) : (
-          <AiOutlinePlus className="text-gray-600" size={24} />
+          <IconPlus className="text-gray-600" size={24} />
         )}
       </button>
 

@@ -15,7 +15,7 @@ const Highlighter = () => {
               title={item.title}
               className="flex items-center justify-center text-secondaryTextColor border rounded-full"
             >
-              <span className="flex items-center justify-center h-7 px-2 space-x-2">
+              <span className="flex items-center justify-center h-9 px-2 space-x-2">
                 {item.logo}
                 <p>{item.route.split(":")[1]}</p>
               </span>
@@ -28,7 +28,7 @@ const Highlighter = () => {
               href={item.route}
               target="_blank"
               title={item.title}
-              className="flex items-center justify-center rounded-full w-7 h-7 border text-secondaryTextColor"
+              className="flex items-center justify-center rounded-full w-9 h-9 border text-secondaryTextColor"
             >
               {item.logo}
             </Link>

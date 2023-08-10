@@ -1,6 +1,7 @@
 import React from "react";
 import FaqItem from "./FaqItem";
 import Link from "next/link";
+import TextHover from "@/components/TextHover";
 
 const Faq = () => {
   const onFAQClick = () => {};
@@ -51,13 +52,10 @@ const Faq = () => {
           />
         </div>
 
-        <p className="text-center text-gray-600 textbase mt-9">
-          Didn’t find the answer you are looking for?
-          <Link
-            href="/contact"
-            className="ml-2 font-medium text-primaryColor transition-all cursor-pointer duration-200 hover:text-secondaryColor focus:text-secondaryColor hover:underline"
-          >
-            Contact our support
+        <p className="flex space-x-2 justify-center text-center text-gray-600 textbase mt-9">
+          <span>Didn&apos;t find the answer you are looking for?</span>
+          <Link href="/contact" className="font-medium text-primaryColor">
+            <TextHover text=" Contact our support" />
           </Link>
         </p>
       </div>

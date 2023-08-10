@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { AiOutlineCheck } from "react-icons/ai";
+import { IconCheck } from "@tabler/icons-react";
 
 const ServiceItem = ({ cardData }: any) => {
   return (
@@ -28,11 +28,7 @@ const ServiceItem = ({ cardData }: any) => {
           <h2 className="font-semibold py-2 mt-4">{cardData.keyFeatures}:</h2>
           {cardData.features.map((feature: any) => (
             <div key={feature} className="flex w-full items-center space-x-2">
-              <AiOutlineCheck
-                className="text-green-600"
-                strokeWidth={80}
-                size={14}
-              />
+              <IconCheck strokeWidth={4} color="green" size={14} />
               <p className="text-gray-700">{feature}</p>
             </div>
           ))}

@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { BsArrowRightShort } from "react-icons/bs";
 import BlogTile from "./components/blogTile";
 import Link from "next/link";
 import { fetchData } from "@/utils/contentful";
+import TextHover from "@/components/TextHover";
 
 export const revalidate = 604800;
 
@@ -32,11 +32,10 @@ const BlogList = () => {
             visitors than any website.
           </p>
           <div
-            className="flex font-semibold items-center cursor-pointer transition ease-in-out delay-300 duration-800 hover:space-x-1"
+            className="flex font-semibold items-center"
             onClick={onShowAllClick}
           >
-            <p className="text-lg">See all articles</p>
-            <BsArrowRightShort size={28} />
+            <TextHover text="See all articles" className="text-lg" />
           </div>
         </div>
         <div className="w-full h-full flex flex-col lg:flex-row lg:flex-wrap justify-between">
@@ -45,7 +44,7 @@ const BlogList = () => {
               <Link
                 key={item.fields.slug}
                 href={`/blog/${item.fields.slug}`}
-                className="lg:w-[40%] cursor-pointer"
+                className="lg:w-[45%] cursor-pointer"
               >
                 <BlogTile blogData={item} />
               </Link>

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { FiArrowRightCircle } from "react-icons/fi";
+import { IconCircleArrowRight } from "@tabler/icons-react";
 import contactAnimation from "../../assets/animations/contact.json";
 import Input from "@/components/Input";
 import TextAreaInput from "@/components/TextAreaInput";
@@ -28,22 +28,21 @@ const Contact = () => {
             <div className="flex flex-col w-full h-full space-y-4">
               <div className="flex w-full space-x-4">
                 <Input
-                  placeholder="Martha"
                   label="Name"
+                  otherProps={{ minLength: 3 }}
                   value={data.name}
                   onChange={(i: any) => setData({ ...data, name: i })}
                 />
                 <Input
-                  placeholder="+919999999999"
                   type="number"
                   label="Phone"
+                  otherProps={{ minLength: 10, maxLength: 10 }}
                   value={data.phone}
                   onChange={(i: any) => setData({ ...data, phone: i })}
                 />
               </div>
               <div className="w-full">
                 <Input
-                  placeholder="ieltswizardz@gmail.com"
                   type="email"
                   label="Email"
                   value={data.email}
@@ -51,7 +50,6 @@ const Contact = () => {
                 />
               </div>
               <TextAreaInput
-                placeholder="Message"
                 label="Message"
                 value={data.message}
                 onChange={(i: any) => setData({ ...data, message: i })}
@@ -67,7 +65,7 @@ const Contact = () => {
                 className="inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"
               >
                 Submit
-                <FiArrowRightCircle size={18} className="ml-8" />
+                <IconCircleArrowRight size={18} className="ml-8" />
               </button>
             </div>
           </div>

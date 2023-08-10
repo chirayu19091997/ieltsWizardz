@@ -1,29 +1,37 @@
 import {
-  BiSolidPhoneCall,
-  BiMailSend,
-  BiLogoLinkedin,
-  BiLogoFacebook,
-  BiLogoInstagram,
-  BiLogoWhatsapp,
-} from "react-icons/bi";
-
-import { PiExamFill } from "react-icons/pi";
-import { MdOutlineDocumentScanner } from "react-icons/md";
-import { FcServices } from "react-icons/fc";
-import { GiGraduateCap } from "react-icons/gi";
+  IconPhoneCall,
+  IconAt,
+  IconBrandLinkedin,
+  IconBrandFacebook,
+  IconBrandInstagram,
+  IconBrandWhatsapp,
+  IconAward,
+  IconFileStack,
+  Icon24Hours,
+  IconBrandVisa,
+} from "@tabler/icons-react";
 
 export const Logo = (
-  <img className="w-auto object-cover h-9" src="/titledlogo.png" alt="" />
+  <div className="flex h-12 flex-shrink-0">
+    <img
+      className="w-auto object-contain h-12"
+      src="/titledlogo.png"
+      alt=""
+      height={132}
+      width={382}
+    />
+  </div>
 );
 
 export const clientData = {
   email: "ieltswizardz@gmail.com",
-  phone: "+919310888164",
+  phone: "+91-9310888164",
 };
 
 export const HeaderOptions = [
   { title: "About", route: "/about" },
   { title: "Services", route: "/services" },
+  { title: "For Businesses", route: "/b2bservices" },
   { title: "Blog", route: "/blog" },
   { title: "Contact Us", route: "/contact" },
   // { title: "Pricing", route: "/pricing" },
@@ -36,22 +44,22 @@ export const Socials = [
   {
     title: "LinkedIn",
     route: "https://www.linkedin.com/company/ieltswizardz/",
-    logo: <BiLogoLinkedin />,
+    logo: <IconBrandLinkedin size={16} />,
   },
   {
     title: "Instagram",
     route: "https://www.instagram.com/ieltswizardz/",
-    logo: <BiLogoInstagram />,
+    logo: <IconBrandInstagram size={16} />,
   },
   {
     title: "Facebook",
     route: "https://www.facebook.com/ieltswizardz/",
-    logo: <BiLogoFacebook />,
+    logo: <IconBrandFacebook size={16} />,
   },
   {
     title: "Whatsapp",
     route: `https://wa.me/${clientData.phone}`,
-    logo: <BiLogoWhatsapp />,
+    logo: <IconBrandWhatsapp size={16} />,
   },
 ];
 
@@ -59,12 +67,12 @@ export const DirectContacts = [
   {
     title: "Phone",
     route: `tel:${clientData.phone}`,
-    logo: <BiSolidPhoneCall />,
+    logo: <IconPhoneCall size={16} />,
   },
   {
     title: "Email",
     route: `mailto:${clientData.email}`,
-    logo: <BiMailSend />,
+    logo: <IconAt size={16} />,
   },
 ];
 
@@ -213,24 +221,24 @@ export const homeServiceSections = [
   {
     title: "How can we help you?",
     subtitle: "Click here to have a look at our services",
-    logo: <FcServices size={48} />,
+    logo: <Icon24Hours size={48} />,
   },
   {
     title: "Test preparation",
     subtitle:
       "Our Professionals can help you with IELTS One Skill,IELTS Complete,TOEFL,PTE,SAT",
-    logo: <PiExamFill size={48} />,
+    logo: <IconAward size={48} />,
   },
   {
     title: "Document Drafting",
     subtitle: "We can help you with SOPs,LORs,Admission Essays",
-    logo: <MdOutlineDocumentScanner size={48} />,
+    logo: <IconFileStack size={48} />,
   },
   {
     title: "Admission Assistance",
     subtitle:
       "We can help you with University Selection,Application Processing,Visa",
-    logo: <GiGraduateCap size={48} />,
+    logo: <IconBrandVisa size={48} />,
   },
 ];
 

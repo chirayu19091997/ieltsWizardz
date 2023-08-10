@@ -2,8 +2,8 @@
 import { HeaderOptions, Logo } from "@/utils/constants";
 import Link from "next/link";
 import React, { useState } from "react";
-import { RxCross1 } from "react-icons/rx";
-import { HiMenu } from "react-icons/hi";
+import { IconMenu2, IconX } from "@tabler/icons-react";
+import TextHover from "./TextHover";
 
 const Header = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
@@ -11,19 +11,15 @@ const Header = () => {
   return (
     <nav>
       <div className="px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          <div className="flex-shrink-0">
-            <Link href="/" title="" className="flex">
-              {Logo}
-            </Link>
-          </div>
+        <div className="flex items-center justify-between h-20 lg:h-20">
+          <Link href="/">{Logo}</Link>
 
           <button
             type="button"
             className="inline-flex p-2  transition-all duration-200 rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
             onClick={() => setIsMenuVisible(!isMenuVisible)}
           >
-            <HiMenu size={24} />
+            <IconMenu2 size={24} />
           </button>
 
           <div className="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
@@ -32,12 +28,8 @@ const Header = () => {
                 key={`Hnavigation-${item.title}`}
                 href={item.route}
                 title={item.title}
-                // className="text-base relative one"
               >
-                <div className="text-base relative one">
-                  <span>{item.title}</span>
-                  <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-primaryColor" />
-                </div>
+                <TextHover text={item.title} />
               </Link>
             ))}
           </div>
@@ -66,7 +58,7 @@ const Header = () => {
               className="navbar-close"
               onClick={() => setIsMenuVisible(false)}
             >
-              <RxCross1 size={24} />
+              <IconX size={24} />
             </button>
           </div>
           <div>
