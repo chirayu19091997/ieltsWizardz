@@ -165,6 +165,7 @@ const ServiceNew = () => {
         <div className="flex flex-wrap justify-center items-center w-full">
           {serviceSections.map((item: any, index: number) => (
             <p
+              key={`tab-${index}`}
               className={`p-2 m-1 px-4 rounded-full cursor-pointer ${
                 activeIndex === index ? "bg-tertiaryColor" : "bg-slate-100"
               } ${
