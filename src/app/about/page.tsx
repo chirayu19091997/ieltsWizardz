@@ -3,6 +3,7 @@ import Animator from "@/components/Animator";
 import aboutUsFounderAnimation from "@/assets/animations/afs.json";
 import aboutUsWhoWeAre from "@/assets/animations/awwa.json";
 import aboutUsWhatWeDo from "@/assets/animations/awwd.json";
+import "./aboutStyles.css";
 
 const About = () => {
   return (

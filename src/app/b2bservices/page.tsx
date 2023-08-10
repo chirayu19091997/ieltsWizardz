@@ -1,6 +1,7 @@
 import Animator from "@/components/Animator";
 import React from "react";
 import forBusinessAnimation from "@/assets/animations/fb.json";
+import "./b2bStyles.css";
 
 const B2BServices = () => {
   return (

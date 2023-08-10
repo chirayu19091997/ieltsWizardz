@@ -25,7 +25,9 @@ const Blog = async ({ params }: any) => {
         />
         <h1 className="font-bold text-3xl">{blogDetails.fields.title}</h1>
         <div className="border w-full border-black" />
-        <div>{documentToReactComponents(blogDetails.fields.content)}</div>
+        <div className="text-justify">
+          {documentToReactComponents(blogDetails.fields.content)}
+        </div>
       </div>
       <div className="flex flex-col lg:w-[40%] w-full space-y-2 py-4">
         <h1 className="text-xl font-bold border-b pb-2">Recent Posts</h1>
