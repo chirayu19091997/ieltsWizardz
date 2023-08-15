@@ -11,6 +11,13 @@ import { Toaster } from "react-hot-toast";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
 export const metadata: Metadata = {
+  openGraph: {
+    siteName: "IELTS Wizardz",
+    url: "www.ieltswizardz.com",
+    title: "IELTS Wizardz",
+    description:
+      "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
+  },
   applicationName: "IELTS Wizardz",
   title: {
     template: "%s | IELTS Wizardz",

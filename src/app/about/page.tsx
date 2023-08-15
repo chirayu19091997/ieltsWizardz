@@ -7,9 +7,16 @@ import "./aboutStyles.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  openGraph: {
+    siteName: "IELTS Wizardz",
+    url: "www.ieltswizardz.com",
+    title: "IELTS Wizardz",
+    description:
+      "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
+  },
   title: {
-    template: "%s | IELTS Widardz",
-    default: "IELTS Widardz",
+    template: "%s | IELTS Wizardz",
+    default: "IELTS Wizardz",
   },
   keywords: [
     "IELTS Wizardz",
