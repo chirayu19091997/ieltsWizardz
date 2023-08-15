@@ -11,9 +11,10 @@ import { Toaster } from "react-hot-toast";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
 export const metadata: Metadata = {
+  applicationName: "IELTS Wizardz",
   title: {
-    template: "%s | IELTS Widardz",
-    default: "IELTS Widardz",
+    template: "%s | IELTS Wizardz",
+    default: "IELTS Wizardz",
   },
   category: "education",
   keywords: [

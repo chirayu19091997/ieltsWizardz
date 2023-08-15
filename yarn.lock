@@ -2889,11 +2889,6 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-flags@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/use-flags/-/use-flags-1.0.1.tgz#bbd6639783c1676430488989c5ba70d0decb1184"
-  integrity sha512-ndILB19Nba/ukI46CQ2cUru4AWAcQdhAXtPB8VaS3NV2GeU/5iLDpZHfqC3Av3A6BdjroQ85T543hIWRz/jU8w==
-
 util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
