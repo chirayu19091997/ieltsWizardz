@@ -9,6 +9,7 @@ import { Suspense } from "react";
 import Loading from "./loading";
 import { Toaster } from "react-hot-toast";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   openGraph: {
@@ -51,6 +52,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics />
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className="noScroll">
         <Suspense fallback={<Loading />}>
           <Highlighter />
