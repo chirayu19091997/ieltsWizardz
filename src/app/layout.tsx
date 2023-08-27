@@ -9,7 +9,6 @@ import { Suspense } from "react";
 import Loading from "./loading";
 import { Toaster } from "react-hot-toast";
 import GoogleAnalytics from "@/utils/GoogleAnalytics";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   openGraph: {
@@ -40,6 +39,9 @@ export const metadata: Metadata = {
     "student support",
   ],
   viewport: "width=device-width, initial-scale=1.0",
+  creator: "Chirayu Agrawal",
+  publisher: "Amita Garg",
+  icons: "/favicon.ico",
   description:
     "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
 };
@@ -52,9 +54,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics />
-      <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </Head>
       <body className="noScroll">
         <Suspense fallback={<Loading />}>
           <Highlighter />
