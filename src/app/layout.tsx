@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1.0",
   creator: "Chirayu Agrawal",
   publisher: "Amita Garg",
-  icons: "/favicon.ico",
+  icons: "/logo.png",
   description:
     "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
 };
