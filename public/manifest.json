@@ -1,0 +1,30 @@
+{
+  "name": "IELTS Wizardz",
+  "short_name": "ieltswizardz",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Your One Stop Solution For Abroad Education",
+  "shortcuts": [
+    {
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
+      "name": "Services",
+      "url": "/services"
+    },
+    {
+      "name": "For Partners",
+      "url": "/b2bservices"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Contact Us",
+      "url": "/contact"
+    }
+  ]
+}
