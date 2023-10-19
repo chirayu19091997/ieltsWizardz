@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import BlogTile from "../components/blogTile";
 import Link from "next/link";
@@ -25,7 +26,7 @@ const Blog = async ({ params }: any) => {
         />
         <h1 className="font-bold text-3xl">{blogDetails.fields.title}</h1>
         <div className="border w-full border-black" />
-        <div className="text-justify">
+        <div className="text-justify whitespace-break-spaces [&_ul]:list-disc [&_ol]:list-decimal [&_td]:border [&_td]:border-disabledColor [&_td_p]:p-2">
           {documentToReactComponents(blogDetails.fields.content)}
         </div>
       </div>
