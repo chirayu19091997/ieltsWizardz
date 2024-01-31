@@ -9,6 +9,7 @@ import React from "react";
 import SubscriptionForm from "./SubscriptionForm";
 
 const Footer = () => {
+  const CopyrightYear = new Date().getFullYear();
   return (
     <section className="py-10 sm:pt-16 lg:pt-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -95,8 +96,7 @@ const Footer = () => {
         <hr className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © Copyright {new Date().getFullYear()}, All Rights Reserved by IELTS
-          Wizardz
+          © Copyright {CopyrightYear}, All Rights Reserved by IELTS Wizardz
         </p>
       </div>
     </section>
