@@ -20,7 +20,7 @@ export const Logo = (
       height={230}
       width={230}
     />
-    <p className="text-xl font-bold">IELTS Wizardz</p>
+    <p className="text-xl font-bold">Wizardz Overseas Education</p>
   </div>
 );
 
