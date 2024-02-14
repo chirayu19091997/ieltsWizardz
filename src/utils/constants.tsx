@@ -132,7 +132,7 @@ export const statsData = [
   {
     title: "Universities",
     subTitle: "Working for your success",
-    stats: 700,
+    stats: 800,
   },
 ];
 
