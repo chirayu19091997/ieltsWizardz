@@ -18,7 +18,7 @@ const Hero = () => {
               Connect & learn from our wizards
             </h1>
             <p className="mt-4 text-base  lg:mt-8 sm:text-xl">
-              Build an ultimate study abroad career with IELTS Wizardz
+              Build an ultimate study abroad career with Wizardz Overseas Education
             </p>
 
             <Link
