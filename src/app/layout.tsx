@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     siteName: "IELTS Wizardz",
     url: "www.ieltswizardz.com",
-    title: "IELTS Wizardz",
+    title: "Wizardz Overseas",
     description:
       "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
   },
