@@ -42,7 +42,7 @@ const About = () => {
         <div className="flex flex-col w-full space-y-4">
           <h1 className="flex text-3xl text-primaryColor">Who we are</h1>
           <p>
-            IELTS Wizardz is your one stop destination for all your study abroad
+            Wizardz Overseas is your one stop destination for all your study abroad
             needs, your virtual friend that supports and guides you in your
             endeavour to study abroad.
           </p>
@@ -66,7 +66,7 @@ const About = () => {
         <div className="flex flex-col w-full space-y-4">
           <h1 className="flex text-3xl text-primaryColor">What we do</h1>
           <p>
-            IELTS Wizardz starts with the first step of providing expert
+            Wizardz Overseas starts with the first step of providing expert
             training on various international tests like the IELTS, PTE, TOEFL
             iBT and the Digital SAT with a variety of course structures to
             choose from. Our highly qualified and experienced test-prep wizards
@@ -122,7 +122,7 @@ const About = () => {
             sharpened her axe further to be able to give it back to the society.
           </p>
           <p>
-            IELTS Wizardz has been her dream project. As the chief wizard, she
+            Wizardz Overseas has been her dream project. As the chief wizard, she
             personally mentors each student and guides them for training and
             admissions. Under her able guidance and mentorship, many aspiring
             candidates have successfully culminated their pursuit of studying
