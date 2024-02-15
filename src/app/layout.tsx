@@ -12,7 +12,7 @@ import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
 export const metadata: Metadata = {
   openGraph: {
-    siteName: "IELTS Wizardz",
+    siteName: "Wizardz Overseas",
     url: "www.ieltswizardz.com",
     title: "Wizardz Overseas",
     description:
