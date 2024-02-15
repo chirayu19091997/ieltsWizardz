@@ -40,17 +40,17 @@ export const HeaderOptions = [
 export const Socials = [
   {
     title: "LinkedIn",
-    route: "https://www.linkedin.com/company/ieltswizardz/",
+    route: "https://www.linkedin.com/company/wizardzoverseas/",
     logo: <IconBrandLinkedin size={20} />,
   },
   {
     title: "Instagram",
-    route: "https://www.instagram.com/ieltswizardz/",
+    route: "https://www.instagram.com/wizardzoverseas/",
     logo: <IconBrandInstagram size={20} />,
   },
   {
     title: "Facebook",
-    route: "https://www.facebook.com/ieltswizardz/",
+    route: "https://www.facebook.com/wizardzoverseas/",
     logo: <IconBrandFacebook size={20} />,
   },
   {
