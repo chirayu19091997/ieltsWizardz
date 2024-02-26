@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   applicationName: "IELTS Wizardz",
   title: {
-    template: "%s | IELTS Wizardz",
-    default: "IELTS Wizardz",
+    template: "%s | Wizardz Overseas",
+    default: "Wizardz Overseas",
   },
   category: "education",
   keywords: [
