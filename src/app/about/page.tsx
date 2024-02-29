@@ -3,7 +3,6 @@ import Animator from "@/components/Animator";
 import aboutUsFounderAnimation from "@/assets/animations/afs.json";
 import aboutUsWhoWeAre from "@/assets/animations/awwa.json";
 import aboutUsWhatWeDo from "@/assets/animations/awwd.json";
-import "./aboutStyles.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center px-12 w-full h-full space-y-8">
+    <div className="flex flex-col items-center px-12 w-full h-full space-y-8 [&_p]:text-justify">
       <div className="flex max-md:flex-col items-center justify-center w-full lg:space-x-24 max-md:space-y-8">
         <div className="flex flex-col w-full space-y-4">
           <h1 className="flex text-3xl text-primaryColor">Who we are</h1>

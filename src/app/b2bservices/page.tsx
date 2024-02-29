@@ -1,7 +1,6 @@
 import Animator from "@/components/Animator";
 import React from "react";
 import forBusinessAnimation from "@/assets/animations/fb.json";
-import "./b2bStyles.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 
 const B2BServices = () => {
   return (
-    <div className="flex flex-col items-center space-y-8 p-12">
+    <div className="flex flex-col items-center space-y-8 p-12 [&_p]:text-justify">
       <div className="flex max-md:flex-col items-center justify-center w-full lg:space-x-24 max-md:space-y-8">
         <div className="flex w-full">
           <Animator animationData={forBusinessAnimation} />
