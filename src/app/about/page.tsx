@@ -8,7 +8,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   keywords: [
-    "IELTS Wizardz",
+    "Wizardz Overseas",
     "English language",
     "counselling",
     "overseas admissions",
@@ -42,9 +42,9 @@ const About = () => {
         <div className="flex flex-col w-full space-y-4">
           <h1 className="flex text-3xl text-primaryColor">Who we are</h1>
           <p>
-            Wizardz Overseas is your one stop destination for all your study abroad
-            needs, your virtual friend that supports and guides you in your
-            endeavour to study abroad.
+            Wizardz Overseas is your one stop destination for all your study
+            abroad needs, your virtual friend that supports and guides you in
+            your endeavour to study abroad.
           </p>
           <p>
             We are a team of highly qualified English language experts with a
@@ -122,8 +122,8 @@ const About = () => {
             sharpened her axe further to be able to give it back to the society.
           </p>
           <p>
-            Wizardz Overseas has been her dream project. As the chief wizard, she
-            personally mentors each student and guides them for training and
+            Wizardz Overseas has been her dream project. As the chief wizard,
+            she personally mentors each student and guides them for training and
             admissions. Under her able guidance and mentorship, many aspiring
             candidates have successfully culminated their pursuit of studying
             abroad. As the founder, she ensures that every student/client gets

@@ -9,7 +9,7 @@ const Message = ({ chatData }: any) => {
         </div>
       </div>
       {/* <div className="chat-header">
-        IELTS Wizardz
+        Wizardz Overseas
         <time className="text-xs opacity-50">12:45</time>
       </div> */}
       <div className="chat-bubble">{chatData.message}</div>

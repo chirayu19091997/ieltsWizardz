@@ -13,12 +13,12 @@ import GoogleAnalytics from "@/utils/GoogleAnalytics";
 export const metadata: Metadata = {
   openGraph: {
     siteName: "Wizardz Overseas",
-    url: "www.ieltswizardz.com",
+    url: "www.wizardzoverseas.com",
     title: "Wizardz Overseas",
     description:
       "Explore our study abroad education services, including IELTS, TOEFL, SAT, PTE preparation, document drafting, and admission assistance for international students. Find the perfect programs and universities for your global learning journey.",
   },
-  applicationName: "IELTS Wizardz",
+  applicationName: "Wizardz Overseas",
   title: {
     template: "%s | Wizardz Overseas",
     default: "Wizardz Overseas",
