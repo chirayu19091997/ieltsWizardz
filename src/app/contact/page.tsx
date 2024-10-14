@@ -1,7 +1,6 @@
 "use client";
 import React, { Suspense, useState } from "react";
 import { IconCircleArrowRight } from "@tabler/icons-react";
-import contactAnimation from "../../assets/animations/contact.json";
 import Input from "@/components/Input";
 import TextAreaInput from "@/components/TextAreaInput";
 import { useSearchParams } from "next/navigation";
@@ -30,7 +29,11 @@ const Contact = () => {
   return (
     <Suspense fallback={<Loading />}>
       <section className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 p-6 max-md:p-4 grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-        <Animator animationData={contactAnimation} />
+        <Animator
+          animationData={
+            "https://lottie.host/0cac74f6-dde5-4234-8c27-824fea4575ff/DcrhFTmS7f.lottie"
+          }
+        />
         <div className="flex flex-col items-center justify-between w-full h-full p-8 space-y-4 shadow-xl border rounded-lg">
           <p className="flex text-base font-semibold tracking-wider text-primaryColor uppercase lg:my-4">
             Leave us a message
@@ -84,7 +87,13 @@ const Contact = () => {
                 )
               }
               onClick={() => {
-                sendContactForm(data);
+                const temp = {
+                  "entry.2005620554": data.name,
+                  "entry.1045781291": data.email,
+                  "entry.1166974658": data.phone,
+                  "entry.839337160": data.message,
+                };
+                sendContactForm(temp);
                 setData(standardData);
               }}
               className="disabled:opacity-30 inline-flex items-center px-6 py-4 font-semibold  transition-all duration-200 bg-primaryColor text-secondaryTextColor rounded-full hover:ring-2 hover:ring-offset-2 hover:ring-primaryColor focus:ring-2 focus:ring-offset-2 focus:ring-primaryColor"

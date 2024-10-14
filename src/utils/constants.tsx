@@ -1,3 +1,4 @@
+import Animator from "@/components/Animator";
 import {
   IconPhoneCall,
   IconAt,
@@ -20,7 +21,7 @@ export const Logo = (
       height={230}
       width={230}
     />
-    <p className="text-xl font-bold">IELTS Wizardz</p>
+    <p className="text-xl font-bold">Global Vista Exports</p>
   </div>
 );
 
@@ -31,9 +32,9 @@ export const clientData = {
 
 export const HeaderOptions = [
   { title: "About", route: "/about" },
-  { title: "Services", route: "/services" },
-  { title: "For Partners", route: "/b2bservices" },
-  { title: "Blog", route: "/blog" },
+  // { title: "Services", route: "/services" },
+  // { title: "For Partners", route: "/b2bservices" },
+  // { title: "Blog", route: "/blog" },
   { title: "Contact Us", route: "/contact" },
 ];
 
@@ -75,46 +76,25 @@ export const DirectContacts = [
 
 export const homeServiceSections = [
   {
-    title: "Test preparation",
+    title: "Premium Quality",
     subtitle:
-      "Live and self-paced online training & preparation for proficiency tests like IELTS / TOEFL / PTE and scholastic tests such as the SAT.",
-    logo: (
-      <div className="flex bg-gray-100 items-center justify-center w-14 h-14 flex-shrink-0">
-        <img
-          className="h-14 w-14 object-contain mix-blend-multiply"
-          src="/serviceshome/image6.png"
-          alt=""
-        />
-      </div>
-    ),
+      "We have All types of fabric and colors to choose from with premium quality",
+    serviceAnimationUrl:
+      "https://lottie.host/3a2e2ab0-f12d-489c-b5e9-e90f3c61bf0e/VkU3rxRHou.lottie",
   },
   {
-    title: "Admission Essays",
+    title: "Competitive Pricing",
     subtitle:
-      "We brainstorm with you to develop your university specific admission essays necessary for your applications to universities abroad.",
-    logo: (
-      <div className="flex bg-gray-100 items-center justify-center h-14 w-14 flex-shrink-0">
-        <img
-          className="h-14 w-14 object-contain mix-blend-multiply"
-          src="/serviceshome/image7.png"
-          alt=""
-        />
-      </div>
-    ),
+      "We provide best price for our customers with competitive pricing to cater all budgets",
+    serviceAnimationUrl:
+      "https://lottie.host/e12aa21a-6b15-4610-8199-1e67a0f479a9/x9BRgUS9SR.lottie",
   },
   {
-    title: "Study Abroad",
+    title: "Timely Delivery",
     subtitle:
-      "Your all-in-one guide that assists you at every step in your journey from course, country and university selection to securing your seat and getting your visa and accommodation.",
-    logo: (
-      <div className="flex bg-gray-100 items-center justify-center h-14 w-14 flex-shrink-0">
-        <img
-          className="h-14 w-14 object-contain mix-blend-multiply"
-          src="/serviceshome/image8.png"
-          alt=""
-        />
-      </div>
-    ),
+      "We Ship Directly from factories and this helps prompt delivery for our customers",
+    serviceAnimationUrl:
+      "https://lottie.host/549a78f2-8af1-47f3-a617-7d8933feb9b7/VSqzpZaneL.lottie",
   },
 ];
 

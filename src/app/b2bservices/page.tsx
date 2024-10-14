@@ -1,13 +1,13 @@
 import Animator from "@/components/Animator";
 import React from "react";
-import forBusinessAnimation from "@/assets/animations/fb.json";
+// import forBusinessAnimation from "@/assets/animations/fb.json";
 import "./b2bStyles.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | IELTS Widardz",
-    default: "IELTS Widardz",
+    template: "%s | Global Vista Exports",
+    default: "Global Vista Exports",
   },
   keywords: [
     "overseas admission consultancies",
@@ -29,7 +29,7 @@ const B2BServices = () => {
     <div className="flex flex-col items-center space-y-8 p-12">
       <div className="flex max-md:flex-col items-center justify-center w-full lg:space-x-24 max-md:space-y-8">
         <div className="flex w-full">
-          <Animator animationData={forBusinessAnimation} />
+          {/* <Animator animationData={forBusinessAnimation} /> */}
         </div>
         <div className="flex flex-col space-y-4">
           <h1 className="text-4xl text-primaryColor">For Partners</h1>

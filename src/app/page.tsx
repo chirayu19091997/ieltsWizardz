@@ -11,11 +11,11 @@ export default function Home() {
     <div className="bg-backgroundColor">
       <Hero />
       <ServicesHome />
-      <LogoCloud />
+      {/* <LogoCloud />
       <Stats />
       <Universities />
       <Countries />
-      <Testimonials />
+      <Testimonials /> */}
     </div>
   );
 }

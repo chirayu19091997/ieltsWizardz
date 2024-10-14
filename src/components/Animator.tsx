@@ -1,18 +1,17 @@
 "use client";
 import React, { Suspense } from "react";
-//@ts-ignore
-import Lottie from "lottie-react";
 import Loading from "@/app/loading";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 interface AnimatorProps {
-  animationData: object;
+  animationData: string;
   customOptions?: object;
 }
 
 const Animator = ({ animationData, customOptions }: AnimatorProps) => {
   return (
     <Suspense fallback={<Loading />}>
-      <Lottie {...customOptions} loop autoplay animationData={animationData} />
+      <DotLottieReact src={animationData} loop autoplay {...customOptions} />
     </Suspense>
   );
 };

@@ -1,15 +1,15 @@
 import React from "react";
 import Animator from "@/components/Animator";
-import aboutUsFounderAnimation from "@/assets/animations/afs.json";
-import aboutUsWhoWeAre from "@/assets/animations/awwa.json";
-import aboutUsWhatWeDo from "@/assets/animations/awwd.json";
+// import aboutUsFounderAnimation from "@/assets/animations/afs.json";
+// import aboutUsWhoWeAre from "@/assets/animations/awwa.json";
+// import aboutUsWhatWeDo from "@/assets/animations/awwd.json";
 import "./aboutStyles.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | IELTS Widardz",
-    default: "IELTS Widardz",
+    template: "%s | Global Vista Exports",
+    default: "Global Vista Exports",
   },
   keywords: [
     "IELTS Wizardz",
@@ -60,12 +60,12 @@ const About = () => {
           </p>
         </div>
         <div className="flex w-full">
-          <Animator animationData={aboutUsWhoWeAre} />
+          {/* <Animator animationData={aboutUsWhoWeAre} /> */}
         </div>
       </div>
       <div className="flex max-md:flex-col items-center w-full lg:space-x-24 max-md:space-y-8">
         <div className="flex w-full">
-          <Animator animationData={aboutUsWhatWeDo} />
+          {/* <Animator animationData={aboutUsWhatWeDo} /> */}
         </div>
         <div className="flex flex-col w-full space-y-4">
           <h1 className="flex text-3xl text-primaryColor">What we do</h1>
@@ -136,7 +136,7 @@ const About = () => {
           </p>
         </div>
         <div className="flex w-full">
-          <Animator animationData={aboutUsFounderAnimation} />
+          {/* <Animator animationData={aboutUsFounderAnimation} /> */}
         </div>
       </div>
     </div>

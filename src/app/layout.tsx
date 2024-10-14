@@ -8,12 +8,11 @@ import Highlighter from "@/components/Highlighter";
 import { Suspense } from "react";
 import Loading from "./loading";
 import { Toaster } from "react-hot-toast";
-import GoogleAnalytics from "@/utils/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | IELTS Widardz",
-    default: "IELTS Widardz",
+    template: "%s | Global Vista Exports",
+    default: "Global Vista Exports",
   },
   category: "education",
   keywords: [
@@ -42,14 +41,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics />
       <body className="noScroll">
         <Suspense fallback={<Loading />}>
-          <Highlighter />
+          {/* <Highlighter /> */}
           <Header />
           {children}
           <Footer />
-          <Chatbot />
+          {/* <Chatbot /> */}
         </Suspense>
         <Toaster
           position="top-right"

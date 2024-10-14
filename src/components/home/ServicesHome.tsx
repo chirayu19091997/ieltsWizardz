@@ -1,6 +1,7 @@
 import { homeServiceSections } from "@/utils/constants";
 import Link from "next/link";
 import React from "react";
+import Animator from "../Animator";
 
 const ServicesHome = () => {
   return (
@@ -15,7 +16,10 @@ const ServicesHome = () => {
                 index > 0 ? "md:border-l md:border-gray-200" : ""
               }`}
             >
-              <div className="w-14 h-14">{item.logo}</div>
+              <Animator
+                animationData={item.serviceAnimationUrl}
+                customOptions={{ className: "w-full h-full" }}
+              />
               <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj">
                 {item.title}
               </h3>
