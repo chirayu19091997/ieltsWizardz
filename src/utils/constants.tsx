@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Animator from "@/components/Animator";
 import {
   IconPhoneCall,
@@ -26,7 +27,7 @@ export const Logo = (
 );
 
 export const clientData = {
-  email: "ieltswizardz@gmail.com",
+  email: "globalvistaexports@gmail.com",
   phone: "+91-9310888164",
 };
 
@@ -41,17 +42,17 @@ export const HeaderOptions = [
 export const Socials = [
   {
     title: "LinkedIn",
-    route: "https://www.linkedin.com/company/ieltswizardz/",
+    route: "https://www.linkedin.com/company/globalvistaexports/",
     logo: <IconBrandLinkedin size={20} />,
   },
   {
     title: "Instagram",
-    route: "https://www.instagram.com/ieltswizardz/",
+    route: "https://www.instagram.com/globalvistaexports/",
     logo: <IconBrandInstagram size={20} />,
   },
   {
     title: "Facebook",
-    route: "https://www.facebook.com/ieltswizardz/",
+    route: "https://www.facebook.com/globalvistaexports/",
     logo: <IconBrandFacebook size={20} />,
   },
   {
@@ -105,332 +106,13 @@ export const statsData = [
     stats: 20,
   },
   {
-    title: "Students trained",
-    subTitle: "In last 6 years",
-    stats: 5000,
+    title: "Customers Served",
+    subTitle: "In last 6 months",
+    stats: 300,
   },
   {
-    title: "Universities",
-    subTitle: "Working for your success",
-    stats: 700,
+    title: "Yarns Delivered",
+    subTitle: "In last 6 months",
+    stats: 20000,
   },
-];
-
-export const logoSlides = [
-  "/universities/image1.png",
-  "/universities/image2.png",
-  "/universities/image3.png",
-  "/universities/image4.png",
-  "/universities/image5.png",
-  "/universities/image6.png",
-  "/universities/image7.png",
-  "/universities/image8.png",
-  "/universities/image9.png",
-  "/universities/image10.png",
-  "/universities/image11.png",
-  "/universities/image12.png",
-  "/universities/image13.png",
-  "/universities/image14.png",
-  "/universities/image15.png",
-  "/universities/image16.png",
-  "/universities/image17.png",
-  "/universities/image18.png",
-  "/universities/image19.png",
-  "/universities/image20.png",
-  "/universities/image21.png",
-  "/universities/image22.png",
-  "/universities/image23.png",
-  "/universities/image24.png",
-];
-
-export const serviceSections = [
-  {
-    tab: "Test Preparation",
-    subTabs: [
-      {
-        tab: "IELTS Academic",
-        title: "IELTS Complete Preparation",
-        data: [
-          {
-            title: "IELTS Plus",
-            subtitle:
-              "For those who need complete live training with online support",
-            keyFeatures: "Key Features",
-            features: [
-              "4 weeks live online classes",
-              "Video recordings of each class",
-              "Up-to-date study materials",
-              "Cambridge certified trainers",
-              "2 full length mock tests with evaluation",
-              "Grammar and vocabulary sessions",
-            ],
-          },
-          {
-            title: "IELTS Premium",
-            subtitle:
-              "For those who need complete live training with access to our exclusive ONLINE Portal treasures",
-            keyFeatures: "Key Features",
-            features: [
-              "6 weeks live online classes",
-              "Video recordings of each class",
-              "24x7 access to our ONLINE Portal for 6 months",
-              "10 timed Mock Tests with evaluation",
-              "40 Sectional tests for practice with evaluation",
-              "Weekend sessions on grammar and vocabulary",
-              "300+ videos on grammar, vocabulary and tips",
-              "100+ videos on trending topics, idioms and spellings",
-              "200+ Practice Exercises and Quizzes",
-              "Regular Doubt Solving Sessions",
-            ],
-          },
-          {
-            title: "IELTS Self-paced",
-            subtitle:
-              "For those who wish to prepare and practice at their own pace",
-            keyFeatures: "Key Features",
-            features: [
-              "24x7 access to our ONLINE Portal for 3 months",
-              "10 full-length timed Mock Tests with evaluation",
-              "40 Sectional tests for practice with evaluation",
-              "300+ self-paced lessons on grammar and vocabulary",
-              "100+ videos on trending topics, idioms and spellings",
-              "200+ Practice Exercises and Quizzes",
-              "Free English assessment and IELTS Diagnostic Test",
-            ],
-          },
-        ],
-      },
-      {
-        tab: "IELTS One-Skill",
-        title: "IELTS One Skill Preparation",
-        data: [
-          {
-            title: "One-skill Booster",
-            subtitle:
-              "For those who wish to boost their scores in any one section of the IELTS test",
-            keyFeatures: "Key Features",
-            features: [
-              "10 hrs. of live training-cum-practice",
-              "Evaluation and feedback by experts",
-              "Personal mentoring and support",
-            ],
-          },
-          {
-            title: "Writing Tasks Evaluation",
-            subtitle:
-              "For those who are worried about your IELTS Academic writing skills and want to get their essays evaluated",
-            keyFeatures: "Key Features",
-            features: [
-              "Combo: Task 1 + Task 2 (pack of 5/10/15 writeups)",
-              "Task 2: Pack of 5/10/15 writeups",
-              "Real time evaluation based on band descriptions",
-              "Predictive band scores",
-              "Feedback within 24-48 hrs",
-            ],
-          },
-        ],
-      },
-      {
-        tab: "TOEFL iBT",
-        title: "TOEFL Complete Preparation",
-        data: [
-          {
-            title: "TOEFL Plus",
-            subtitle:
-              "For those who need complete live training on TOEFL test with online support",
-            keyFeatures: "Key Features",
-            features: [
-              "3 weeks of online classes",
-              "Video recordings of each class",
-              "Up-to-date study materials",
-              "1 full length mock test with evaluation",
-              "Grammar and vocabulary sessions",
-            ],
-          },
-          {
-            title: "TOEFL Premium",
-            subtitle:
-              "For those who need complete live training with access to our exclusive ONLINE Portal treasures",
-            keyFeatures: "Key Features",
-            features: [
-              "6 weeks of live online classes",
-              "Video recordings of each class",
-              "24x7 access to our ONLINE Portal for 6 months",
-              "14 timed Mock Tests with evaluation",
-              "300+ videos on grammar, vocabulary and tips",
-              "Weekend doubt solving sessions",
-              "Free English assessment Test",
-            ],
-          },
-          {
-            title: "TOEFL Self-paced",
-            subtitle:
-              "For those who wish to prepare and practice at their own pace.",
-            keyFeatures: "Key Features",
-            features: [
-              "24x7 access to our ONLINE Portal for 6 months",
-              "14 timed Mock Tests with evaluation",
-              "300+ videos on grammar, vocabulary and tips",
-              "Free English assessment Test",
-            ],
-          },
-        ],
-      },
-      {
-        tab: "PTE",
-        title: "PTE Complete Preparation",
-        data: [
-          {
-            title: "PTE Plus",
-            subtitle:
-              "For those who need complete live training on PTE test with online support",
-            keyFeatures: "Key Features",
-            features: [
-              "3 weeks of live online classes",
-              "Video recordings of each class",
-              "Up-to-date study materials",
-              "1 full length mock test with evaluation",
-              "Grammar and vocabulary sessions",
-            ],
-          },
-          {
-            title: "PTE Premium",
-            subtitle:
-              "For those who need complete live training with access to our exclusive ONLINE Portal treasure",
-            keyFeatures: "Key Features",
-            features: [
-              "6 weeks of live online classes ",
-              "Video recordings of each class",
-              "24x7 access to our ONLINE Portal for 6 months",
-              "14 timed Mock Tests with evaluation",
-              "300+ videos on grammar, vocabulary and tips",
-              "Weekend doubt solving sessions",
-              "Free English assessment Test",
-            ],
-          },
-          {
-            title: "PTE Self-paced",
-            subtitle:
-              "For those who wish to prepare and practice at their own pace",
-            keyFeatures: "Key Features",
-            features: [
-              "24x7 access to our ONLINE Portal for 6 months",
-              "14 timed Mock Test with evaluation",
-              "300+ videos on grammar, vocabulary and tips",
-              "Free English assessment Test",
-            ],
-          },
-        ],
-      },
-      {
-        tab: "SAT Digital",
-        title: "SAT Digital",
-        data: [
-          {
-            title: "SAT Plus",
-            subtitle:
-              "For those who need complete live training on the new Digital SAT with online support",
-            keyFeatures: "Key Features",
-            features: [
-              "6 weeks of live online classes",
-              "Video recordings of each class",
-              "Up-to-date study materials",
-              "7 full length mock test with evaluation",
-              "Personalized mentoring and support",
-            ],
-          },
-          {
-            title: "SAT Premium",
-            subtitle:
-              "For those who need complete live training with access to our exclusive ONLINE Portal treasures ",
-            keyFeatures: "Key Features",
-            features: [
-              "12 weeks of live online classes",
-              "Video recordings of each class",
-              "24x7 access to our ONLINE Portal for 6 months",
-              "10 timed Mock Tests with evaluation",
-              "45 sectional tests with evaluation",
-              "300+ videos on grammar, vocabulary and tips",
-              "Weekend Verbal and Math doubt solving sessions",
-              "Free English assessment Test",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    tab: "Admission Essays",
-    subTabs: [
-      {
-        tab: "Document Drafting",
-        title: "Document Drafting",
-        data: [
-          {
-            title: "Document drafting",
-            subtitle:
-              "For those who need assistance in drafting or editing their university application essays",
-            keyFeatures: "Key Features",
-            features: [
-              "Common app essays & Uni. specific essays",
-              "Statement of Purpose / Personal Statement ",
-              "Letter of Intent",
-              "LORs",
-              "Turnaround time 48 to 72 hours",
-              "Drafting by internationally recognized English language experts",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    tab: "Study Abroad",
-    subTabs: [
-      {
-        tab: "Admission Assistance",
-        title: "Admission Assistance",
-        data: [
-          {
-            title: "CORE Services",
-            subtitle:
-              "For those who seek help in navigating through realizing their study abroad dream",
-            keyFeatures: "Key Features",
-            features: [
-              "Admissions Counseling",
-              "Profile Evaluation",
-              "Country and Course Selection",
-              "University Selection",
-              "Application processing",
-              "Visa Consulting",
-            ],
-          },
-          {
-            title: "ALLIED Services",
-            subtitle:
-              "We assist you in easing out your journey to studying abroad",
-            keyFeatures: "Key Features",
-            features: [
-              "Scholarships",
-              "Education Loans",
-              "GIC Accounts",
-              "Air Ticketing",
-              "Accommodation",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-];
-
-export const CountriesData = [
-  { title: "United States", image: "/countries/us.svg" },
-  { title: "Canada", image: "/countries/canada.svg" },
-  { title: "United Kingdom", image: "/countries/uk.svg" },
-  { title: "Australia", image: "/countries/australia.svg" },
-  { title: "France", image: "/countries/france.svg" },
-  { title: "Ireland", image: "/countries/ireland.svg" },
-  { title: "Singapore", image: "/countries/singapore.svg" },
-  { title: "UAE", image: "/countries/uae.svg" },
 ];

@@ -1,43 +1,6 @@
 import React from "react";
 import Animator from "@/components/Animator";
-// import aboutUsFounderAnimation from "@/assets/animations/afs.json";
-// import aboutUsWhoWeAre from "@/assets/animations/awwa.json";
-// import aboutUsWhatWeDo from "@/assets/animations/awwd.json";
 import "./aboutStyles.css";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: {
-    template: "%s | Global Vista Exports",
-    default: "Global Vista Exports",
-  },
-  keywords: [
-    "IELTS Wizardz",
-    "English language",
-    "counselling",
-    "overseas admissions",
-    "study abroad",
-    "IELTS",
-    "PTE",
-    "TOEFL iBT",
-    "Digital SAT",
-    "test-prep",
-    "writing wizards",
-    "college applications",
-    "personalised essays",
-    "Ivy League admission essays",
-    "overseas admissions",
-    "country counsellors",
-    "country selections",
-    "admission processes",
-    "scholarships",
-    "visa processing",
-    "Amita Garg",
-    "Trinity London certified",
-    "British Council trained IELTS Coach",
-    "ETS certified TOEFL trainer",
-  ],
-};
 
 const About = () => {
   return (

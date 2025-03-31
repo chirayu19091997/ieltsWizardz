@@ -5,7 +5,7 @@ import Animator from "../Animator";
 
 const ServicesHome = () => {
   return (
-    <section className="py-12 bg-gray-100 sm:py-16 lg:py-20">
+    <section className="py-12 bg-white border-b border-t sm:py-16 lg:py-20">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 text-center sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0">
           {homeServiceSections.map((item, index) => (

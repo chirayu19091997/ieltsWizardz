@@ -95,8 +95,8 @@ const Footer = () => {
         <hr className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © Copyright {new Date().getFullYear()}, All Rights Reserved by IELTS
-          Wizardz
+          © Copyright {new Date().getFullYear()}, All Rights Reserved by Global
+          Vista Exports
         </p>
       </div>
     </section>
